@@ -54,6 +54,7 @@ export default [
     id: f.id,
     name: f.name,
     kind: 'news',
+    allowEmpty: true, // 입시 키워드로 거르므로 0건인 날이 있을 수 있음
     async run() {
       const items = await readFeed(f.url);
       return items

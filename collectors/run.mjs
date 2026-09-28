@@ -93,7 +93,7 @@ for (const [i, src] of targets.entries()) {
   const prev = status.sources[src.id] ?? {};
   if (r.status === 'rejected') {
     console.error(`✗ ${src.id}: ${r.reason?.message ?? r.reason}`);
-    status.sources[src.id] = { ...prev, name: src.name, ok: false, error: String(r.reason?.message ?? r.reason), checkedAt: now.toISOString() };
+    status.sources[src.id] = { ...prev, name: src.name, ok: false, error: String(r.reason?.message ?? r.reason), checkedAt: now.toISOString(), since: prev.since ?? now.toISOString() };
     continue;
   }
   if (r.value == null) {
@@ -107,7 +107,17 @@ for (const [i, src] of targets.entries()) {
     buckets[src.kind].push(...r.value.map((raw) => normalize(raw, src)).filter(Boolean));
   }
   console.log(`✓ ${src.id}: ${r.value.length}건`);
-  status.sources[src.id] = { name: src.name, ok: true, count: r.value.length, checkedAt: now.toISOString(), lastSuccess: now.toISOString() };
+  status.sources[src.id] = {
+    name: src.name,
+    ok: true,
+    count: r.value.length,
+    checkedAt: now.toISOString(),
+    lastSuccess: now.toISOString(),
+    // 0건이 계속되는 것도 장애로 본다(allowEmpty 출처 제외). health.mjs 가 참고
+    lastNonEmpty: r.value.length > 0 ? now.toISOString() : prev.lastNonEmpty,
+    allowEmpty: src.allowEmpty ?? false,
+    since: prev.since ?? now.toISOString(),
+  };
 }
 
 for (const [kind, incoming] of Object.entries(buckets)) {

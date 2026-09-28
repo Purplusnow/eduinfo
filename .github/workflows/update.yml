@@ -48,6 +48,24 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
+      - name: 수집 상태 점검 · 텔레그램 알림
+        # 출처가 24시간 넘게 실패하거나 0건이면 한 번, 복구되면 한 번 알린다(horseai와 같은 봇·채팅)
+        continue-on-error: true
+        env:
+          TG_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TG_CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SITE_STATUS_URL: https://purplusnow.github.io/eduinfo/status/
+        run: |
+          BODY=$(node collectors/health.mjs)
+          [ -n "$BODY" ] || { echo "상태 변화 없음"; exit 0; }
+          echo "$BODY"
+          [ -n "$TG_TOKEN" ] && [ -n "$TG_CHAT" ] || { echo "텔레그램 설정 없음 — 넘어간다"; exit 0; }
+          curl -sS --max-time 20 -X POST \
+            "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TG_CHAT}" \
+            --data-urlencode "text=$(printf '%s\n\n%s' "$BODY" "$SITE_STATUS_URL")" \
+            -o /dev/null -w "  텔레그램 %{http_code}\n" || true
+
       - name: 수집 결과 커밋
         run: |
           git config user.name "github-actions[bot]"
@@ -83,3 +101,22 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v5
+
+  # 빌드·배포가 실패하면 바로 알린다(수집 장애는 위 점검 단계가 따로 알림)
+  notify-failure:
+    needs: [collect-and-build, deploy]
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          TG_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TG_CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          [ -n "$TG_TOKEN" ] && [ -n "$TG_CHAT" ] || { echo "텔레그램 설정 없음"; exit 0; }
+          NOW=$(TZ=Asia/Seoul date '+%m/%d %H:%M')
+          curl -sS --max-time 20 -X POST \
+            "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TG_CHAT}" \
+            --data-urlencode "text=$(printf '[입시정보] %s 빌드·배포 실패\n사이트가 갱신되지 않았습니다.\n\n%s' "$NOW" "$RUN_URL")" \
+            -o /dev/null -w "  텔레그램 %{http_code}\n" || true

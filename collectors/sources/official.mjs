@@ -77,7 +77,7 @@ async function adigaNews() {
 }
 
 export default [
-  { id: 'moe', name: '교육부 보도자료', kind: 'official', run: moeBoard },
+  { id: 'moe', name: '교육부 보도자료', kind: 'official', run: moeBoard, allowEmpty: true },
   { id: 'kice-notice', name: '평가원 수능 공지사항', kind: 'official', run: () => suneungBoard('1500229', '0301', '공지') },
   { id: 'kice-press', name: '평가원 수능 보도자료', kind: 'official', run: () => suneungBoard('1500230', '0302', '보도자료') },
   { id: 'adiga', name: '대입정보포털 어디가', kind: 'official', run: adigaNews },
