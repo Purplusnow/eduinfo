@@ -6,7 +6,7 @@ export const SITE_DESC = '대입·고입 공식 발표, 뉴스, 일정, 전형 �
 // 검색엔진 소유 확인 코드(서치콘솔·서치어드바이저에서 "HTML 태그" 방식으로 받은 content 값). 비어 있으면 태그를 넣지 않는다.
 export const VERIFY = {
   google: '',
-  naver: '',
+  naver: '0d28832c730d2c51222ef18851059bce06b3e2f2',
 };
 
 export { CATEGORIES };
