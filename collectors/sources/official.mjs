@@ -67,7 +67,8 @@ async function adigaNews() {
     items.push({
       id: `adiga-${id}`,
       title,
-      url: 'https://www.adiga.kr/uct/nmg/enw/newsView.do?menuId=PCUCTNMG2000',
+      // 상세 페이지는 팝업이라 목록으로 연결하고, 항목마다 주소가 달라지도록 번호를 붙인다(RSS guid 중복 방지)
+      url: `https://www.adiga.kr/uct/nmg/enw/newsView.do?menuId=PCUCTNMG2000#news-${id}`,
       date: null,
       summary: $(a).find('.newsTy').text().trim(),
       source: '대입정보포털 어디가',

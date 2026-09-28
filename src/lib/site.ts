@@ -3,6 +3,12 @@ import { CATEGORIES } from '../../collectors/lib/classify.mjs';
 export const SITE_NAME = '입시정보 한눈에';
 export const SITE_DESC = '대입·고입 공식 발표, 뉴스, 일정, 전형 가이드를 자동으로 모아 매일 갱신하는 입시 정보 사이트';
 
+// 검색엔진 소유 확인 코드(서치콘솔·서치어드바이저에서 "HTML 태그" 방식으로 받은 content 값). 비어 있으면 태그를 넣지 않는다.
+export const VERIFY = {
+  google: '',
+  naver: '',
+};
+
 export { CATEGORIES };
 export const categoryLabel = (id: string) => CATEGORIES.find((c) => c.id === id)?.label ?? id;
 

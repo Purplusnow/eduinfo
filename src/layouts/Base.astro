@@ -1,14 +1,17 @@
 ---
 import '../styles/global.css';
-import { SITE_NAME, SITE_DESC, u } from '../lib/site';
+import { SITE_NAME, SITE_DESC, VERIFY, u } from '../lib/site';
 import status from '../data/status.json';
 import { fmtDate } from '../lib/site';
 
 interface Props {
   title?: string;
   description?: string;
+  noindex?: boolean;
 }
-const { title, description = SITE_DESC } = Astro.props;
+const { title, description = SITE_DESC, noindex = false } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL(u('/og.png'), Astro.site);
 const fullTitle = title ? `${title} · ${SITE_NAME}` : SITE_NAME;
 const path = Astro.url.pathname;
 
@@ -28,9 +31,22 @@ const NAV = [
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <meta property="og:site_name" content={SITE_NAME} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="alternate" type="application/rss+xml" title={SITE_NAME} href={u('/rss.xml')} />
+    <link rel="sitemap" href={u('/sitemap-index.xml')} />
+    {VERIFY.google && <meta name="google-site-verification" content={VERIFY.google} />}
+    {VERIFY.naver && <meta name="naver-site-verification" content={VERIFY.naver} />}
     <link rel="icon" href={u('/favicon.svg')} type="image/svg+xml" />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
@@ -58,7 +74,7 @@ const NAV = [
         </p>
         <p class="muted">
           마지막 수집: {fmtDate(status.updatedAt, true)} (KST) ·
-          <a href={u("/schools/")}>전국 고등학교</a> · <a href={u("/status/")}>수집 현황</a> · <a href={u("/about/")}>사이트 소개</a>
+          <a href={u("/schools/")}>전국 고등학교</a> · <a href={u("/status/")}>수집 현황</a> · <a href={u("/rss.xml")}>RSS</a> · <a href={u("/about/")}>사이트 소개</a>
         </p>
       </div>
     </footer>
