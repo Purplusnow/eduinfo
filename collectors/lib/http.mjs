@@ -1,16 +1,33 @@
 const UA =
   'Mozilla/5.0 (compatible; eduinfo-bot/0.1; admissions news aggregator)';
 
-// 같은 호스트로는 한 번에 하나씩, 약간의 간격을 두고 요청한다(서버 부담·차단 방지).
-const hostQueues = new Map();
-const HOST_GAP_MS = 400;
+// 호스트마다 동시 요청 수를 제한하고 요청 사이에 간격을 둔다(서버 부담·차단 방지).
+// 기본은 한 번에 하나씩 400ms 간격. 트래픽 한도로 관리되는 공식 Open API는 더 빠르게.
+const HOST_LIMITS = {
+  default: { concurrency: 1, gap: 400 },
+  'apis.data.go.kr': { concurrency: 4, gap: 50 },
+  'open.neis.go.kr': { concurrency: 1, gap: 100 },
+};
+const hosts = new Map();
 
 export function fetchText(url, opts) {
   const host = new URL(url).host;
-  const prev = hostQueues.get(host) ?? Promise.resolve();
-  const job = prev.then(() => doFetch(url, opts)).finally(() => new Promise((r) => setTimeout(r, HOST_GAP_MS)));
-  hostQueues.set(host, job.catch(() => {}));
-  return job;
+  const { concurrency, gap } = HOST_LIMITS[host] ?? HOST_LIMITS.default;
+  const h = hosts.get(host) ?? hosts.set(host, { active: 0, waiting: [] }).get(host);
+  return new Promise((resolve, reject) => {
+    const run = () => {
+      h.active++;
+      doFetch(url, opts)
+        .then(resolve, reject)
+        .finally(() =>
+          setTimeout(() => {
+            h.active--;
+            h.waiting.shift()?.();
+          }, gap),
+        );
+    };
+    h.active < concurrency ? run() : h.waiting.push(run);
+  });
 }
 
 async function doFetch(url, { timeout = 20000, retries = 2, init = {} } = {}) {

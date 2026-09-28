@@ -19,7 +19,7 @@ for (const [id, s] of Object.entries(status.sources)) {
   if (s.skipped) continue;
   const healthyAt = s.allowEmpty ? s.lastSuccess : s.lastNonEmpty;
   const ref = healthyAt ?? s.since ?? s.checkedAt;
-  const isDown = now - new Date(ref).getTime() > THRESHOLD_H * 3600_000;
+  const isDown = now - new Date(ref).getTime() > (s.staleHours ?? THRESHOLD_H) * 3600_000;
   if (isDown && !alerts[id]) {
     alerts[id] = new Date(now).toISOString();
     down.push({ id, s, healthyAt });

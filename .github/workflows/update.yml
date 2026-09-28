@@ -43,6 +43,12 @@ jobs:
         env:
           NEIS_API_KEY: ${{ secrets.NEIS_API_KEY }}
 
+      - name: 대학 정보 수집(대학알리미, 하루 호출 한도 안에서 누적)
+        run: node collectors/universities.mjs
+        continue-on-error: true
+        env:
+          DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
+
       - name: 주간 브리핑 작성(월요일, 키가 있을 때만)
         run: npm run digest -- ${{ inputs.force_digest && '--force' || '' }}
         env:

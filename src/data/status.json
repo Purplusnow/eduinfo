@@ -63,9 +63,9 @@
    "name": "교육부 보도자료",
    "ok": true,
    "count": 7,
-   "checkedAt": "2026-09-28T07:33:31.059Z",
-   "lastSuccess": "2026-09-28T07:33:31.059Z",
-   "lastNonEmpty": "2026-09-28T07:33:31.059Z",
+   "checkedAt": "2026-09-28T07:59:59.106Z",
+   "lastSuccess": "2026-09-28T07:59:59.106Z",
+   "lastNonEmpty": "2026-09-28T07:59:59.106Z",
    "allowEmpty": true,
    "since": "2026-09-28T06:51:27.841Z"
   },
@@ -73,9 +73,9 @@
    "name": "평가원 수능 공지사항",
    "ok": true,
    "count": 10,
-   "checkedAt": "2026-09-28T07:33:31.059Z",
-   "lastSuccess": "2026-09-28T07:33:31.059Z",
-   "lastNonEmpty": "2026-09-28T07:33:31.059Z",
+   "checkedAt": "2026-09-28T07:59:59.106Z",
+   "lastSuccess": "2026-09-28T07:59:59.106Z",
+   "lastNonEmpty": "2026-09-28T07:59:59.106Z",
    "allowEmpty": false,
    "since": "2026-09-28T06:51:27.841Z"
   },
@@ -93,9 +93,9 @@
    "name": "대입정보포털 어디가",
    "ok": true,
    "count": 3,
-   "checkedAt": "2026-09-28T07:33:31.059Z",
-   "lastSuccess": "2026-09-28T07:33:31.059Z",
-   "lastNonEmpty": "2026-09-28T07:33:31.059Z",
+   "checkedAt": "2026-09-28T07:59:59.106Z",
+   "lastSuccess": "2026-09-28T07:59:59.106Z",
+   "lastNonEmpty": "2026-09-28T07:59:59.106Z",
    "allowEmpty": false,
    "since": "2026-09-28T06:51:27.841Z"
   },
@@ -118,8 +118,41 @@
    "lastNonEmpty": "2026-09-28T07:33:31.059Z",
    "allowEmpty": false,
    "since": "2026-09-28T06:51:27.841Z"
+  },
+  "univ-list": {
+   "name": "대학알리미 대학 목록",
+   "ok": true,
+   "count": 384,
+   "staleHours": 216,
+   "checkedAt": "2026-09-28T07:58:25.006Z",
+   "lastSuccess": "2026-09-28T07:58:25.006Z",
+   "lastNonEmpty": "2026-09-28T07:58:25.006Z",
+   "allowEmpty": true,
+   "since": "2026-09-28T07:58:25.006Z"
+  },
+  "univ-metrics": {
+   "name": "대학알리미 공시 지표",
+   "ok": true,
+   "count": 180,
+   "staleHours": 72,
+   "checkedAt": "2026-09-28T08:00:17.113Z",
+   "lastSuccess": "2026-09-28T08:00:17.113Z",
+   "lastNonEmpty": "2026-09-28T08:00:17.113Z",
+   "allowEmpty": true,
+   "since": "2026-09-28T07:58:25.006Z"
+  },
+  "univ-majors": {
+   "name": "대학알리미 학과 정보",
+   "ok": true,
+   "count": 15576,
+   "staleHours": 216,
+   "checkedAt": "2026-09-28T07:58:25.006Z",
+   "lastSuccess": "2026-09-28T07:58:25.006Z",
+   "lastNonEmpty": "2026-09-28T07:58:25.006Z",
+   "allowEmpty": true,
+   "since": "2026-09-28T07:58:25.006Z"
   }
  },
- "updatedAt": "2026-09-28T07:33:31.059Z",
+ "updatedAt": "2026-09-28T07:59:59.106Z",
  "alerts": {}
 }

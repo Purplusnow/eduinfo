@@ -1,0 +1,122 @@
+---
+import Base from '../../layouts/Base.astro';
+import { fmtDate, u } from '../../lib/site';
+import { univ, displayName, fmtMetric, kindGroup, metricValue, type MetricId } from '../../lib/univ';
+
+const schools = univ.schools;
+const regions = [...new Set(schools.map((s) => s.region))].sort((a, b) => a.localeCompare(b, 'ko'));
+const COLS: { id: MetricId; label: string }[] = [
+  { id: 'competition', label: '경쟁률' },
+  { id: 'fillRate', label: '충원율' },
+  { id: 'employment', label: '취업률' },
+  { id: 'tuition', label: '등록금' },
+];
+const withData = schools.filter((s) => metricValue(s, 'competition') != null).length;
+---
+<Base title="대학 정보" description={`전국 4년제·전문대학 ${schools.length}곳의 신입생 경쟁률, 충원율, 취업률, 등록금을 대학알리미 공시 기준으로 비교합니다.`}>
+  <h1>대학 정보</h1>
+  <p class="muted">
+    대학알리미 {univ.year}년 공시 기준 · 전국 4년제·전문대학 {schools.length}곳 · {fmtDate(univ.updatedAt)} 갱신
+    {withData < schools.length && <> · 공시 지표는 매일 조금씩 채우는 중({withData}/{schools.length}곳)</>}
+  </p>
+
+  <div class="univ-filters">
+    <input class="filter-input" id="q" type="search" placeholder="대학 이름으로 찾기" />
+    <select id="region" aria-label="지역">
+      <option value="">전체 지역</option>
+      {regions.map((r) => <option value={r}>{r}</option>)}
+    </select>
+    <select id="kind" aria-label="유형">
+      <option value="">4년제·전문대</option>
+      <option value="4년제">4년제</option>
+      <option value="전문대학">전문대학</option>
+    </select>
+    <select id="estb" aria-label="설립">
+      <option value="">국공립·사립</option>
+      <option value="사립">사립</option>
+      <option value="국공립">국공립</option>
+    </select>
+  </div>
+  <p class="muted small" id="count"></p>
+
+  <div class="table-scroll">
+    <table class="data sortable" id="univ-table">
+      <thead>
+        <tr>
+          <th data-sort="name">대학</th>
+          <th>지역</th>
+          {COLS.map((c) => <th data-sort={c.id} class="num">{c.label}</th>)}
+        </tr>
+      </thead>
+      <tbody>
+        {schools.map((s) => (
+          <tr
+            data-name={displayName(s)}
+            data-region={s.region}
+            data-kind={kindGroup(s)}
+            data-estb={s.estb === '사립' ? '사립' : '국공립'}
+            {...Object.fromEntries(COLS.map((c) => [`data-${c.id}`, metricValue(s, c.id) ?? '']))}
+          >
+            <td>
+              <a href={u(`/universities/${s.id}/`)}>{displayName(s)}</a>
+              <span class="muted small"> {kindGroup(s) === '전문대학' ? '전문대' : ''} {s.estb}</span>
+            </td>
+            <td>{s.region.replace(/(특별자치도|특별자치시|특별시|광역시|도)$/, '')}</td>
+            {COLS.map((c) => <td class="num">{fmtMetric(s, c.id)}</td>)}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <p class="muted small">
+    출처: 한국대학교육협의회 대학알리미(공공데이터포털 Open API). 경쟁률은 정원 내 신입생 기준, 등록금은 학생 1인당 연 평균입니다.
+    열 제목을 누르면 정렬됩니다.
+  </p>
+
+  <style>
+    .univ-filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 4px; }
+    .univ-filters select { font: inherit; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--text); }
+    .num { text-align: right !important; white-space: nowrap; font-variant-numeric: tabular-nums; }
+    th[data-sort] { cursor: pointer; user-select: none; }
+    th[data-dir='asc']::after { content: ' ▲'; }
+    th[data-dir='desc']::after { content: ' ▼'; }
+  </style>
+
+  <script is:inline>
+    (() => {
+      const $ = (id) => document.getElementById(id);
+      const tbody = document.querySelector('#univ-table tbody');
+      const rows = [...tbody.rows];
+      const apply = () => {
+        const q = $('q').value.trim(), r = $('region').value, k = $('kind').value, e = $('estb').value;
+        let n = 0;
+        for (const tr of rows) {
+          const d = tr.dataset;
+          const ok = (!q || d.name.includes(q)) && (!r || d.region === r) && (!k || d.kind === k) && (!e || d.estb === e);
+          tr.hidden = !ok;
+          if (ok) n++;
+        }
+        $('count').textContent = n + '곳';
+      };
+      ['q', 'region', 'kind', 'estb'].forEach((id) => $(id).addEventListener('input', apply));
+      document.querySelectorAll('th[data-sort]').forEach((th) => {
+        th.addEventListener('click', () => {
+          const key = th.dataset.sort;
+          const dir = th.dataset.dir === 'desc' ? 'asc' : key === 'name' ? 'asc' : 'desc';
+          document.querySelectorAll('th[data-sort]').forEach((x) => delete x.dataset.dir);
+          th.dataset.dir = dir;
+          const val = (tr) => (key === 'name' ? tr.dataset.name : tr.dataset[key] === '' ? null : Number(tr.dataset[key]));
+          rows.sort((a, b) => {
+            const x = val(a), y = val(b);
+            if (x === null) return 1;
+            if (y === null) return -1;
+            const c = key === 'name' ? x.localeCompare(y, 'ko') : x - y;
+            return dir === 'asc' ? c : -c;
+          });
+          rows.forEach((tr) => tbody.appendChild(tr));
+        });
+      });
+      apply();
+    })();
+  </script>
+</Base>

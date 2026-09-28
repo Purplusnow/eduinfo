@@ -1,0 +1,118 @@
+---
+import Base from '../../layouts/Base.astro';
+import { u } from '../../lib/site';
+import { METRIC_INFO, univ, displayName, fmtMetric, homepageUrl, kindGroup, type MetricId, type School } from '../../lib/univ';
+import majorsData from '../../data/majors.json';
+
+export function getStaticPaths() {
+  return univ.schools.map((s) => ({ params: { id: s.id }, props: { s } }));
+}
+const { s } = Astro.props as { s: School };
+
+// [단과대학, 학과, 계열, 수업연한, 입학정원, 주야, 관련직업]
+type Major = [string, string, string, string, number, string, string];
+const majors = ((majorsData as { bySchool: Record<string, Major[]> }).bySchool[s.name] ?? []) as Major[];
+const sameName = univ.schools.filter((x) => x.name === s.name).length > 1;
+const colleges = [...new Set(majors.map((m) => m[0] || '기타'))];
+const collegeLabel = (c: string) => (c === '단과대구분없음' ? '단과대학 구분 없음' : c);
+const totalQuota = majors.reduce((n, m) => n + (m[4] || 0), 0);
+
+const ORDER: MetricId[] = ['competition', 'fillRate', 'employment', 'dropout', 'tuition', 'scholarship'];
+const title = displayName(s);
+const home = homepageUrl(s.homepage);
+const desc = `${title}(${s.region}, ${s.estb} ${kindGroup(s)})의 신입생 경쟁률 ${fmtMetric(s, 'competition')}, 취업률 ${fmtMetric(s, 'employment')}, 연 등록금 ${fmtMetric(s, 'tuition')}과 개설 학과 ${majors.length}개 정보`;
+---
+<Base title={title} description={desc}>
+  <p class="small"><a href={u('/universities/')}>대학 정보</a> · {s.region}</p>
+  <h1>{title}</h1>
+  <p class="muted">
+    {s.region} · {s.estb} · {s.kind}{s.campus !== '본교' ? ` · ${s.campus}` : ''}
+    {s.founded && ` · ${s.founded.slice(0, 4)}년 설립`}
+  </p>
+
+  <div class="metric-grid">
+    {ORDER.map((id) => {
+      const m = s.metrics[id];
+      return (
+        <div class="card metric">
+          <div class="muted small">{METRIC_INFO[id].label}</div>
+          <div class="metric-num">{fmtMetric(s, id)}</div>
+          <div class="muted small">
+            {m?.avg != null ? `전국 평균 ${METRIC_INFO[id].fmt(m.avg)}` : METRIC_INFO[id].desc}
+          </div>
+        </div>
+      );
+    })}
+  </div>
+  <p class="muted small">
+    {univ.year}년 대학알리미 공시 기준. "-"는 공시 값이 없거나 아직 수집하지 않은 항목입니다. 경쟁률은 정원 내 신입생 기준입니다.
+  </p>
+
+  <h2>기본 정보</h2>
+  <table class="data">
+    <tbody>
+      <tr><th>주소</th><td>{s.address || '-'}</td></tr>
+      <tr><th>대표 전화</th><td>{s.phone || '-'}</td></tr>
+      <tr><th>홈페이지</th><td>{home ? <a href={home} target="_blank" rel="noopener">{s.homepage.toLowerCase()}</a> : '-'}</td></tr>
+      <tr>
+        <th>더 알아보기</th>
+        <td>
+          <a href="https://www.adiga.kr" target="_blank" rel="noopener">어디가(모집요강·입결)</a> ·
+          <a href="https://www.academyinfo.go.kr" target="_blank" rel="noopener">대학알리미(전체 공시)</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>개설 학과 <span class="muted small">{majors.length}개{totalQuota > 0 && ` · 입학정원 합계 ${totalQuota.toLocaleString('ko-KR')}명`}</span></h2>
+  {sameName && <p class="notice small">같은 이름의 캠퍼스가 여러 곳이라, 공시 자료에서 캠퍼스를 구분할 수 없는 학과는 함께 표시됩니다.</p>}
+  {majors.length === 0 ? (
+    <p class="muted">공시된 학과 정보가 없습니다.</p>
+  ) : (
+    <>
+      <input class="filter-input" id="mq" type="search" placeholder="학과·계열·관련 직업으로 찾기" />
+      {colleges.map((c) => (
+        <section class="college">
+          <h3>{collegeLabel(c)}</h3>
+          <div class="table-scroll">
+            <table class="data">
+              <thead><tr><th>학과</th><th>계열</th><th class="num">정원</th><th>관련 직업</th></tr></thead>
+              <tbody>
+                {majors.filter((m) => (m[0] || '기타') === c).map((m) => (
+                  <tr data-text={`${m[1]} ${m[2]} ${m[6]}`}>
+                    <td>{m[1]}{m[5] === '야간' && <span class="muted small"> (야간)</span>}<span class="muted small"> {m[3]}</span></td>
+                    <td class="small">{m[2]}</td>
+                    <td class="num">{m[4] || '-'}</td>
+                    <td class="small muted">{m[6]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      ))}
+      <script is:inline>
+        (() => {
+          const q = document.getElementById('mq');
+          const rows = [...document.querySelectorAll('tr[data-text]')];
+          q.addEventListener('input', () => {
+            const v = q.value.trim();
+            rows.forEach((r) => (r.hidden = v && !r.dataset.text.includes(v)));
+            document.querySelectorAll('section.college').forEach((sec) => {
+              sec.hidden = !!v && ![...sec.querySelectorAll('tr[data-text]')].some((r) => !r.hidden);
+            });
+          });
+        })();
+      </script>
+    </>
+  )}
+  <p class="muted small">출처: 한국대학교육협의회 대학알리미(공공데이터포털 Open API). 입학정원 0은 모집 중단·학부 통합 등으로 공시된 정원이 없는 경우입니다.</p>
+
+  <style>
+    .metric-grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(min(160px, 100%), 1fr)); margin: 16px 0 6px; }
+    .metric { padding: 14px 16px; }
+    .metric-num { font-size: 1.5rem; font-weight: 800; font-variant-numeric: tabular-nums; margin: 2px 0; }
+    .num { text-align: right !important; font-variant-numeric: tabular-nums; }
+    table.data th { white-space: nowrap; }
+  </style>
+</Base>
