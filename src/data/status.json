@@ -152,8 +152,138 @@
    "lastNonEmpty": "2026-09-28T07:58:25.006Z",
    "allowEmpty": true,
    "since": "2026-09-28T07:58:25.006Z"
+  },
+  "hs-seoul": {
+   "name": "서울시교육청 고입자료실",
+   "ok": true,
+   "count": 10,
+   "checkedAt": "2026-09-28T08:37:12.571Z",
+   "lastSuccess": "2026-09-28T08:37:12.571Z",
+   "lastNonEmpty": "2026-09-28T08:37:12.571Z",
+   "allowEmpty": true,
+   "since": "2026-09-28T08:37:12.571Z"
+  },
+  "hs-busan": {
+   "name": "부산시교육청 고입포털",
+   "ok": true,
+   "count": 29,
+   "checkedAt": "2026-09-28T08:37:12.571Z",
+   "lastSuccess": "2026-09-28T08:37:12.571Z",
+   "lastNonEmpty": "2026-09-28T08:37:12.571Z",
+   "allowEmpty": true,
+   "since": "2026-09-28T08:37:12.571Z"
+  },
+  "hs-daegu": {
+   "name": "대구시교육청 공지사항",
+   "ok": true,
+   "count": 4,
+   "checkedAt": "2026-09-28T08:37:12.571Z",
+   "lastSuccess": "2026-09-28T08:37:12.571Z",
+   "lastNonEmpty": "2026-09-28T08:37:12.571Z",
+   "allowEmpty": true,
+   "since": "2026-09-28T08:37:12.571Z"
+  },
+  "hs-incheon": {
+   "name": "인천시교육청 고등학교입학자료실",
+   "ok": true,
+   "count": 30,
+   "checkedAt": "2026-09-28T08:37:12.571Z",
+   "lastSuccess": "2026-09-28T08:37:12.571Z",
+   "lastNonEmpty": "2026-09-28T08:37:12.571Z",
+   "allowEmpty": true,
+   "since": "2026-09-28T08:37:12.571Z"
+  },
+  "hs-gwangju": {
+   "name": "광주진로진학지원센터 고입정보",
+   "ok": true,
+   "count": 30,
+   "checkedAt": "2026-09-28T08:37:12.571Z",
+   "lastSuccess": "2026-09-28T08:37:12.571Z",
+   "lastNonEmpty": "2026-09-28T08:37:12.571Z",
+   "allowEmpty": true,
+   "since": "2026-09-28T08:37:12.571Z"
+  },
+  "hs-sejong": {
+   "name": "세종시교육청 공지·고시공고",
+   "ok": true,
+   "count": 7,
+   "checkedAt": "2026-09-28T08:37:12.571Z",
+   "lastSuccess": "2026-09-28T08:37:12.571Z",
+   "lastNonEmpty": "2026-09-28T08:37:12.571Z",
+   "allowEmpty": true,
+   "since": "2026-09-28T08:37:12.571Z"
+  },
+  "hs-gyeonggi": {
+   "name": "경기도교육청 고입포털·보도자료",
+   "ok": true,
+   "count": 9,
+   "checkedAt": "2026-09-28T08:37:12.571Z",
+   "lastSuccess": "2026-09-28T08:37:12.571Z",
+   "lastNonEmpty": "2026-09-28T08:37:12.571Z",
+   "allowEmpty": true,
+   "since": "2026-09-28T08:37:12.571Z"
+  },
+  "hs-gangwon": {
+   "name": "강원특별자치도교육청 고입자료실",
+   "ok": true,
+   "count": 10,
+   "checkedAt": "2026-09-28T08:37:12.571Z",
+   "lastSuccess": "2026-09-28T08:37:12.571Z",
+   "lastNonEmpty": "2026-09-28T08:37:12.571Z",
+   "allowEmpty": true,
+   "since": "2026-09-28T08:37:12.571Z"
+  },
+  "hs-chungbuk": {
+   "name": "충북교육청 고입시 게시판",
+   "ok": true,
+   "count": 30,
+   "checkedAt": "2026-09-28T08:37:12.571Z",
+   "lastSuccess": "2026-09-28T08:37:12.571Z",
+   "lastNonEmpty": "2026-09-28T08:37:12.571Z",
+   "allowEmpty": true,
+   "since": "2026-09-28T08:37:12.571Z"
+  },
+  "hs-jeonbuk": {
+   "name": "전북특별자치도교육청 보도자료",
+   "ok": true,
+   "count": 4,
+   "checkedAt": "2026-09-28T08:37:12.571Z",
+   "lastSuccess": "2026-09-28T08:37:12.571Z",
+   "lastNonEmpty": "2026-09-28T08:37:12.571Z",
+   "allowEmpty": true,
+   "since": "2026-09-28T08:37:12.571Z"
+  },
+  "hs-jeonnam": {
+   "name": "전남교육청 진로진학지원센터 고입자료실",
+   "ok": true,
+   "count": 26,
+   "checkedAt": "2026-09-28T08:37:12.571Z",
+   "lastSuccess": "2026-09-28T08:37:12.571Z",
+   "lastNonEmpty": "2026-09-28T08:37:12.571Z",
+   "allowEmpty": true,
+   "since": "2026-09-28T08:37:12.571Z"
+  },
+  "hs-gyeongbuk": {
+   "name": "경북교육청 온라인 고입전형",
+   "ok": true,
+   "count": 20,
+   "checkedAt": "2026-09-28T08:37:12.571Z",
+   "lastSuccess": "2026-09-28T08:37:12.571Z",
+   "lastNonEmpty": "2026-09-28T08:37:12.571Z",
+   "allowEmpty": true,
+   "since": "2026-09-28T08:37:12.571Z"
+  },
+  "hs-gyeongnam": {
+   "name": "경남교육청 고입포털",
+   "ok": true,
+   "count": 10,
+   "checkedAt": "2026-09-28T08:37:12.571Z",
+   "lastSuccess": "2026-09-28T08:37:12.571Z",
+   "lastNonEmpty": "2026-09-28T08:37:12.571Z",
+   "allowEmpty": true,
+   "since": "2026-09-28T08:37:12.571Z"
   }
  },
- "updatedAt": "2026-09-28T08:17:09.804Z",
+ "updatedAt": "2026-09-28T08:37:12.571Z",
  "alerts": {}
 }

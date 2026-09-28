@@ -1,0 +1,59 @@
+---
+import { getEntry } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import ItemList from '../components/ItemList.astro';
+import { fmtDate, u, type Item } from '../lib/site';
+import official from '../data/official.json';
+
+const items = (official.items as Item[]).filter((it) => it.sourceId.startsWith('hs-'));
+// "서울시교육청 고입자료실" → "서울시교육청"
+const office = (it: Item) => it.source.split(' ')[0];
+const offices = [...new Set(items.map(office))].sort((a, b) => a.localeCompare(b, 'ko'));
+const guide = await getEntry('guides', 'highschool-admission');
+---
+<Base title="고입 공지" description="전국 시·도교육청의 고등학교 입학전형 공지(특목고·자사고·일반고 배정·특성화고)를 한곳에 모았습니다.">
+  <h1>고입 공지</h1>
+  <p class="muted">
+    전국 시·도교육청의 고입 게시판과 공지사항에서 고등학교 입학 관련 글만 모았습니다 · {offices.length}개 교육청 · {fmtDate(official.updatedAt, true)} 갱신
+  </p>
+  <p class="small">
+    {guide && <><a href={u(`/guides/${guide.id}/`)}>고입 한눈에 보기(가이드)</a> · </>}
+    <a href={u('/schools/')}>전국 고등학교 찾기</a>
+  </p>
+
+  <div class="hs-filter">
+    <select id="office" aria-label="교육청">
+      <option value="">전체 교육청</option>
+      {offices.map((o) => <option value={o}>{o}</option>)}
+    </select>
+    <span class="muted small" id="hs-count"></span>
+  </div>
+  <ItemList items={items} showTags={false} />
+
+  <p class="muted small">
+    대전·충남·제주교육청은 사이트가 자동 수집을 허용하지 않고, 울산교육청은 보안 인증서 문제로 접속이 되지 않아 제외되었습니다. 해당 지역은 교육청 홈페이지에서 직접
+    확인하세요.
+  </p>
+
+  <style>
+    .hs-filter { display: flex; gap: 12px; align-items: center; margin: 12px 0; }
+    .hs-filter select { font: inherit; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--text); }
+  </style>
+  <script is:inline>
+    (() => {
+      const sel = document.getElementById('office');
+      const rows = [...document.querySelectorAll('.items li')];
+      const apply = () => {
+        let n = 0;
+        rows.forEach((li) => {
+          const ok = !sel.value || (li.dataset.text || '').includes(sel.value);
+          li.hidden = !ok;
+          if (ok) n++;
+        });
+        document.getElementById('hs-count').textContent = n + '건';
+      };
+      sel.addEventListener('input', apply);
+      apply();
+    })();
+  </script>
+</Base>

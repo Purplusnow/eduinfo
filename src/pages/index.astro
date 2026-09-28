@@ -11,7 +11,8 @@ import majorsData from '../data/majors.json';
 import { univ } from '../lib/univ';
 
 const newsItems = news.items as Item[];
-const officialItems = (official.items as Item[]).slice(0, 8);
+const officialItems = (official.items as Item[]).filter((it) => !it.sourceId.startsWith('hs-')).slice(0, 8);
+const hsCount = (official.items as Item[]).filter((it) => it.sourceId.startsWith('hs-')).length;
 const byCat = CATEGORIES.map((c) => ({ ...c, items: newsItems.filter((it) => it.categories.includes(c.id)).slice(0, 5) })).filter(
   (c) => c.items.length,
 );
@@ -31,6 +32,7 @@ const TILES = [
   { href: '/majors/', title: '학과 찾기', desc: `학과 ${majorCount.toLocaleString('ko-KR')}개를 이름·직업으로 검색` },
   { href: '/schedule/', title: '입시 일정', desc: '수능·수시·정시·전문대 일정과 D-day' },
   { href: '/guides/', title: '입시 가이드', desc: `전형·전략·수능 정리글 ${guides.length}편` },
+  { href: '/highschool/', title: '고입 공지', desc: `시·도교육청 고입 공지 ${hsCount}건 모음` },
   { href: '/exams/', title: '수능 기출문제', desc: '평가원 문제·정답 바로가기' },
   ...(schoolsData ? [{ href: '/schools/', title: '전국 고등학교', desc: `고교 ${schoolsData.items.length.toLocaleString('ko-KR')}곳 유형·지역별 찾기` }] : []),
 ];

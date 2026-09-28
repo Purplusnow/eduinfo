@@ -7,11 +7,18 @@ import news from './sources/news.mjs';
 import official from './sources/official.mjs';
 import exams from './sources/exams.mjs';
 import schools from './sources/schools.mjs';
+import highschool from './sources/highschool.mjs';
 import { classify } from './lib/classify.mjs';
 import { hash, normTitle, truncate } from './lib/util.mjs';
 
+// 시·도교육청 고입 게시판(hs-*)에서 온 글은 제목 키워드와 관계없이 고입으로 분류
+const categorize = (it) => {
+  const c = classify(`${it.title} ${it.summary ?? ''}`);
+  return it.sourceId?.startsWith('hs-') && !c.includes('highschool') ? [...c, 'highschool'] : c;
+};
+
 const DATA_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../src/data');
-const SOURCES = [...news, ...official, ...exams, ...schools];
+const SOURCES = [...news, ...official, ...highschool, ...exams, ...schools];
 
 // kind별 보관 정책
 const RETENTION = {
@@ -47,7 +54,7 @@ function normalize(raw, src) {
     source: raw.source ?? src.name,
     sourceId: src.id,
     summary: truncate(raw.summary ?? '', 180),
-    categories: classify(`${title} ${raw.summary ?? ''}`),
+    categories: categorize({ title, summary: raw.summary, sourceId: src.id }),
     ...(raw.year ? { year: raw.year, subject: raw.subject } : {}),
   };
 }
@@ -75,7 +82,7 @@ function merge(existing, incoming, { maxDays, maxItems }) {
     .map((it) => ({
       ...it,
       date: it.date && new Date(it.date) > now ? it.firstSeen : it.date,
-      categories: classify(`${it.title} ${it.summary}`),
+      categories: categorize(it),
     }))
     .sort((a, b) => new Date(b.date ?? b.firstSeen) - new Date(a.date ?? a.firstSeen))
     .slice(0, maxItems);
