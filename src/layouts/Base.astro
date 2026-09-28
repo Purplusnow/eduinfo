@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { SITE_NAME, SITE_DESC, VERIFY, u } from '../lib/site';
+import { SITE_NAME, SITE_DESC, VERIFY, ADSENSE_CLIENT, u } from '../lib/site';
 import status from '../data/status.json';
 import { fmtDate } from '../lib/site';
 
@@ -51,6 +51,12 @@ const NAV = [
     <link rel="sitemap" href={u('/sitemap-index.xml')} />
     {VERIFY.google && <meta name="google-site-verification" content={VERIFY.google} />}
     {VERIFY.naver && <meta name="naver-site-verification" content={VERIFY.naver} />}
+    {ADSENSE_CLIENT && (
+      <>
+        <meta name="google-adsense-account" content={ADSENSE_CLIENT} />
+        <script is:inline async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`} crossorigin="anonymous"></script>
+      </>
+    )}
     <link rel="icon" href={u('/favicon.svg')} type="image/svg+xml" />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
@@ -78,7 +84,7 @@ const NAV = [
         </p>
         <p class="muted">
           마지막 수집: {fmtDate(status.updatedAt, true)} (KST) ·
-          <a href={u("/schools/")}>전국 고등학교</a> · <a href={u("/status/")}>수집 현황</a> · <a href={u("/rss.xml")}>RSS</a> · <a href={u("/about/")}>사이트 소개</a>
+          <a href={u("/schools/")}>전국 고등학교</a> · <a href={u("/status/")}>수집 현황</a> · <a href={u("/rss.xml")}>RSS</a> · <a href={u("/about/")}>사이트 소개</a> · <a href={u("/privacy/")}>개인정보처리방침</a>
         </p>
       </div>
     </footer>

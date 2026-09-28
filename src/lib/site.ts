@@ -4,6 +4,10 @@ export const SITE_NAME = '입시정보 한눈에';
 export const SITE_DESC = '대입·고입 공식 발표, 뉴스, 일정, 전형 가이드를 자동으로 모아 매일 갱신하는 입시 정보 사이트';
 
 // 검색엔진 소유 확인 코드(서치콘솔·서치어드바이저에서 "HTML 태그" 방식으로 받은 content 값). 비어 있으면 태그를 넣지 않는다.
+// Google 애드센스 게시자 ID(koreanblog.xyz 계정). 비우면 광고 스크립트를 넣지 않는다.
+export const ADSENSE_CLIENT = 'ca-pub-4640178123605595';
+export const REPO_URL = 'https://github.com/Purplusnow/eduinfo';
+
 export const VERIFY = {
   google: '',
   naver: '0d28832c730d2c51222ef18851059bce06b3e2f2',

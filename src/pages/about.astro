@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import { SITE_NAME, u } from '../lib/site';
+import { SITE_NAME, REPO_URL, u } from '../lib/site';
 ---
 <Base title="사이트 소개">
   <article class="prose">
@@ -24,6 +24,9 @@ import { SITE_NAME, u } from '../lib/site';
       <li>자동 분류라 일부 기사가 엉뚱한 분야에 들어갈 수 있습니다.</li>
       <li>입시 일정과 전형은 바뀔 수 있습니다. 지원 전에 대학 모집요강과 공식 발표를 꼭 확인하세요.</li>
     </ul>
+    <h2>광고와 문의</h2>
+    <p>사이트 운영을 위해 Google 애드센스 광고를 게재합니다. 쿠키 사용 등은 <a href={u('/privacy/')}>개인정보처리방침</a>을 참고하세요.</p>
+    <p>잘못된 정보 제보, 정정·삭제 요청, 제안은 <a href={`${REPO_URL}/issues`} target="_blank" rel="noopener">GitHub 이슈</a>로 남겨 주세요.</p>
     <p>수집 상태는 <a href={u('/status/')}>수집 현황</a>에서 볼 수 있습니다.</p>
   </article>
 </Base>
