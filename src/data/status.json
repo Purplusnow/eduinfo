@@ -3,86 +3,87 @@
   "google-news": {
    "name": "Google 뉴스",
    "ok": true,
-   "count": 438,
-   "checkedAt": "2026-09-28T05:57:13.798Z",
-   "lastSuccess": "2026-09-28T05:57:13.798Z"
+   "count": 444,
+   "checkedAt": "2026-09-28T06:32:04.294Z",
+   "lastSuccess": "2026-09-28T06:32:04.294Z"
   },
   "veritas": {
    "name": "베리타스알파",
    "ok": true,
    "count": 7,
-   "checkedAt": "2026-09-28T05:57:13.798Z",
-   "lastSuccess": "2026-09-28T05:57:13.798Z"
+   "checkedAt": "2026-09-28T06:32:04.294Z",
+   "lastSuccess": "2026-09-28T06:32:04.294Z"
   },
   "edujin": {
    "name": "에듀진",
    "ok": true,
-   "count": 39,
-   "checkedAt": "2026-09-28T05:57:13.798Z",
-   "lastSuccess": "2026-09-28T05:57:13.798Z"
+   "count": 38,
+   "checkedAt": "2026-09-28T06:32:04.294Z",
+   "lastSuccess": "2026-09-28T06:32:04.294Z"
   },
   "unn": {
    "name": "한국대학신문",
    "ok": true,
    "count": 11,
-   "checkedAt": "2026-09-28T05:57:13.798Z",
-   "lastSuccess": "2026-09-28T05:57:13.798Z"
+   "checkedAt": "2026-09-28T06:32:04.294Z",
+   "lastSuccess": "2026-09-28T06:32:04.294Z"
   },
   "edupress": {
    "name": "에듀프레스",
    "ok": true,
    "count": 8,
-   "checkedAt": "2026-09-28T05:57:13.798Z",
-   "lastSuccess": "2026-09-28T05:57:13.798Z"
+   "checkedAt": "2026-09-28T06:32:04.294Z",
+   "lastSuccess": "2026-09-28T06:32:04.294Z"
   },
   "eduinnews": {
    "name": "에듀인뉴스",
    "ok": true,
    "count": 0,
-   "checkedAt": "2026-09-28T05:57:13.798Z",
-   "lastSuccess": "2026-09-28T05:57:13.798Z"
+   "checkedAt": "2026-09-28T06:32:04.294Z",
+   "lastSuccess": "2026-09-28T06:32:04.294Z"
   },
   "moe": {
    "name": "교육부 보도자료",
    "ok": true,
    "count": 7,
-   "checkedAt": "2026-09-28T05:57:13.798Z",
-   "lastSuccess": "2026-09-28T05:57:13.798Z"
+   "checkedAt": "2026-09-28T06:32:04.294Z",
+   "lastSuccess": "2026-09-28T06:32:04.294Z"
   },
   "kice-notice": {
    "name": "평가원 수능 공지사항",
    "ok": true,
    "count": 10,
-   "checkedAt": "2026-09-28T05:57:13.798Z",
-   "lastSuccess": "2026-09-28T05:57:13.798Z"
+   "checkedAt": "2026-09-28T06:32:04.294Z",
+   "lastSuccess": "2026-09-28T06:32:04.294Z"
   },
   "kice-press": {
    "name": "평가원 수능 보도자료",
    "ok": true,
    "count": 10,
-   "checkedAt": "2026-09-28T05:57:13.798Z",
-   "lastSuccess": "2026-09-28T05:57:13.798Z"
+   "checkedAt": "2026-09-28T06:32:04.294Z",
+   "lastSuccess": "2026-09-28T06:32:04.294Z"
   },
   "adiga": {
    "name": "대입정보포털 어디가",
    "ok": true,
    "count": 3,
-   "checkedAt": "2026-09-28T05:57:13.798Z",
-   "lastSuccess": "2026-09-28T05:57:13.798Z"
+   "checkedAt": "2026-09-28T06:32:04.294Z",
+   "lastSuccess": "2026-09-28T06:32:04.294Z"
   },
   "kice-exams": {
    "name": "평가원 수능 기출문제",
    "ok": true,
    "count": 30,
-   "checkedAt": "2026-09-28T05:57:13.798Z",
-   "lastSuccess": "2026-09-28T05:57:13.798Z"
+   "checkedAt": "2026-09-28T06:32:04.294Z",
+   "lastSuccess": "2026-09-28T06:32:04.294Z"
   },
   "neis-schools": {
    "name": "NEIS 고등학교 정보",
-   "ok": null,
-   "skipped": true,
-   "checkedAt": "2026-09-28T05:57:13.798Z"
+   "ok": true,
+   "count": 2409,
+   "checkedAt": "2026-09-28T06:32:04.294Z",
+   "lastSuccess": "2026-09-28T06:32:04.294Z"
   }
  },
- "updatedAt": "2026-09-28T05:57:13.798Z"
+ "updatedAt": "2026-09-28T06:32:04.294Z"
 }
