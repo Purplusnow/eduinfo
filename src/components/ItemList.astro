@@ -1,0 +1,23 @@
+---
+import { categoryLabel, fmtDate, itemDate, type Item } from '../lib/site';
+
+interface Props {
+  items: Item[];
+  showSummary?: boolean;
+  showTags?: boolean;
+}
+const { items, showSummary = false, showTags = true } = Astro.props;
+---
+<ul class="items">
+  {items.map((it) => (
+    <li data-cats={it.categories.join(' ')} data-text={`${it.title} ${it.source}`}>
+      <a class="title" href={it.url} target="_blank" rel="noopener">{it.title}</a>
+      {showSummary && it.summary && <p class="summary">{it.summary}</p>}
+      <div class="meta">
+        <span>{it.source}</span>
+        <time datetime={itemDate(it)}>{fmtDate(itemDate(it))}</time>
+        {showTags && it.categories.map((c) => <span class="tag">{categoryLabel(c)}</span>)}
+      </div>
+    </li>
+  ))}
+</ul>

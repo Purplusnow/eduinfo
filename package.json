@@ -1,0 +1,26 @@
+{
+  "name": "eduinfo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "국내 입시 정보를 자동으로 모아 보여주는 정적 사이트",
+  "scripts": {
+    "collect": "node collectors/run.mjs",
+    "dev": "astro dev",
+    "build": "astro build && pagefind --site dist",
+    "preview": "astro preview",
+    "digest": "node collectors/digest.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.128.0",
+    "astro": "^7.3.5",
+    "cheerio": "^1.2.0",
+    "fast-xml-parser": "^5.11.1"
+  },
+  "devDependencies": {
+    "pagefind": "^1.5.2"
+  }
+}

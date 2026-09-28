@@ -1,0 +1,36 @@
+---
+import Base from '../layouts/Base.astro';
+import { type Item } from '../lib/site';
+import exams from '../data/exams.json';
+
+const items = exams.items as Item[];
+const byYear = new Map<number, Item[]>();
+for (const it of items) {
+  if (!it.year) continue;
+  byYear.set(it.year, [...(byYear.get(it.year) ?? []), it]);
+}
+const years = [...byYear.keys()].sort((a, b) => b - a);
+---
+<Base title="수능 기출문제" description="한국교육과정평가원 수능 기출문제·정답 바로가기">
+  <h1>수능 기출문제</h1>
+  <p class="muted">
+    한국교육과정평가원이 공개한 대학수학능력시험 문제와 정답입니다. 링크를 누르면 평가원 게시글로 이동해 PDF를 내려받을 수 있습니다.
+  </p>
+  <div class="grid">
+    {years.map((y) => (
+      <section class="card">
+        <h2>{y}학년도 수능</h2>
+        <ul class="items">
+          {byYear.get(y)!.map((it) => (
+            <li><a class="title" href={it.url} target="_blank" rel="noopener">{it.subject}</a></li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </div>
+  <h2>더 찾아보기</h2>
+  <ul>
+    <li><a href="https://www.suneung.re.kr/boardCnts/list.do?boardID=1500234&m=0403&s=suneung" target="_blank" rel="noopener">평가원 수능 기출문제 전체 목록</a></li>
+    <li><a href="https://www.ebsi.co.kr" target="_blank" rel="noopener">EBSi: 모의평가·학력평가 기출과 해설 강의</a></li>
+  </ul>
+</Base>

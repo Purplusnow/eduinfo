@@ -1,0 +1,85 @@
+name: 수집 · 빌드 · 배포
+
+on:
+  schedule:
+    # 3시간마다(UTC 기준 17분). KST로 00:17, 03:17, … 21:17
+    - cron: '17 */3 * * *'
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      force_digest:
+        description: '주간 브리핑을 지금 강제로 생성'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write # 수집한 데이터를 저장소에 커밋
+  pages: write
+  id-token: write
+
+concurrency:
+  group: update-site
+  cancel-in-progress: false
+
+jobs:
+  collect-and-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: 정보 수집
+        # 일부 출처가 실패해도 기존 데이터로 빌드·배포를 이어간다
+        run: npm run collect
+        continue-on-error: true
+        env:
+          NEIS_API_KEY: ${{ secrets.NEIS_API_KEY }}
+
+      - name: 주간 브리핑 작성(월요일, 키가 있을 때만)
+        run: npm run digest -- ${{ inputs.force_digest && '--force' || '' }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: 수집 결과 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data src/content/digests
+          if git diff --cached --quiet; then
+            echo "변경 없음"
+          else
+            git commit -m "data: $(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M') 자동 수집"
+            git pull --rebase --autostash
+            git push
+          fi
+
+      - id: pages
+        uses: actions/configure-pages@v5
+
+      - name: 사이트 빌드
+        run: npm run build
+        env:
+          SITE_URL: ${{ steps.pages.outputs.origin }}
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: collect-and-build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,39 @@
+[
+  { "group": "대입 공식 포털", "links": [
+    { "name": "대입정보포털 어디가", "url": "https://www.adiga.kr", "desc": "대교협 운영. 대학별 모집요강, 전형 결과, 성적 분석" },
+    { "name": "한국대학교육협의회", "url": "https://www.kcue.or.kr", "desc": "대입전형 기본사항·시행계획 발표 기관" },
+    { "name": "대학알리미", "url": "https://www.academyinfo.go.kr", "desc": "대학 공시정보(등록금, 취업률, 충원율 등)" },
+    { "name": "전문대학포털 프로칼리지", "url": "https://www.procollege.kr", "desc": "전문대학 입학정보" },
+    { "name": "한국전문대학교육협의회", "url": "https://www.kcce.or.kr", "desc": "전문대학 입학전형 기본사항" },
+    { "name": "체육특기자 대입포털", "url": "https://info.kusf.or.kr", "desc": "체육특기자 전형 정보" }
+  ]},
+  { "group": "수능·시험", "links": [
+    { "name": "대학수학능력시험(평가원)", "url": "https://www.suneung.re.kr", "desc": "수능·모의평가 공지, 기출문제, 성적 발표" },
+    { "name": "한국교육과정평가원", "url": "https://www.kice.re.kr", "desc": "수능·검정고시·학업성취도 평가 주관" },
+    { "name": "EBSi", "url": "https://www.ebsi.co.kr", "desc": "수능 연계 교재, 기출 해설, 모의고사 풀서비스" }
+  ]},
+  { "group": "정부·교육청", "links": [
+    { "name": "교육부", "url": "https://www.moe.go.kr", "desc": "대입 정책, 보도자료" },
+    { "name": "고교학점제", "url": "https://www.hscredit.kr", "desc": "고교학점제 안내" },
+    { "name": "학교알리미", "url": "https://www.schoolinfo.go.kr", "desc": "초·중·고 공시정보" },
+    { "name": "나이스 대국민서비스", "url": "https://www.neis.go.kr", "desc": "학생부 열람, 증명서 발급" },
+    { "name": "교육통계서비스", "url": "https://kess.kedi.re.kr", "desc": "학교·학생 수 등 교육 통계" }
+  ]},
+  { "group": "진로·장학", "links": [
+    { "name": "커리어넷", "url": "https://www.career.go.kr", "desc": "진로심리검사, 학과·직업 정보" },
+    { "name": "한국장학재단", "url": "https://www.kosaf.go.kr", "desc": "국가장학금, 학자금 대출" },
+    { "name": "영재교육종합데이터베이스(GED)", "url": "https://ged.kedi.re.kr", "desc": "영재교육원·영재학급 선발" },
+    { "name": "국립국제교육원", "url": "https://www.niied.go.kr", "desc": "재외국민·외국인 유학생 관련" }
+  ]},
+  { "group": "원서접수 대행", "links": [
+    { "name": "진학어플라이", "url": "https://apply.jinhakapply.com", "desc": "대학 원서접수" },
+    { "name": "유웨이어플라이", "url": "https://www.uwayapply.com", "desc": "대학 원서접수" }
+  ]},
+  { "group": "특수 대학", "links": [
+    { "name": "육군사관학교", "url": "https://www.kma.ac.kr", "desc": "" },
+    { "name": "해군사관학교", "url": "https://www.navy.ac.kr", "desc": "" },
+    { "name": "공군사관학교", "url": "https://www.afa.ac.kr", "desc": "" },
+    { "name": "국군간호사관학교", "url": "https://www.kafna.ac.kr", "desc": "" },
+    { "name": "경찰대학", "url": "https://www.police.ac.kr", "desc": "" }
+  ]}
+]

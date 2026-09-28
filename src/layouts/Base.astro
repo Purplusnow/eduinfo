@@ -1,0 +1,66 @@
+---
+import '../styles/global.css';
+import { SITE_NAME, SITE_DESC, u } from '../lib/site';
+import status from '../data/status.json';
+import { fmtDate } from '../lib/site';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+const { title, description = SITE_DESC } = Astro.props;
+const fullTitle = title ? `${title} · ${SITE_NAME}` : SITE_NAME;
+const path = Astro.url.pathname;
+
+const NAV = [
+  { href: '/news/', label: '뉴스' },
+  { href: '/official/', label: '공식 발표' },
+  { href: '/schedule/', label: '입시 일정' },
+  { href: '/guides/', label: '입시 가이드' },
+  { href: '/exams/', label: '기출문제' },
+  { href: '/links/', label: '기관·사이트' },
+];
+---
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href={u('/favicon.svg')} type="image/svg+xml" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href={u('/')}>{SITE_NAME}</a>
+        <nav class="nav" aria-label="주요 메뉴">
+          {NAV.map((n) => (
+            <a href={u(n.href)} aria-current={path.startsWith(u(n.href)) ? 'page' : undefined}>{n.label}</a>
+          ))}
+        </nav>
+        <a class="search-link" href={u('/search/')} aria-label="검색">검색</a>
+      </div>
+    </header>
+    <main class="wrap" data-pagefind-body>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          공식 기관 발표와 언론 보도를 자동으로 모아 제목과 링크만 보여줍니다. 모든 저작권은 원 출처에 있으며,
+          정확한 내용은 반드시 원문과 각 대학 모집요강에서 확인하세요.
+        </p>
+        <p class="muted">
+          마지막 수집: {fmtDate(status.updatedAt, true)} (KST) ·
+          <a href={u("/schools/")}>전국 고등학교</a> · <a href={u("/status/")}>수집 현황</a> · <a href={u("/about/")}>사이트 소개</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

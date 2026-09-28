@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro';
+import ItemList from '../components/ItemList.astro';
+import Filter from '../components/Filter.astro';
+import { fmtDate, type Item } from '../lib/site';
+import official from '../data/official.json';
+
+const items = official.items as Item[];
+---
+<Base title="공식 발표" description="교육부, 한국교육과정평가원, 대교협 대입정보포털의 입시 관련 공지와 보도자료">
+  <h1>공식 발표</h1>
+  <p class="muted">
+    교육부 보도자료, 평가원(수능) 공지·보도자료, 대교협 대입정보포털 어디가 소식 · {fmtDate(official.updatedAt, true)} 갱신
+  </p>
+  <Filter />
+  <ItemList items={items} />
+</Base>

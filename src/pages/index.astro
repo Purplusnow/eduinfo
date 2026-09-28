@@ -1,0 +1,77 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Ddays from '../components/Ddays.astro';
+import ItemList from '../components/ItemList.astro';
+import { CATEGORIES, SITE_DESC, fmtDate, u, type Item } from '../lib/site';
+import news from '../data/news.json';
+import official from '../data/official.json';
+import status from '../data/status.json';
+
+const newsItems = news.items as Item[];
+const officialItems = (official.items as Item[]).slice(0, 8);
+const byCat = CATEGORIES.map((c) => ({ ...c, items: newsItems.filter((it) => it.categories.includes(c.id)).slice(0, 5) })).filter(
+  (c) => c.items.length,
+);
+const guides = (await getCollection('guides')).sort((a, b) => a.data.order - b.data.order);
+const latestDigest = (await getCollection('digests')).sort((a, b) => +b.data.date - +a.data.date)[0];
+---
+<Base>
+  <section class="hero">
+    <h1>오늘의 입시 정보</h1>
+    <p>{SITE_DESC}</p>
+    <p class="small">마지막 갱신 {fmtDate(status.updatedAt, true)}</p>
+  </section>
+
+  <Ddays limit={4} />
+  <p class="small"><a href={u('/schedule/')}>전체 일정 보기 →</a></p>
+
+  {latestDigest && (
+    <a class="card" href={u(`/digest/${latestDigest.id}/`)} style="display:block;color:inherit;text-decoration:none;margin-top:16px">
+      <span class="tag">주간 브리핑</span>
+      <h2 style="margin:6px 0 4px">{latestDigest.data.title}</h2>
+      <p class="summary">{latestDigest.data.summary}</p>
+    </a>
+  )}
+
+  <div class="grid" style="margin-top:24px">
+    <section class="card">
+      <div class="card-head">
+        <h2>공식 발표</h2>
+        <a class="small" href={u('/official/')}>더보기</a>
+      </div>
+      <ItemList items={officialItems} showTags={false} />
+    </section>
+    <section class="card">
+      <div class="card-head">
+        <h2>최신 뉴스</h2>
+        <a class="small" href={u('/news/')}>더보기</a>
+      </div>
+      <ItemList items={newsItems.slice(0, 8)} showTags={false} />
+    </section>
+  </div>
+
+  <h2>분야별 뉴스</h2>
+  <div class="grid">
+    {byCat.map((c) => (
+      <section class="card">
+        <div class="card-head">
+          <h2>{c.label}</h2>
+          <a class="small" href={u(`/news/?cat=${c.id}`)}>더보기</a>
+        </div>
+        <ItemList items={c.items} showTags={false} />
+      </section>
+    ))}
+  </div>
+
+  <h2>입시 가이드</h2>
+  <div class="grid">
+    {guides.map((g) => (
+      <a class="card" href={u(`/guides/${g.id}/`)} style="color:inherit;text-decoration:none">
+        <span class="tag">{g.data.category}</span>
+        <h3 style="margin:6px 0 4px">{g.data.title}</h3>
+        <p class="summary">{g.data.description}</p>
+      </a>
+    ))}
+  </div>
+</Base>

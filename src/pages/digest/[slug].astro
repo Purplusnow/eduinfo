@@ -1,0 +1,23 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { fmtDate, u } from '../../lib/site';
+
+export async function getStaticPaths() {
+  const digests = await getCollection('digests');
+  return digests.map((d) => ({ params: { slug: d.id }, props: { d } }));
+}
+const { d } = Astro.props;
+const { Content } = await render(d);
+---
+<Base title={d.data.title} description={d.data.summary}>
+  <p class="small"><a href={u('/guides/')}>입시 가이드</a> · 주간 브리핑</p>
+  <article class="prose">
+    <h1>{d.data.title}</h1>
+    <p class="muted small">{fmtDate(d.data.date.toISOString())}</p>
+    {d.data.generated && (
+      <p class="notice">이 브리핑은 한 주간 수집된 기사 제목과 공식 발표를 AI가 요약한 것입니다. 각 항목의 원문 링크에서 사실을 확인하세요.</p>
+    )}
+    <Content />
+  </article>
+</Base>

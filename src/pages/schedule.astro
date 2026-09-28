@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+import Ddays from '../components/Ddays.astro';
+import schedule from '../data/schedule.json';
+import { dday, fmtDate } from '../lib/site';
+
+const GROUPS = ['수능', '수시', '정시', '추가모집', '재외국민', '전문대'];
+const sources = schedule.sources as Record<string, { name: string; url: string }>;
+const d = (s: string) => fmtDate(`${s}T12:00:00+09:00`);
+const events = [...schedule.events].sort((a, b) => a.start.localeCompare(b.start));
+const state = (e: (typeof events)[number]) => {
+  const s = dday(e.start);
+  const l = dday(e.end ?? e.start);
+  if (l < 0) return 'past';
+  if (s <= 0) return 'now';
+  return s <= 14 ? 'soon' : '';
+};
+---
+<Base title="2027학년도 입시 일정" description="2027학년도 수능, 수시, 정시, 추가모집, 전문대 주요 일정과 D-day">
+  <h1>{schedule.title}</h1>
+  <p class="muted">
+    대교협 대학입학전형기본사항과 교육부·평가원 발표를 바탕으로 정리했습니다. 확인일 {schedule.verifiedAt}.
+    대학별 세부 일정(논술·면접일, 합격자 발표 시각)은 각 대학 모집요강을 확인하세요.
+  </p>
+  <Ddays limit={8} />
+
+  {GROUPS.map((g) => (
+    <section>
+      <h2>{g}</h2>
+      <ul class="timeline">
+        {events.filter((e) => e.group === g).map((e) => (
+          <li class={state(e)}>
+            <div class="date">
+              {d(e.start)}{e.end ? ` ~ ${d(e.end)}` : ''}
+              {state(e) === 'now' && <span class="badge now">진행 중</span>}
+              {state(e) === 'soon' && <span class="badge soon">D-{dday(e.start)}</span>}
+            </div>
+            <div>{e.title}</div>
+            {e.note && <div class="muted small">{e.note}</div>}
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+
+  <h2>근거 자료</h2>
+  <ul>
+    {Object.values(sources).map((s) => <li><a href={s.url} target="_blank" rel="noopener">{s.name}</a></li>)}
+  </ul>
+</Base>

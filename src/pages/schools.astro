@@ -1,0 +1,50 @@
+---
+// NEIS_API_KEY 로 schools.json 이 만들어졌을 때만 내용이 채워진다.
+import Base from '../layouts/Base.astro';
+import { fmtDate } from '../lib/site';
+
+type School = { id: string; name: string; region: string; type: string; track: string | null; founding: string; homepage: string | null; address: string };
+const mod = Object.values(import.meta.glob<{ default: { updatedAt: string; items: School[] } }>('../data/schools.json', { eager: true }))[0];
+const data = mod?.default;
+const TYPE_ORDER = ['특수목적고', '자율고', '일반고', '특성화고'];
+const types = data ? [...new Set(data.items.map((s) => s.type))].sort((a, b) => TYPE_ORDER.indexOf(a) - TYPE_ORDER.indexOf(b)) : [];
+---
+<Base title="전국 고등학교" description="전국 고등학교를 지역·유형(특목고, 자율고, 일반고, 특성화고)별로 찾아보기">
+  <h1>전국 고등학교</h1>
+  {!data ? (
+    <p class="muted">학교 정보가 아직 수집되지 않았습니다. (NEIS 인증키 설정 필요)</p>
+  ) : (
+    <>
+      <p class="muted">NEIS 교육정보 개방 포털 기준 {data.items.length}개교 · {fmtDate(data.updatedAt)} 갱신</p>
+      <input class="filter-input" id="school-q" type="search" placeholder="학교명·지역·계열로 찾기 (예: 과학, 부산, 외국어)" />
+      {types.map((t) => (
+        <section>
+          <h2>{t} <span class="muted small">{data.items.filter((s) => s.type === t).length}개교</span></h2>
+          <div class="table-scroll">
+            <table class="data">
+              <thead><tr><th>학교</th><th>지역</th><th>계열</th><th>설립</th></tr></thead>
+              <tbody>
+                {data.items.filter((s) => s.type === t).sort((a, b) => a.region.localeCompare(b.region) || a.name.localeCompare(b.name)).map((s) => (
+                  <tr data-text={`${s.name} ${s.region} ${s.track ?? ''} ${s.address}`}>
+                    <td>{s.homepage ? <a href={s.homepage.startsWith('http') ? s.homepage : `http://${s.homepage}`} target="_blank" rel="noopener">{s.name}</a> : s.name}</td>
+                    <td>{s.region}</td>
+                    <td>{s.track ?? ''}</td>
+                    <td>{s.founding}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      ))}
+      <script is:inline>
+        const q = document.getElementById('school-q');
+        const rows = [...document.querySelectorAll('tr[data-text]')];
+        q.addEventListener('input', () => {
+          const v = q.value.trim();
+          rows.forEach((r) => (r.hidden = v && !r.dataset.text.includes(v)));
+        });
+      </script>
+    </>
+  )}
+</Base>

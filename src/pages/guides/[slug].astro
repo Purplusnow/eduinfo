@@ -1,0 +1,31 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { fmtDate, u } from '../../lib/site';
+
+export async function getStaticPaths() {
+  const guides = await getCollection('guides');
+  return guides.map((g) => ({ params: { slug: g.id }, props: { g } }));
+}
+const { g } = Astro.props;
+const { Content } = await render(g);
+---
+<Base title={g.data.title} description={g.data.description}>
+  <p class="small"><a href={u('/guides/')}>입시 가이드</a> · {g.data.category}</p>
+  <article class="prose">
+    <h1>{g.data.title}</h1>
+    <p class="muted small">{fmtDate(g.data.updated.toISOString())} 업데이트</p>
+    <Content />
+    {g.data.sources.length > 0 && (
+      <>
+        <h2>근거 자료</h2>
+        <ul>
+          {g.data.sources.map((s) => <li><a href={s.url} target="_blank" rel="noopener">{s.name}</a></li>)}
+        </ul>
+      </>
+    )}
+    <p class="notice">
+      이 글은 공개된 자료를 바탕으로 정리한 안내입니다. 대학별 세부 전형은 해마다 바뀌므로 지원 전 반드시 해당 대학의 모집요강을 확인하세요.
+    </p>
+  </article>
+</Base>

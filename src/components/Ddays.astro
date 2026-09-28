@@ -1,0 +1,48 @@
+---
+// D-day는 방문 시각 기준으로 브라우저에서 다시 계산한다(빌드가 하루 이상 밀려도 정확하도록).
+import schedule from '../data/schedule.json';
+import { dday, fmtDate } from '../lib/site';
+
+interface Props {
+  limit?: number;
+}
+const { limit = 4 } = Astro.props;
+const label = (s: number, l: number) => (s > 0 ? `D-${s}` : s === 0 ? 'D-DAY' : l >= 0 ? '진행 중' : '종료');
+const upcoming = schedule.events
+  .filter((e) => e.dday)
+  .map((e) => ({ ...e, last: e.end ?? e.start }))
+  .filter((e) => dday(e.last) >= 0)
+  .sort((a, b) => a.start.localeCompare(b.start));
+// 빌드 뒤 날짜가 지나도 다음 일정이 채워지도록 여유분까지 렌더링하고 브라우저에서 거른다.
+const rendered = upcoming.slice(0, limit + 4);
+---
+<div class="ddays" data-ddays data-limit={limit}>
+  {rendered.map((e, i) => (
+    <div class="dday" data-start={e.start} data-last={e.last} hidden={i >= limit}>
+      <div class="num" data-num>{label(dday(e.start), dday(e.last))}</div>
+      <div class="label">{e.title}</div>
+      <div class="when">
+        {fmtDate(`${e.start}T12:00:00+09:00`)}{e.end ? ` ~ ${fmtDate(`${e.end}T12:00:00+09:00`)}` : ''}
+      </div>
+    </div>
+  ))}
+</div>
+
+<script is:inline>
+  (() => {
+    const day = (s) => Math.floor((new Date(s + 'T00:00:00+09:00').getTime() + 9 * 3600e3) / 864e5);
+    const today = Math.floor((Date.now() + 9 * 3600e3) / 864e5);
+    for (const root of document.querySelectorAll('[data-ddays]')) {
+      const limit = Number(root.dataset.limit);
+      let shown = 0;
+      for (const el of root.querySelectorAll('.dday')) {
+        const s = day(el.dataset.start) - today;
+        const l = day(el.dataset.last) - today;
+        el.hidden = l < 0 || shown >= limit;
+        if (el.hidden) continue;
+        shown++;
+        el.querySelector('[data-num]').textContent = s > 0 ? 'D-' + s : s === 0 ? 'D-DAY' : '진행 중';
+      }
+    }
+  })();
+</script>

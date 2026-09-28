@@ -1,0 +1,55 @@
+---
+// 바로 뒤에 오는 .items 목록을 분류 칩과 검색어로 거른다. (li[data-cats], li[data-text])
+import { CATEGORIES } from '../lib/site';
+
+interface Props {
+  counts?: Record<string, number>;
+}
+const { counts = {} } = Astro.props;
+---
+<div class="filter" data-filter>
+  <input class="filter-input" type="search" placeholder="제목·언론사로 거르기 (예: 서울대, 논술)" aria-label="목록 거르기" />
+  <div class="chips" role="group" aria-label="분류">
+    <button class="chip" type="button" data-cat="" aria-pressed="true">전체</button>
+    {CATEGORIES.map((c) => (
+      <button class="chip" type="button" data-cat={c.id} aria-pressed="false">
+        {c.label}{counts[c.id] ? ` ${counts[c.id]}` : ''}
+      </button>
+    ))}
+  </div>
+  <p class="muted small" data-count></p>
+</div>
+
+<script>
+  for (const root of document.querySelectorAll<HTMLElement>('[data-filter]')) {
+    let list = root.nextElementSibling;
+    while (list && !list.matches('.items')) list = list.nextElementSibling;
+    if (!list) continue;
+    const input = root.querySelector('input')!;
+    const chips = [...root.querySelectorAll<HTMLButtonElement>('.chip')];
+    const counter = root.querySelector<HTMLElement>('[data-count]')!;
+    const rows = [...list.querySelectorAll<HTMLElement>('li')];
+    const params = new URLSearchParams(location.search);
+    let cat = params.get('cat') ?? '';
+
+    const apply = () => {
+      const q = input.value.trim().toLowerCase();
+      let shown = 0;
+      for (const li of rows) {
+        const ok =
+          (!cat || (li.dataset.cats ?? '').split(' ').includes(cat)) &&
+          (!q || (li.dataset.text ?? '').toLowerCase().includes(q));
+        li.hidden = !ok;
+        if (ok) shown++;
+      }
+      chips.forEach((c) => c.setAttribute('aria-pressed', String(c.dataset.cat === cat)));
+      counter.textContent = `${shown}건`;
+      const url = new URL(location.href);
+      cat ? url.searchParams.set('cat', cat) : url.searchParams.delete('cat');
+      history.replaceState(null, '', url);
+    };
+    chips.forEach((c) => c.addEventListener('click', () => { cat = c.dataset.cat ?? ''; apply(); }));
+    input.addEventListener('input', apply);
+    apply();
+  }
+</script>

@@ -1,0 +1,29 @@
+---
+import Base from '../layouts/Base.astro';
+import { fmtDate } from '../lib/site';
+import status from '../data/status.json';
+
+type S = { name: string; ok: boolean | null; count?: number; error?: string; checkedAt: string; lastSuccess?: string; skipped?: boolean };
+const rows = Object.entries(status.sources as Record<string, S>);
+---
+<Base title="수집 현황">
+  <h1>수집 현황</h1>
+  <p class="muted">GitHub Actions가 정해진 주기로 아래 출처를 확인합니다. 마지막 실행: {fmtDate(status.updatedAt, true)}</p>
+  <div class="table-scroll">
+    <table class="data">
+      <thead><tr><th>출처</th><th>상태</th><th>이번 수집</th><th>마지막 성공</th></tr></thead>
+      <tbody>
+        {rows.map(([id, s]) => (
+          <tr>
+            <td>{s.name}<br /><span class="muted small">{id}</span></td>
+            <td>
+              {s.skipped ? <span class="muted">설정 안 됨</span> : s.ok ? <span class="ok">정상</span> : <span class="fail" title={s.error}>실패</span>}
+            </td>
+            <td>{s.count ?? '-'}</td>
+            <td>{fmtDate(s.lastSuccess, true) || '-'}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</Base>
