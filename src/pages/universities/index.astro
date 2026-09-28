@@ -44,7 +44,7 @@ const withData = schools.filter((s) => metricValue(s, 'competition') != null).le
       <thead>
         <tr>
           <th data-sort="name">대학</th>
-          <th>지역</th>
+          <th class="col-region">지역</th>
           {COLS.map((c) => <th data-sort={c.id} class="num">{c.label}</th>)}
         </tr>
       </thead>
@@ -60,8 +60,9 @@ const withData = schools.filter((s) => metricValue(s, 'competition') != null).le
             <td>
               <a href={u(`/universities/${s.id}/`)}>{displayName(s)}</a>
               <span class="muted small"> {kindGroup(s) === '전문대학' ? '전문대' : ''} {s.estb}</span>
+              <span class="muted small region-inline">{s.region.replace(/(특별자치도|특별자치시|특별시|광역시|도)$/, '')}</span>
             </td>
-            <td>{s.region.replace(/(특별자치도|특별자치시|특별시|광역시|도)$/, '')}</td>
+            <td class="col-region">{s.region.replace(/(특별자치도|특별자치시|특별시|광역시|도)$/, '')}</td>
             {COLS.map((c) => <td class="num">{fmtMetric(s, c.id)}</td>)}
           </tr>
         ))}
@@ -78,6 +79,12 @@ const withData = schools.filter((s) => metricValue(s, 'competition') != null).le
     .univ-filters select { font: inherit; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--text); }
     .num { text-align: right !important; white-space: nowrap; font-variant-numeric: tabular-nums; }
     th[data-sort] { cursor: pointer; user-select: none; }
+    .region-inline { display: none; }
+    @media (max-width: 600px) {
+      .col-region { display: none; }
+      .region-inline { display: block; }
+      #univ-table td, #univ-table th { padding: 8px 4px; font-size: 0.875rem; }
+    }
     th[data-dir='asc']::after { content: ' ▲'; }
     th[data-dir='desc']::after { content: ' ▼'; }
   </style>
