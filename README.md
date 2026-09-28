@@ -6,12 +6,11 @@
 
 | 종류 | 출처 | 방식 | 코드 |
 | --- | --- | --- | --- |
-| 뉴스 | Google 뉴스 입시 키워드 검색 12종 | RSS | `collectors/sources/news.mjs` |
-| 뉴스 | 베리타스알파, 에듀진, 한국대학신문, 에듀프레스, 에듀인뉴스 | RSS, 입시 키워드로 거름 | 〃 |
-| 공식 발표 | 교육부 보도자료(입시 관련만) | 게시판 크롤링 | `collectors/sources/official.mjs` |
-| 공식 발표 | 평가원 수능 공지사항·보도자료 | 게시판 크롤링 | 〃 |
-| 공식 발표 | 대교협 대입정보포털 어디가 대입뉴스 | 크롤링 | 〃 |
-| 기출문제 | 평가원 수능 기출문제 게시판 | 크롤링 | `collectors/sources/exams.mjs` |
+| 뉴스 | 베리타스알파, 에듀진, 한국대학신문, 에듀프레스, 에듀인뉴스 | RSS, 입시 키워드로 거름 | `collectors/sources/news.mjs` |
+| 공식 발표 | 교육부 보도자료(입시 관련만, 평가원 수능 발표 포함) | 게시판 크롤링 | `collectors/sources/official.mjs` |
+| 고입 공지 | 13개 시·도교육청 고입 게시판 | 게시판 크롤링 | `collectors/sources/highschool.mjs` |
+| 대학 정보 | 대학알리미 공시·학과 (`DATA_GO_KR_KEY`) | Open API | `collectors/universities.mjs` |
+| 기출문제 | 평가원 수능 기출문제 링크 | 직접 관리(수능 후 연 1회) | `src/data/exams.json` |
 | 고교 정보 | NEIS 학교기본정보 (선택: `NEIS_API_KEY`) | Open API | `collectors/sources/schools.mjs` |
 | 주간 브리핑 | 수집 데이터를 Claude가 요약 (선택: `ANTHROPIC_API_KEY`) | Claude API | `collectors/digest.mjs` |
 | 입시 일정 | 대교협 기본사항, 교육부·평가원 발표 | 직접 검증해 작성 | `src/data/schedule.json` |
@@ -21,7 +20,7 @@
 
 ```bash
 npm install
-npm run collect      # src/data/*.json 갱신 (특정 출처만: node collectors/run.mjs moe kice-notice)
+npm run collect      # src/data/*.json 갱신 (특정 출처만: node collectors/run.mjs moe hs-seoul)
 npm run dev          # http://localhost:4321
 npm run build        # dist/ 생성 + Pagefind 검색 색인
 ```
@@ -51,6 +50,8 @@ src/pages/            페이지
 ```
 
 ## 운영 메모
+
+- **수집 원칙:** 새 출처를 추가하기 전에 robots.txt를 확인합니다. Google 뉴스, 평가원 수능 사이트(suneung.re.kr), 대교협 어디가(adiga.kr)는 자동 수집을 금지하므로 쓰지 않습니다(대전·충남·제주교육청도 같은 이유로 제외).
 
 - 한 출처가 실패해도 기존 데이터는 유지됩니다. 상태는 사이트의 `/status/` 페이지에서 볼 수 있습니다.
 - 게시판 크롤러는 사이트 HTML 구조가 바뀌면 0건을 반환할 수 있습니다. `/status/`에서 0건이 이어지면 해당 `sources/*.mjs`의 선택자를 확인하세요.

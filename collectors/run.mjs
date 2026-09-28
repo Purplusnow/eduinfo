@@ -5,7 +5,6 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import news from './sources/news.mjs';
 import official from './sources/official.mjs';
-import exams from './sources/exams.mjs';
 import schools from './sources/schools.mjs';
 import highschool from './sources/highschool.mjs';
 import { classify } from './lib/classify.mjs';
@@ -18,13 +17,12 @@ const categorize = (it) => {
 };
 
 const DATA_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../src/data');
-const SOURCES = [...news, ...official, ...highschool, ...exams, ...schools];
+const SOURCES = [...news, ...official, ...highschool, ...schools];
 
 // kind별 보관 정책
 const RETENTION = {
   news: { file: 'news.json', maxDays: 45, maxItems: 1500 },
   official: { file: 'official.json', maxDays: 400, maxItems: 800 },
-  exam: { file: 'exams.json', maxDays: Infinity, maxItems: 1000 },
 };
 
 const now = new Date();
@@ -90,7 +88,7 @@ function merge(existing, incoming, { maxDays, maxItems }) {
 }
 
 const status = await readJson('status.json', { sources: {} });
-const buckets = { news: [], official: [], exam: [] };
+const buckets = { news: [], official: [] };
 
 const targets = only.length ? SOURCES.filter((s) => only.includes(s.id)) : SOURCES;
 const results = await Promise.allSettled(targets.map((s) => s.run()));

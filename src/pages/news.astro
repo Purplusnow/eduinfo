@@ -12,7 +12,7 @@ for (const it of items) for (const c of it.categories) counts[c] = (counts[c] ??
 <Base title="입시 뉴스" description="수시·정시·수능·의대·고입 등 입시 관련 최신 뉴스를 자동으로 모았습니다.">
   <h1>입시 뉴스</h1>
   <p class="muted">
-    최근 45일 동안 Google 뉴스와 교육 전문 매체에서 모은 입시 기사 {items.length}건 · {fmtDate(news.updatedAt, true)} 갱신
+    최근 45일 동안 모은 입시 기사 {items.length}건 · {fmtDate(news.updatedAt, true)} 갱신
   </p>
   <Filter counts={counts} />
   <ItemList items={items} showSummary />

@@ -7,10 +7,10 @@ import official from '../data/official.json';
 
 const items = official.items as Item[];
 ---
-<Base title="공식 발표" description="교육부, 한국교육과정평가원, 대교협 대입정보포털의 입시 관련 공지와 보도자료">
+<Base title="공식 발표" description="교육부, 한국교육과정평가원, 시·도교육청의 입시 관련 공지와 보도자료">
   <h1>공식 발표</h1>
   <p class="muted">
-    교육부 보도자료, 평가원(수능) 공지·보도자료, 대교협 대입정보포털 어디가 소식, 시·도교육청 고입 공지 · {fmtDate(official.updatedAt, true)} 갱신 ·
+    교육부 보도자료(평가원 수능 발표 포함), 시·도교육청 고입 공지 · {fmtDate(official.updatedAt, true)} 갱신 ·
     <a href={u('/official.xml')}>RSS 구독</a>
   </p>
   <Filter />

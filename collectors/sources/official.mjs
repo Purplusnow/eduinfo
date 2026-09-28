@@ -34,52 +34,8 @@ function parseMoe($) {
   return items;
 }
 
-// 한국교육과정평가원 수능 사이트 게시판(공지사항 1500229, 보도자료 1500230)
-async function suneungBoard(boardID, m, label) {
-  const url = `https://www.suneung.re.kr/boardCnts/list.do?boardID=${boardID}&m=${m}&s=suneung`;
-  const $ = cheerio.load(await fetchText(url));
-  const items = [];
-  $('table:not(.mb) td.link a').each((_, a) => {
-    const [, seq, lev] = goViewArgs($(a).attr('onclick'));
-    if (!seq) return;
-    const row = $(a).closest('tr');
-    const date = row.find('td').filter((_, td) => /^\d{4}-\d{2}-\d{2}$/.test($(td).text().trim())).first().text().trim();
-    items.push({
-      title: ($(a).attr('title') || $(a).text()).trim(),
-      url: `https://www.suneung.re.kr/boardCnts/view.do?boardID=${boardID}&boardSeq=${seq}&lev=${lev}&m=${m}&s=suneung`,
-      date: toIso(date),
-      summary: '',
-      source: `평가원 ${label}`,
-    });
-  });
-  return items;
-}
-
-// 대교협 대입정보포털 어디가: 메인의 대입뉴스 목록(날짜 없음 → 처음 본 시각을 사용)
-async function adigaNews() {
-  const html = await fetchText('https://www.adiga.kr/man/inf/mainNewsLstAjax.do', { init: { method: 'POST' } });
-  const $ = cheerio.load(html);
-  const items = [];
-  $('#newsList li a').each((_, a) => {
-    const id = ($(a).attr('onclick') || '').match(/(\d{3,})/)?.[1];
-    const title = $(a).find('.newsTit').text().trim();
-    if (!id || !title) return;
-    items.push({
-      id: `adiga-${id}`,
-      title,
-      // 상세 페이지는 팝업이라 목록으로 연결하고, 항목마다 주소가 달라지도록 번호를 붙인다(RSS guid 중복 방지)
-      url: `https://www.adiga.kr/uct/nmg/enw/newsView.do?menuId=PCUCTNMG2000#news-${id}`,
-      date: null,
-      summary: $(a).find('.newsTy').text().trim(),
-      source: '대입정보포털 어디가',
-    });
-  });
-  return items;
-}
-
+// 평가원 수능 사이트(suneung.re.kr)와 대교협 어디가(adiga.kr)는 robots.txt 로 모든 자동 수집을 금지하므로 수집하지 않는다.
+// 평가원 보도자료는 교육부 보도자료 게시판에도 원문이 올라오므로 moe 로 받는다.
 export default [
   { id: 'moe', name: '교육부 보도자료', kind: 'official', run: moeBoard, allowEmpty: true },
-  { id: 'kice-notice', name: '평가원 수능 공지사항', kind: 'official', run: () => suneungBoard('1500229', '0301', '공지') },
-  { id: 'kice-press', name: '평가원 수능 보도자료', kind: 'official', run: () => suneungBoard('1500230', '0302', '보도자료') },
-  { id: 'adiga', name: '대입정보포털 어디가', kind: 'official', run: adigaNews },
 ];

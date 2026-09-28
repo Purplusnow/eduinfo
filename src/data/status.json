@@ -1,22 +1,12 @@
 {
  "sources": {
-  "google-news": {
-   "name": "Google 뉴스",
-   "ok": true,
-   "count": 443,
-   "checkedAt": "2026-09-28T08:38:35.460Z",
-   "lastSuccess": "2026-09-28T08:38:35.460Z",
-   "lastNonEmpty": "2026-09-28T08:38:35.460Z",
-   "allowEmpty": false,
-   "since": "2026-09-28T06:51:27.841Z"
-  },
   "veritas": {
    "name": "베리타스알파",
    "ok": true,
    "count": 10,
-   "checkedAt": "2026-09-28T08:38:35.460Z",
-   "lastSuccess": "2026-09-28T08:38:35.460Z",
-   "lastNonEmpty": "2026-09-28T08:38:35.460Z",
+   "checkedAt": "2026-09-28T08:46:02.056Z",
+   "lastSuccess": "2026-09-28T08:46:02.056Z",
+   "lastNonEmpty": "2026-09-28T08:46:02.056Z",
    "allowEmpty": true,
    "since": "2026-09-28T06:51:27.841Z"
   },
@@ -63,50 +53,10 @@
    "name": "교육부 보도자료",
    "ok": true,
    "count": 7,
-   "checkedAt": "2026-09-28T08:38:35.460Z",
-   "lastSuccess": "2026-09-28T08:38:35.460Z",
-   "lastNonEmpty": "2026-09-28T08:38:35.460Z",
+   "checkedAt": "2026-09-28T08:46:02.056Z",
+   "lastSuccess": "2026-09-28T08:46:02.056Z",
+   "lastNonEmpty": "2026-09-28T08:46:02.056Z",
    "allowEmpty": true,
-   "since": "2026-09-28T06:51:27.841Z"
-  },
-  "kice-notice": {
-   "name": "평가원 수능 공지사항",
-   "ok": true,
-   "count": 10,
-   "checkedAt": "2026-09-28T08:38:35.460Z",
-   "lastSuccess": "2026-09-28T08:38:35.460Z",
-   "lastNonEmpty": "2026-09-28T08:38:35.460Z",
-   "allowEmpty": false,
-   "since": "2026-09-28T06:51:27.841Z"
-  },
-  "kice-press": {
-   "name": "평가원 수능 보도자료",
-   "ok": true,
-   "count": 10,
-   "checkedAt": "2026-09-28T08:38:35.460Z",
-   "lastSuccess": "2026-09-28T08:38:35.460Z",
-   "lastNonEmpty": "2026-09-28T08:38:35.460Z",
-   "allowEmpty": false,
-   "since": "2026-09-28T06:51:27.841Z"
-  },
-  "adiga": {
-   "name": "대입정보포털 어디가",
-   "ok": true,
-   "count": 3,
-   "checkedAt": "2026-09-28T08:38:35.460Z",
-   "lastSuccess": "2026-09-28T08:38:35.460Z",
-   "lastNonEmpty": "2026-09-28T08:38:35.460Z",
-   "allowEmpty": false,
-   "since": "2026-09-28T06:51:27.841Z"
-  },
-  "kice-exams": {
-   "name": "평가원 수능 기출문제",
-   "ok": true,
-   "count": 30,
-   "checkedAt": "2026-09-28T08:38:35.460Z",
-   "lastSuccess": "2026-09-28T08:38:35.460Z",
-   "lastNonEmpty": "2026-09-28T08:38:35.460Z",
-   "allowEmpty": false,
    "since": "2026-09-28T06:51:27.841Z"
   },
   "neis-schools": {
@@ -285,6 +235,6 @@
    "since": "2026-09-28T08:37:12.571Z"
   }
  },
- "updatedAt": "2026-09-28T08:38:35.460Z",
+ "updatedAt": "2026-09-28T08:46:02.056Z",
  "alerts": {}
 }
