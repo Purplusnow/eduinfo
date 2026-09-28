@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-09-28T08:58:51.505Z",
+ "updatedAt": "2026-09-28T13:50:53.817Z",
  "items": [
   {
    "id": "e008e5420d51",
@@ -100,6 +100,19 @@
    "firstSeen": "2026-09-28T08:37:12.571Z",
    "source": "인천시교육청 고등학교입학자료실",
    "sourceId": "hs-incheon",
+   "summary": "",
+   "categories": [
+    "highschool"
+   ]
+  },
+  {
+   "id": "ff949d675c55",
+   "title": "성남외고 조강우 학생, ‘한어교’세계 중국어대회 한국 대표로 출전",
+   "url": "https://www.goe.go.kr/goe/na/ntt/selectNttInfo.do?mi=10102&bbsId=1922&nttSn=2375584",
+   "date": "2026-09-22T03:00:00.000Z",
+   "firstSeen": "2026-09-28T13:50:53.817Z",
+   "source": "경기도교육청 보도자료",
+   "sourceId": "hs-gyeonggi",
    "summary": "",
    "categories": [
     "highschool"
