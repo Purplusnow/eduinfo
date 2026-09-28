@@ -1,6 +1,6 @@
 # 입시정보 한눈에 (eduinfo)
 
-국내 입시 정보를 자동으로 모아 보여주는 정적 사이트입니다. GitHub Actions가 3시간마다 공식 기관과 언론의 입시 소식을 수집해 커밋하고, Astro로 빌드한 뒤 GitHub Pages에 배포합니다.
+국내 입시 정보를 자동으로 모아 보여주는 정적 사이트입니다. → https://edu.koreanblog.xyz GitHub Actions가 3시간마다 공식 기관과 언론의 입시 소식을 수집해 커밋하고, Astro로 빌드한 뒤 GitHub Pages에 배포합니다.
 
 ## 무엇을 모으나
 

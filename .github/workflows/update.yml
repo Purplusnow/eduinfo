@@ -54,7 +54,7 @@ jobs:
         env:
           TG_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TG_CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
-          SITE_STATUS_URL: https://purplusnow.github.io/eduinfo/status/
+          SITE_STATUS_URL: https://edu.koreanblog.xyz/status/
         run: |
           BODY=$(node collectors/health.mjs)
           [ -n "$BODY" ] || { echo "상태 변화 없음"; exit 0; }
