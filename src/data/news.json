@@ -1,6 +1,69 @@
 {
- "updatedAt": "2026-09-28T06:51:27.841Z",
+ "updatedAt": "2026-09-28T07:05:58.248Z",
  "items": [
+  {
+   "id": "89aaed0586cf",
+   "title": "‘원서접수 먹통 사태’ 올해 국감 집중 전망… 대교협 감사 일정은?",
+   "url": "https://news.unn.net/news/articleView.html?idxno=597960",
+   "date": "2026-09-28T07:05:58.248Z",
+   "firstSeen": "2026-09-28T07:05:58.248Z",
+   "source": "한국대학신문",
+   "sourceId": "unn",
+   "summary": "[한국대학신문 주지영 기자] 다음달 7일 시작되는 국정감사에서 유웨이 원서접수 먹통 사태와 관련한 질의가 이어질 전망이다. 한국대학교육협의회(대교협) 관계자의 국감 출석 여부는 오는 29일 국정감사계획서 의결과 함께 확정될 방침이다.교육부 관계자는 28일 출입기자단 정례브리핑에서 대교협 관계자의 국정감사 참석 여부·날짜…",
+   "categories": []
+  },
+  {
+   "id": "a3ce8debc617",
+   "title": "부천대-부천시 오정보건소, ‘청년·청소년 마약중독 문제 및 예방을 위한 포럼’ 개최",
+   "url": "https://news.unn.net/news/articleView.html?idxno=597961",
+   "date": "2026-09-28T07:05:58.248Z",
+   "firstSeen": "2026-09-28T07:05:58.248Z",
+   "source": "한국대학신문",
+   "sourceId": "unn",
+   "summary": "[한국대학신문 김윤미 기자] 부천대학교(총장 한정석) 앵커사업단과 부천시 오정보건소 주최·주관으로 지난 15일 부천시청 3층 소통마당에서 ‘청년·청소년 마약중독 문제 및 예방을 위한 포럼’이 열렸다.부천대 간호학과 권은진 교수의 사회로 진행된 이날 포럼에서는 분야별 전문가들이 청년·청소년 마약 문제의 심각성을 짚고 다각…",
+   "categories": [
+    "medical"
+   ]
+  },
+  {
+   "id": "fa387690e531",
+   "title": "가천대 의대 박철규 교수팀, 보건복지부 ‘한국형 ARPA-H 프로젝트’ 선정",
+   "url": "https://news.unn.net/news/articleView.html?idxno=597953",
+   "date": "2026-09-28T07:05:58.248Z",
+   "firstSeen": "2026-09-28T07:05:58.248Z",
+   "source": "한국대학신문",
+   "sourceId": "unn",
+   "summary": "[한국대학신문 김연주 기자] 가천대학교(총장 이길여) 의과대학 가천통증연구소 박철규 교수 연구팀이 보건복지부와 한국보건산업진흥원 K-헬스미래추진단(한국형 보건의료 미래 추진단)이 주관하는 ‘2026년도 한국형 ARPA-H(보건의료 고등연구계획국) 프로젝트’ 복지·돌봄 임무 분야 최종 과제에 선정됐다.이번에 선정된 과제는…",
+   "categories": [
+    "medical"
+   ]
+  },
+  {
+   "id": "342fdf0bce75",
+   "title": "영어 1등급 15.54% 9월 모평 변별력 떨어져",
+   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE05SFdFZGdaa0RmbjgxSlloYXQtYUNqbVdURUpUTlpSelB5TVppSms4ZkpjREloaThZbF9MZGtBX0VTZi1iVmhUbWhqZWptejVlb2JkOXFvZHVlTGc5YWgxUGFR?oc=5",
+   "date": "2026-09-28T06:57:25.000Z",
+   "firstSeen": "2026-09-28T07:05:58.248Z",
+   "source": "충북일보",
+   "sourceId": "google-news",
+   "summary": "",
+   "categories": [
+    "suneung"
+   ]
+  },
+  {
+   "id": "2c56fccb67bc",
+   "title": "평택대, 2027학년도 수시 경쟁률 10.67대 1…5년 연속 상승",
+   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5aVjkxaDYzcmtWNVZud1ZxZ0dQVERSY29zajJ3NUpfQ0hoaXc2ejdCOFViLWRIVzh1MDVFY3BnbE9aZVRwdkpUOHlvaldvc3VwZ0k1ZkU0ZHZ0VmUxYjZfU1lRX05Hdw?oc=5",
+   "date": "2026-09-28T06:52:42.000Z",
+   "firstSeen": "2026-09-28T07:05:58.248Z",
+   "source": "한국대학신문",
+   "sourceId": "google-news",
+   "summary": "",
+   "categories": [
+    "susi"
+   ]
+  },
   {
    "id": "92b6b9427d42",
    "title": "광주대 석사과정생 배미소, 한국연구재단 '연구장려금' 선정",
@@ -28,12 +91,25 @@
    ]
   },
   {
+   "id": "cff8694c64f4",
+   "title": "9월 모평 국어 어렵고 수학·영어 쉬웠다… 수학 만점자 2741명",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE12VW90dUppbi1BbHVLRzg2b3lXZmNMOWl3LU5RUWJnWkQzcXRWek1ad04zV2NnQk5hSWZuMktqc3B6bEJlUXotU0RYUjNSZ09hY3Fwd1BJb3k5WVA0azJaM2hLWDfSAWhBVV95cUxQMS10OHdlRFlRcU9PVU1xSVdUeG1fSk9wNWVsaWt6NUtacVdfTFU3SVFUb1dqNUtYQnlhZ2tmRjZwaHMzdDdKOXBrQkNpU1ZqSFlqQ2VLTWpIZDJWOWZXRjN3OUhxY19HWQ?oc=5",
+   "date": "2026-09-28T06:45:18.000Z",
+   "firstSeen": "2026-09-28T07:05:58.248Z",
+   "source": "매일일보",
+   "sourceId": "google-news",
+   "summary": "",
+   "categories": [
+    "suneung"
+   ]
+  },
+  {
    "id": "605ea2185bf3",
    "title": "“SKY 말고 의대갈래요”… 지난 5년간 중도탈락 1만 명 ↑",
    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1ERXVWWF9MZ1EtR1NCbWNZa0U2TWNGUVBQc2w4SUFGak04YnAxbzFkS0VIak5UMjN3dUNxbGJTTTM2Wl94aEJvanZwN0ZLMW1JZ0NOMExPVW5OeVV6anpmY3NtcktWZw?oc=5",
    "date": "2026-09-28T06:43:19.000Z",
    "firstSeen": "2026-09-28T06:51:27.841Z",
-   "source": "news.unn.net",
+   "source": "한국대학신문",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -135,7 +211,7 @@
    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAxLTItTHc4dEpya182RTRIdzh6YlBNSk5fUVhvYXc5MXNmbDNmeUhTdzRfWWwtVnNJNmg5emd1RTBYNWtFUlpIazhRS3hwTEsyclVaTFRTM0R0a2diUHRFOVJtb1lYLXZVVlE?oc=5",
    "date": "2026-09-28T06:12:37.000Z",
    "firstSeen": "2026-09-28T06:32:04.294Z",
-   "source": "코리아타임뉴스",
+   "source": "koreatimenews.com",
    "sourceId": "google-news",
    "summary": "",
    "categories": []
@@ -181,7 +257,7 @@
    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBUZ1ItZ0VWS2paVTRkLWE2MGpXRVZRelVOaGNrUm9wcG53N2l3cXFURDBIdHhmX044MFNvY2F6NkdqVVJzZFZ2VnlBWnhoSlZZLUxjaVd2amxoQ1XSAWBBVV95cUxQR2otU0pkN2xHdldmRm5yeWRMdElCcW9wUkxkYmtzZ0lnTm9VVFg0TlpqQkRpWV84WXhMbHZsMFQ1T251N1ZWbFM3emRlT2lqS1NoSmtNaW5TcTRUTjJTc0U?oc=5",
    "date": "2026-09-28T06:05:13.000Z",
    "firstSeen": "2026-09-28T06:32:04.294Z",
-   "source": "연합뉴스",
+   "source": "yna.co.kr",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -402,7 +478,7 @@
    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE94Y0p2YWs1ZHBVNHVSZ2ZYdXZlN3ExQ3J4RlVrRUpabUt6WWpaX1lTYzAzTWVCdnFnd3RMd1d2RGhLUkpmc1EyS2x2eWVSdDQ0MUptTFJLT3dwNmt5ZDNWbNIBeEFVX3lxTE1iUHkycEI0dkU5RmdNZ19FaU9ULWtXb0xvWWJWWWlzaHJEUWxjRHd1NEJKVVZ4V0J5Nlh5bkpYc1JLQ3hoelQ5X3VMUnBBVmpVejhQQWFxM3pDSEl3OWZ4VW1IQWhkd1RFblpaczFxMGpiYjNURlFtOA?oc=5",
    "date": "2026-09-28T05:13:57.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "newsis.com",
+   "source": "뉴시스",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -646,7 +722,7 @@
    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9MNDRJQi1VNnBaemxHY2JQVDhqS1l5LVZ3Z0dRSTlLTkdjQUtUQkt2YzZGa0lWMGRFcWMwSjFPbDJ0ZlJiWUoxNWZnbGppbGlYelBKTHcwLVRBVlFWY056MVFiUGtISFBKOE9jNmpHdTlfQdIBckFVX3lxTE9MNDRJQi1VNnBaemxHY2JQVDhqS1l5LVZ3Z0dRSTlLTkdjQUtUQkt2YzZGa0lWMGRFcWMwSjFPbDJ0ZlJiWUoxNWZnbGppbGlYelBKTHcwLVRBVlFWY056MVFiUGtISFBKOE9jNmpHdTlfQQ?oc=5",
    "date": "2026-09-28T03:08:31.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "job-post.co.kr",
+   "source": "잡포스트",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -698,7 +774,7 @@
    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5MbFUwck1pX2JXcVlWN0F0c3I2YVVxS2Z3Tlhubm1QWkFYN0JLbHBya3o4RWRKSnJDaEFfbmIzTzM4djhnSnItTE5RZlRCeVI5NWxGVnZhVlp3VE3SAWBBVV95cUxQRi1ya1ltSzNNZGt6eU8yM0xPc3JYaXpkZ0lSLXpiU18xQ0VVUUVwRVlsbGQ5LTlScF9xNDBGVVZvVG12aEhPMkpicWN0Y25fbVZ0ZWVpZ29Namd4aG00blA?oc=5",
    "date": "2026-09-28T03:00:08.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "연합뉴스",
+   "source": "yna.co.kr",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -750,7 +826,7 @@
    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9JNlg2SXZLWFI2c2hpY18yUjJWX1ltSjF0aGlUNUJfazc0cU1CejV3U2VBUkJGUVFxVFAzREUyemJXRklPS2dGclN2WWtpaHNFNGhyemd3Y3pEcXZXVkIxRNIBeEFVX3lxTE5RY1NEZWpCdUk4Yzc0NWQwdHlVVW1hXzNxcVZGVW5GY1pvRmkxcDVFVVhRalQ0VlBRUGtsbEptWWdXODhTVnpjR3ZPM0cwZXZaM3JpUDdvdEFNVjg1WThKbWp2SFBqRjkxbm1kOUx3X2s0T21oQ3J6OA?oc=5",
    "date": "2026-09-28T03:00:00.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "newsis.com",
+   "source": "뉴시스",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -782,6 +858,19 @@
    "categories": [
     "suneung",
     "etc"
+   ]
+  },
+  {
+   "id": "0e55b91b0e29",
+   "title": "9월 모평 영어 1등급 15.5%…‘불영어’ 작년 수능·6월보다 쉬워, 난이도 '널뛰기'",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE82dzNfcnFLa2NMWDQ5WlhjNUxGMmFzSjJZcThJbHBLWkdwTGU0MEJTUkFQaV9fcmlvbFFjMmhtTDVpSVIzOFBJLVhWdmk3a3lpRFJubg?oc=5",
+   "date": "2026-09-28T03:00:00.000Z",
+   "firstSeen": "2026-09-28T07:05:58.248Z",
+   "source": "이투데이",
+   "sourceId": "google-news",
+   "summary": "",
+   "categories": [
+    "suneung"
    ]
   },
   {
@@ -845,7 +934,7 @@
    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBtODFCeFJSTXhFNXRZdGNRNk5BNUg3dVFKdGpRVDJqTmJGc002bVZhYnVYOUkxYzBjUE1UckdPd0NoTmRQbXh5cGpyY2ZwclJBdW40TVVhcTMzUmRCT1RhWmJOSW9ha2l5YW1BQmJXc9IBc0FVX3lxTE1rVG1iWEFoS2pva3pKRHJpTVM5QnZvVXZHelQwRXp4cGpqNFZjWnM1bklzUDVtYi02VFZNbU1mN2ZyeTltS3RBN09ZdXlxMjE3c2RmNDNhM2RNam0tM3JPVFgwZ3FmN2JXUFdTelZfM1NaY3M?oc=5",
    "date": "2026-09-28T01:58:19.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "daejonilbo.com",
+   "source": "대전일보",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -884,7 +973,7 @@
    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBNSWxSaEVKOExxZDFXVS1iaU5CbTB2VHVBZ25EcUg1aEc5Z2ZvNVk0NmQtWlZMZTF3SVBaMFpJbEM0ME1IY2Y3OXd5OThUZUh6b1VKckRyUlZQejZWVHcxTklyQkZjb3daOHc?oc=5",
    "date": "2026-09-28T01:53:37.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "newscj.com",
+   "source": "천지일보",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -910,7 +999,7 @@
    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9MZXlfNlJodF9rYVVUQklrUnpVd1pRQ1RqcGJ2dXVwUlNwOXRwVHZRdzZRUjc4VDUwYXlVOTd3WDlKangwVlAtWjQtbWQ4cmJJd2ZSNVRxaFNmOUF3MU1oRkwtbm5RYzZVd2c?oc=5",
    "date": "2026-09-28T01:44:42.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "nbn 시사경제",
+   "source": "nbnbiz.co.kr",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -975,7 +1064,7 @@
    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1PSTRIcE5qbjNuXzRGS0lwdjM1MGk1QzJ6ajNGTmN3bVo4NnVSTXJXVU9TaEI2alNISEpGSWxqUnVocmRpVEdFNWNQbm14TWpkOFJzUVcyVmpCT0EyRzdWeGk0UXMwQdIBZkFVX3lxTE1PSTRIcE5qbjNuXzRGS0lwdjM1MGk1QzJ6ajNGTmN3bVo4NnVSTXJXVU9TaEI2alNISEpGSWxqUnVocmRpVEdFNWNQbm14TWpkOFJzUVcyVmpCT0EyRzdWeGk0UXMwQQ?oc=5",
    "date": "2026-09-28T01:09:41.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "donga.com",
+   "source": "동아일보",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -1056,6 +1145,19 @@
    "summary": "",
    "categories": [
     "susi"
+   ]
+  },
+  {
+   "id": "7166be64e988",
+   "title": "메틸페니데이트 불법 판매·알선 1733건 적발…수능 앞두고 10월 특별점검",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1uWUVReTQ1clVnbzZISEhfTHk3UkRsVDBydDEwM3o0dDE0TFV2emtpc0JEUGtJUG5BNFBvVll2cVllSW9wbkxqcE9QYlZpYjJBa3BPOXp0NVJZcVU1RlV6cjVtUTNseHFxZENwMVV3?oc=5",
+   "date": "2026-09-27T23:02:31.000Z",
+   "firstSeen": "2026-09-28T07:05:58.248Z",
+   "source": "뉴스더보이스헬스케어",
+   "sourceId": "google-news",
+   "summary": "",
+   "categories": [
+    "suneung"
    ]
   },
   {
@@ -1193,7 +1295,7 @@
    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1rbnN4RTI2d0tGLVlLcjJMdnZJV3BrMGVQVlFjOWJfNFk0cFhrc1JzU0xMc3N0R05zTFg2Y1NsOVQ0bEZxdU14dUF5TUU0dHhaWmhlQ0lQVWRBVVJIVUszdzhVRTJ6THNLRzlKT2xQclA?oc=5",
    "date": "2026-09-27T09:10:00.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "더코리아",
+   "source": "thekorea.kr",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -1422,7 +1524,7 @@
    "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5sNHZISWVrbHNYS01XeVlMRUhabnBCMUxULTM0bE1FbExoeVRMQkdodnRlQzJHUmN0Vlp4UVRNVkdncnVjdDNtWkNB?oc=5",
    "date": "2026-09-27T02:07:00.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "news.jkn.co.kr",
+   "source": "재경일보",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -1594,7 +1696,7 @@
    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBsT0FtcGl1bElGNWl2WXVNMDR6cE5WUHdEbWx0NlpDV2tfNGJTTGVBUWQ3bXpSb2E4WWRKZjZFX2NmZFZKRExWRzgxSUVTS0FhNERnOFM2REF5YTZJRzBXT0NjVXMySW5STUMwWllUSEU?oc=5",
    "date": "2026-09-26T06:50:00.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "더코리아",
+   "source": "thekorea.kr",
    "sourceId": "google-news",
    "summary": "",
    "categories": []
@@ -1659,7 +1761,7 @@
    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE0zV0xvandCQlE3dkpITkVyYUI4cnc4dW15NFFGSXpEYlpWVFZKdGVaODBoLVZtaV9TR3MzeGRsUmpBVUMxd3R6bnpOZWpHQzRHNG1hMXc0LTlZOWhTcU1FRlBPTHVtNk0?oc=5",
    "date": "2026-09-26T04:05:00.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "yonhapnewstv.co.kr",
+   "source": "연합뉴스TV",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -1804,7 +1906,7 @@
    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1mODRjVC1IZm5CVjFoMmxaMlhQWVN0VVVLa2NoVWUteGR2Uk1tTWZRclRiekIxVzV0TXF4XzdVTzJyWjRCY2xSdFpoLVU0MkZ4Q3dvV2JXNURsQS1STXBzTkJWTUh1YWYxWV9n?oc=5",
    "date": "2026-09-26T02:30:56.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "시정일보",
+   "source": "sijung.co.kr",
    "sourceId": "google-news",
    "summary": "",
    "categories": []
@@ -1957,7 +2059,7 @@
    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9NRUo0TlloWl9BYUFIVDNnNVh0YUU5bEQtVllsaW5OR2R3VHB1Wkpla0NHeFltUkQxdFJhVXJTVGNYOS1oekxhUzFnNERzQU9IMnlPeTFTdDAxdTBOVWlvb0FHdXdBa0NCSExMaE5B?oc=5",
    "date": "2026-09-25T04:17:50.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "thescoop.co.kr",
+   "source": "더스쿠프",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -2023,7 +2125,7 @@
    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE01cU4xYUU0OUhKT2ZOeUdobEVWU0ZYQWs5UGJkdTZtQjFTcHl6QmJKQzNDUXNGVnJUUmZKa0dQTVlpQ2h4bG9SNFBCSG9EbkVFWnpHTUVmLWxzQlQzdVBWQkU3X0xOdw?oc=5",
    "date": "2026-09-24T20:55:00.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "news.unn.net",
+   "source": "한국대학신문",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -2094,7 +2196,7 @@
    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE15a2g0LUJZV1hPR1NlY3ZnV2hqcWhvdXB1cklDaTZkRGV3U0cyLTMtNHctS1h6ajBScU9LQU8wQTUwcHdhaGQtRUdEV1dNZ3l4S25Oc1BMdEJhTVYxMjFRRVFXcEF3bHVOQTc1ZQ?oc=5",
    "date": "2026-09-24T12:39:19.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "fntoday.co.kr",
+   "source": "파이낸스투데이",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -2252,7 +2354,7 @@
    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBkLUNDMVZEOWdFTXNHOWRDTkxYaW8tWWFoRmZZRnI4NFg2ejZndHJ3Z1BYQXY5a3dfUEpsTld1SExoU2ZwTzJrb044QjNCQUwzMkpyMF9LMWFfSXVXYV9GTUdQNGU2Mzk1aGdwOdIBb0FVX3lxTE5mbC1QM0tSYjRaS3EtQ1FqWUNWUmJBS01TWkJTVVJXanY3blBjbmdrV1RHMWVEWXJJSGdMTkpDa0o1QmdLZUktQXpSQkp0OWpFNjhJVHR0cHU0UlJVWkprVFF4eGUyeldNc1g2MEMyUQ?oc=5",
    "date": "2026-09-24T02:30:00.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "newsroad.co.kr",
+   "source": "뉴스로드",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -2331,7 +2433,7 @@
    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9DVExvZ0pMQnV1SGJwVFBRR0NuTl9mSHdidU84WnF2dWFOdHZZS1BjUzdXU3hxazgzVDl3RVE1c1h3clpnVU5SR2xwaFZEVzFUVVhvSTBjaFpQRlB6YmpnSnRFR3FmOUZh?oc=5",
    "date": "2026-09-24T01:07:40.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "한국NGO신문",
+   "source": "ngonews.kr",
    "sourceId": "google-news",
    "summary": "",
    "categories": []
@@ -2369,7 +2471,7 @@
    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBxU1RvWGo1QWd4Tk04OVZfRzlVQ3EtVmZfT2dtUTdLV3pTZUtQdklVUjFuc0FxYmpRdGo4cTlLUThCVDU4ZGp0emVGaXNmUEFPYUF3RTJ5RER5clVwdkVWStIBeEFVX3lxTE9MV2N0YlJOSXpqMzhrWjBMZjV6RkFIN21Ud2pLR2pkMEhDVHpXd1VobDJjMm5JYVl2TzkxMkhPWHJtbDJmcjdaUl9lUnZ1dXhmSGFMbTl2UjFiYlhyMUVxMVlncnZ4THZzTXNZLXRXcHg3OW1udTVFOQ?oc=5",
    "date": "2026-09-24T00:00:00.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "newsis.com",
+   "source": "뉴시스",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -2460,7 +2562,7 @@
    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBvbzlDdmV2OS1jbldVOHBZbVd0WW5xZW1nWV9iZ2lLNTMtWW9nWndKU0dvNTQtR0NjYkpRM3NoUk5uM0trZU5rOEtHQnRMNnZOV3fSAVNBVV95cUxNVTFvb3ZxWkN6Y0FzakZEWEtKNU5QZzg1eHZqYm41ZXVMb3ZaZUN4NmhMbHBxcXlhRWRvUk5LdHBDTmVpSFFWMmVjdUtkZ1hEbENoYw?oc=5",
    "date": "2026-09-23T21:00:00.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "sedaily.com",
+   "source": "서울경제",
    "sourceId": "google-news",
    "summary": "",
    "categories": []
@@ -2534,7 +2636,7 @@
    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBXVEk3bDJrMkVxVGU4YmE5NHExaTNyYlF4OUJEZUxidjA3cGNrdVZJLXVnRnM4S2RCeDZhclZjZXFvZWxPT1ptR3VFWUlocVRiOVRLQzh6bmhYaG0zbnJpYWl4ZkRmTjhX?oc=5",
    "date": "2026-09-23T13:05:23.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "eduinside.kr",
+   "source": "에듀인사이드",
    "sourceId": "google-news",
    "summary": "",
    "categories": []
@@ -2660,7 +2762,7 @@
    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9oSEFPLVdxRVQ3U3A1Q1VJeExjY2F2NENGTkpxaVFSQkJQQlJhak5Vb2VQSjkyZlM2V1JLSDJFQk1KTXJMdTc5MEM2TU5raE5BUmRyaXdpMmI1WGvSAWBBVV95cUxOTDVQRzFPMUQwUG9NUVRLMUNIT3hzd1NrM0RvbE55QkFRNnpsenlUNWNtRkpTU1ZPelc1eGtmbGxrVmI4Q1BGSXhTaHNaN1BFTXJaOU9vN25zSE56bHItLXU?oc=5",
    "date": "2026-09-23T08:02:32.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "연합뉴스",
+   "source": "yna.co.kr",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -3172,7 +3274,7 @@
    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5XRTVrTm1QQWwxakNpMU0xT2dNZ2N6RFlRemk3Z0FVblJoYkdUcDFOQnRQTXZzS2FrNU02UEd5a29XYldfd0RpeDlwUE56bXRnYU9fQW5NVjFpU1d6TzJoRmRaUmp5bnZ4MjF5TWlOa3E?oc=5",
    "date": "2026-09-23T03:00:40.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "안성투데이",
+   "source": "anseongtoday.co.kr",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -3227,7 +3329,7 @@
    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBBSkJHeXBHTG1fdkxYY3RXY0lzelpjNXNROHVtdGFEdTVTcG9uSFJDTHExZWtfaURKSXhFNGwwQzFwSVJfeVRlSjNmdDNjTEUxMXI1cFAzTk9uRndocHdrUTBxRTA1a1ZkYVB4clNB?oc=5",
    "date": "2026-09-23T02:29:55.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "뉴스홈(newshome)",
+   "source": "news-home.co.kr",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -3308,7 +3410,7 @@
    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBqUHo2STJ5aXg1SHZoYUJORU1xVEV6WVBneXFGS3BfTnZSR2h3SGFvcHlReERuTjUwZlcxS0NaWFJXVFEzVzN0eEc1UV9JMzJsUjhUSkZLc1Jqc01SS0ZhdtIBeEFVX3lxTE14S25ZQWctTmxDMHV6LWZHSy0tV0NOa2pLb0t3T2tjaGY2ZFdhWVV1YTRqU3liOGxQMFRFbnkybVlRUmFxMTBVTElUZG01aHJuOVFmV1ZYeExuUy13UTcyZGk0SGtSODVyc0U2U3lhTWtzendjZXMxTw?oc=5",
    "date": "2026-09-23T01:30:40.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "newsis.com",
+   "source": "뉴시스",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -3321,7 +3423,7 @@
    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA2V2Fzc2V1NUNTVlJiN29hVV80SXo5YURrWU4yNmlrZkFVZlk3MG1reGVrSVk2bjI2aldjNlhCY25RTXNDT0NqMWVSQnVvc3RkUW1nbjhxQlNEcmPSAWBBVV95cUxOcW14bTFCOVZrZGFUYldPWEdJbXRMM212d0ZfT09hNDdVcGgyRUxOVzR3QVJ0OUNxN002ZktFaUw4Sk5QUnZYVEFRblFMQ0FyZHNLcGJvR093V1VjSGZjSlA?oc=5",
    "date": "2026-09-23T01:12:21.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "연합뉴스",
+   "source": "yna.co.kr",
    "sourceId": "google-news",
    "summary": "",
    "categories": []
@@ -3385,7 +3487,7 @@
    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0wanhqcHNpNUU1ZXhhVUczQ3NBaU9vcE5DSmJxR1BYZ1lmTjh5MDRhcFdVWHRpZ2cxN3JPbnhIR3VCejRuSXBOM19xRVhFUXlnamZLa2p1and6Xy04aEFLQXl6bkh5dkx4?oc=5",
    "date": "2026-09-23T00:48:38.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "한국NGO신문",
+   "source": "ngonews.kr",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -3412,7 +3514,7 @@
    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBzNWo0U0lBT3JzaFRZQ0F3dHVFUmJSWlVnaUtOcVU4NFlfZUpCaWJXZnlLWXptTVY0Smx1TjRWY2dsMmNKYmVaWEJJUzBFVGExOTJaZ2M5eDEwa1HSAWBBVV95cUxPWmlfcnV2c0JEQkVTNzFLajZUZVdJQlpUUmViMGZBa002NWhVY2dJQzJQZkFYMndJMmNvamRwUEVlMEwwTzBVczV5Z1MxazBxWGxseTliZ0F0Zy1adWkwdlI?oc=5",
    "date": "2026-09-23T00:38:33.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "연합뉴스",
+   "source": "yna.co.kr",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -3495,7 +3597,7 @@
    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9iNEJTdDl1MGJoLThPSzRGVFRzWHNhTjhYMWUwZXM2R0lMR2JPZjgzT1RsN1VyQnVqR0owZ05RQ0dxX0otSVZvaHdxTDNLbHJBSVBlek5ZOXdZWUk2UzFtdVFmSnNVLUF2bWdFREJLN1c2WC1weVHSAWZBVV95cUxQQlhJVTZSVDZzdnZXY004cm1fbTN0QmJNazl4MERvMVFpdlNGbkYzLVJxNC1tYzNRTlVDWkFPQ3UzZ1N2cDNCWTJraEhSTXlxN2RuYTFiRHFTTHJOS3Y5UUdCdzgwdHc?oc=5",
    "date": "2026-09-22T23:55:26.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "donga.com",
+   "source": "동아일보",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -3521,7 +3623,7 @@
    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA2TVdmRnZtT2hXWlYxalAzeVhBd2tuUkNuLU53N0JubGJwZkUyMmN5NzA0a2FJaVAzdnF4bVlsbGZPN2c1TnZjMlpyREZ5MGJtUjRvVWRINXJQenRPbmNOa9IBeEFVX3lxTE9HcjBDVTdVUEpWSFNrb2FqRnhaWGkwS1lWUWdzMTJkbElDSlBLUjlXYW5Xb0hCOGNnSWg5TXdCQUJqSlV5QU90QU9EcnNza0lWdHk3UFBNYUR5RS1YNWszZy0wX2V0VnBNTjgwNGllZU9VUG1lempWRQ?oc=5",
    "date": "2026-09-22T23:50:27.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "newsis.com",
+   "source": "뉴시스",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -3535,7 +3637,7 @@
    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1iWjlUaU10UTV1eXVPNG5yU0x0YnpTTmlGUDIxXzhyR21sRGhQTEo3QmphSlgtQnYteEt0Yy1YNWdrX0FwaGhfajZ0OW9IaGZSeGRwRUlqTVM5WnFQbFB2bmtGTTdGT0lGZGl2LQ?oc=5",
    "date": "2026-09-22T23:39:02.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "호남교육신문",
+   "source": "ihopenews.com",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -3590,7 +3692,7 @@
    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9mRzVfcGxUR2ZUb1cyX0tKQTM4YUZyQjBoeFd0RmZjTS1KUzUzdGw4Z1Z6M3FEbmFyQzRyVWt0cXo5R1J0aFcwNXpwTTBmcjJsZVJwRVpacUE3OWVqRXVDT0xGclJoZw?oc=5",
    "date": "2026-09-22T23:17:51.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "news.unn.net",
+   "source": "한국대학신문",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -3756,7 +3858,7 @@
    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9MOGItLVRySHY3SXJTYTRjTWV1Ri1LUGRyQVZzQzQyMVFHM1lGTDhDZWVhbDdqZ3pQa3d1V3hmZ3VLd0pjNF9hUS14OG9kbEtLdmfSAVNBVV95cUxQS1VOemJLeGJhRmh5X3F6TldXcGV2SEltT3c0aEZmQjhwWnJ1R0EyY21wRnZ6clhxU3JsWERLbmg3SFhsV210cHJpWlhnU1lwUm1kYw?oc=5",
    "date": "2026-09-22T13:54:59.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "sedaily.com",
+   "source": "서울경제",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -3947,7 +4049,7 @@
    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9WWFBUVlFLUjk5bzZkNWljdXFZbC1GMlYwME5HbXRWS0JQbGM1WjlNUzBQbjRNX09oYUx5MUxjSXctQUVDcFIxN2Z0dlcwNU9GSWxVR0M4dXdZa21udTlnVGp1TjluZw?oc=5",
    "date": "2026-09-22T07:53:55.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "news.unn.net",
+   "source": "한국대학신문",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -3968,6 +4070,19 @@
     "jeongsi",
     "medical",
     "etc"
+   ]
+  },
+  {
+   "id": "6db0e8f552fe",
+   "title": "상명대, 2027 수시 경쟁률 12.97대 1...서울캠 19.67대1",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9WQ0JBNWczR09sM3l5Q2NZeFNIb1M3NVhZMzhyQzMxcjFFWWlqMnpBM0JPZDNfd1VtLTZOd3hmOWxhRkF4ZExFX2pSbXlQZUxTX2daNHBPcG4yb1VaSS01RjZHVVRMZWE5ZkJKMG5n0gFyQVVfeXFMTnk3UjJUZ3NNVkRQbW1WV2xOVkZwLXlpeFNSWmRsWUQ2OFFFWTQ1dnVuZ0V3R1JmNkNNcWdiU3FTN25JZkNidFA5SFU2TldNQnpPaWZVWS1GeUE2Q0tPcm1MRmF5RU9TN1llVHVON1lSeUJn?oc=5",
+   "date": "2026-09-22T07:28:30.000Z",
+   "firstSeen": "2026-09-28T07:05:58.248Z",
+   "source": "eduplusnews.com",
+   "sourceId": "google-news",
+   "summary": "",
+   "categories": [
+    "susi"
    ]
   },
   {
@@ -4030,7 +4145,7 @@
    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9vYnYteVpfLUI4Y1NVOF9rRlpRN0NuUjEtTUoxZkFweWN1aWwya1UxcnBKbURESjVxU3NxdUVnWmpRa3NfSS02cF9BMmR0eFQyUmJPajc2dWdpNzdWS3RJWdIBYEFVX3lxTE9vYnYteVpfLUI4Y1NVOF9rRlpRN0NuUjEtTUoxZkFweWN1aWwya1UxcnBKbURESjVxU3NxdUVnWmpRa3NfSS02cF9BMmR0eFQyUmJPajc2dWdpNzdWS3RJWQ?oc=5",
    "date": "2026-09-22T06:14:52.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "연합뉴스",
+   "source": "yna.co.kr",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -4156,7 +4271,7 @@
    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1YWkNBZnA3Rmg0UzRobllwb1dGd0htSEU3Z3JZX1VoNXJWbG0tcEc4c1BOTG84dzlvcFBybFVubFRMQ0htV0p5eW8tNE5HTHZreDlvVDVTTkNiM2tGUUFzWkV2MUJxdVN1VWcyT2dB0gFyQVVfeXFMUFd0dzBkN2VtU2lRR05WUnUxRUs2aHZnbjZrWGwxTkJld2J0alBDelBuRDY2WEhXNzAweWpDazljYzU3c211X0JJazBYVDh1WUdpYXR1QUd0dUx3X25la0QzeXZPZl9vYkRsV1AyZTlOYUZ3?oc=5",
    "date": "2026-09-22T03:27:38.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "job-post.co.kr",
+   "source": "잡포스트",
    "sourceId": "google-news",
    "summary": "",
    "categories": []
@@ -4227,7 +4342,7 @@
    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8tQ0pHOGs2MGJpa3NQcm91OHk1NGJJSUEzejBkSVNIVmtwRWJ3NFg2em1MNHJ5MlRuWEh4QktVOXl5UjlZV3hPZm9VRVVMSEZsZHMwc1dPYWh4WWdqLUdkZNIBeEFVX3lxTE14dnJtUjlJY1dEcmhZSnpDV2hBeFR3WmUydi05ODJmcG5ZUEdWUGdGRkdCeHN5SUE0REsxYVFMQWx6Q2FFcF9OMDRDRFV0V19jQ24wM3N4S1ZSWnFYU3BoQk5pYk14UEVFaExyX2RsU0pvVkFhQ1RtMg?oc=5",
    "date": "2026-09-22T02:00:00.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "newsis.com",
+   "source": "뉴시스",
    "sourceId": "google-news",
    "summary": "",
    "categories": []
@@ -4310,7 +4425,7 @@
    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5OVTEtOVNUREtFbXNNQ0lvU2w1dEI3WkJKdWJVd0xBelBacnNGSGtTLThiRmZZQlAtaXZhUDdlb2dnR185WjBQRWxGdEdUdFgwUnNsZkRncHRTV2_SAWBBVV95cUxQT2JCTlJHX29STHNieGJ5MzNYQ2JTYmxHY3NOZG1qX2JiejVTSTRUMzdjUEl2N3dGN3NtV3F0THpPSmNYVFRPaWJETFRPLXVEbDkzaFJvMWlDbV9FVDM3cF8?oc=5",
    "date": "2026-09-22T01:00:53.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "연합뉴스",
+   "source": "yna.co.kr",
    "sourceId": "google-news",
    "summary": "",
    "categories": []
@@ -4372,7 +4487,7 @@
    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5Sa3FhN1gza0NtUVA3TG5yUTQxRFNXMngwZnY5b1pZNFJ0QlQxb0ZXaEFSWVZoal9OazNVMG9GSF81a055d3VfMlNsakRPZEd2bEpDaWhLNGVBM0g4UVQ3UdIBeEFVX3lxTFBabUt5RkRNbUVGZEYzRExfckxFSVM2eG54T1R5cUpFZWtlWUNCRUNPNkJ0V2RISWZONy1EOFlnbU1vZ3E3V2gzcVF2MUhPNlk1eHZPQ21hWDZITnYwLVhWODJGM0pFaVQzSkF3enRnMFhUYTBNTGpHZQ?oc=5",
    "date": "2026-09-22T00:15:20.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "newsis.com",
+   "source": "뉴시스",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -4458,7 +4573,7 @@
    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFB1LVBOUWN6UFhHSnBZZl9pMmJXM1drYnBkZWttRGVhbnZqWnpEczliU2dOdEs3MHQtYVdwLXpmSERXQi1UTTY5QjRZVW9aQ0ZDS0owQVZfV0J2RVhLV0RTN2xhTlBPWEpGNXZlU2dBMW1kdw?oc=5",
    "date": "2026-09-21T22:04:53.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "industrynews.co.kr",
+   "source": "인더스트리뉴스",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -4665,7 +4780,7 @@
    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBxeS15aGNEZEV0SGZZRU1LUk5CRC1xVmI0THRJU2h2UXlyajlzcWxHTWxwT0dqOG45QThOek5VS0JLVkJSdmhQbzRrenoyVkFnMXk0RkxuVEdTMUhONDI1cDJTUFFFZGRFcWY4?oc=5",
    "date": "2026-09-21T08:35:22.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "news.bbsi.co.kr",
+   "source": "BBS불교방송",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -4783,7 +4898,7 @@
    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1wX0RDTW9LR0IwcTRUVXhKY3ItYWJha2RWcHhtc3REVktsa0xST2RIZ2I2c2xFREhqdDNhbE1oVDVxXzhMTVg0RGloUkpsSmFzTzlSN1B1TnJCd2fSAWBBVV95cUxQNFZSX3N0aXVNdFlaNXFNbDBZaTNTeEZ5NDlOb3dCR3NjbnNzZldWdXU0b0hZbWlUWTRwZVQ3YTdlbnhpUm84ZGUzOFh1Si1laDYxOHU2WUoyYTRrMHJubmU?oc=5",
    "date": "2026-09-21T07:41:48.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "연합뉴스",
+   "source": "yna.co.kr",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -4835,7 +4950,7 @@
    "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxORV95VXJjb3lZM25sY3hYZ09tS0E3NzgxNHJCUmZiMjE3OUU3djBuUFNPQThxb1FDOFBTcjdNYzJFSndERHI2TTJTY1BnTHNFYVZOZTFCRW9lRERrX0diLUpDOFpfQ1VZaHgtaXFDSVJLN3ZLaDJ6UnVJLXNBcHdqTWNSeG5FbVhyREh2enBUM0xSVzNtMVVBVGh4LW1aNkdzR05peHF3RTJlSUxtSl9KRzI4VnprdnJzejZKQTBlQ3Z5SE9XeEE2UVJsTmU2VS1ySFpEcE1CTVBiTUZBNHRja2RxSVRWRWk1MHhqOGZmNW12d3dpeHRXZVQ5b1ZjTDJFWEdr?oc=5",
    "date": "2026-09-21T07:19:00.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "데일리안",
+   "source": "dailian.co.kr",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
