@@ -40,6 +40,6 @@
   { "id": "jc-jeongsi", "group": "전문대", "title": "전문대 정시 원서접수", "start": "2027-01-04", "end": "2027-01-20", "source": "procollege" },
   { "id": "jc-jeongsi-result", "group": "전문대", "title": "전문대 정시 합격자 발표 마감", "start": "2027-02-09", "source": "procollege" },
   { "id": "jc-jeongsi-register", "group": "전문대", "title": "전문대 정시 합격자 등록", "start": "2027-02-10", "end": "2027-02-12", "source": "procollege" },
-  { "id": "jc-additional", "group": "전문대", "title": "전문대 추가모집", "start": "2027-01-21", "end": "2027-02-27", "source": "procollege" }
+  { "id": "jc-additional", "group": "전문대", "title": "전문대 자율모집(추가모집)", "start": "2027-01-21", "end": "2027-02-27", "source": "procollege" }
  ]
 }
