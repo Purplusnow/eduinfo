@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-09-28T07:10:28.025Z",
+ "updatedAt": "2026-09-28T07:14:41.189Z",
  "items": [
   {
    "id": "89aaed0586cf",
@@ -865,7 +865,7 @@
    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB2V3UwTTJvT2ZpRU9FVTIwSC1Wamx3MUdoQ2xXenNiN3FINXdKdUhUb0FKZkVGVzFPVVMxekxER0N3WUZCV1VNX3pEdFlyX2tpMzc2eDlDeFFUMU1PVGhYVENuNlpNeTZ5RHlJQWcxVdIBb0FVX3lxTFB2V3UwTTJvT2ZpRU9FVTIwSC1Wamx3MUdoQ2xXenNiN3FINXdKdUhUb0FKZkVGVzFPVVMxekxER0N3WUZCV1VNX3pEdFlyX2tpMzc2eDlDeFFUMU1PVGhYVENuNlpNeTZ5RHlJQWcxVQ?oc=5",
    "date": "2026-09-28T03:00:00.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "머니투데이",
+   "source": "mt.co.kr",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -1308,7 +1308,7 @@
    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1rbnN4RTI2d0tGLVlLcjJMdnZJV3BrMGVQVlFjOWJfNFk0cFhrc1JzU0xMc3N0R05zTFg2Y1NsOVQ0bEZxdU14dUF5TUU0dHhaWmhlQ0lQVWRBVVJIVUszdzhVRTJ6THNLRzlKT2xQclA?oc=5",
    "date": "2026-09-27T09:10:00.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "thekorea.kr",
+   "source": "더코리아",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -1709,7 +1709,7 @@
    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBsT0FtcGl1bElGNWl2WXVNMDR6cE5WUHdEbWx0NlpDV2tfNGJTTGVBUWQ3bXpSb2E4WWRKZjZFX2NmZFZKRExWRzgxSUVTS0FhNERnOFM2REF5YTZJRzBXT0NjVXMySW5STUMwWllUSEU?oc=5",
    "date": "2026-09-26T06:50:00.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "thekorea.kr",
+   "source": "더코리아",
    "sourceId": "google-news",
    "summary": "",
    "categories": []
@@ -2749,7 +2749,7 @@
    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBzc0VPOHhTUGcwU3ZXNXBtUTltYjdzbk5iRldYcEZIVnloRzFMZUpSTHRrVmVDNWdnSEpyaUpyREM3eW5leEpNMUVmd182bVN3TjdpbWw1bDJIZmdNckw3TUVpR1lPSGVIcng2OXlDaw?oc=5",
    "date": "2026-09-23T08:19:13.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "진일보",
+   "source": "jnilbo.com",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -3204,6 +3204,20 @@
    ]
   },
   {
+   "id": "a6bd6b1a8938",
+   "title": "[2027수시특집] 경기대 1975명(67.5%) ‘확대’.. ‘무전공 577명’ 자유전공학부 수원/서울캠 270명, 5개 단과대통합학부 307명",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9JQ2lBRlJKSmRpU1lnVmRXUW4zd2RvZEViWmxiNEdNRGxwQi1nTG5GUC1xYjA3VVlJMnpJWENLZDRRNVhSNUt6a1R5dC1DeFhyOWd2TlIxS2p2eUE1VnRkZnByM3FWZGhZVTRMaw?oc=5",
+   "date": "2026-09-23T06:47:00.000Z",
+   "firstSeen": "2026-09-28T07:14:41.189Z",
+   "source": "베리타스알파",
+   "sourceId": "google-news",
+   "summary": "",
+   "categories": [
+    "susi",
+    "policy"
+   ]
+  },
+  {
    "id": "74ae0d2d7652",
    "title": "수험생 10명 중 8명 \"2028학년도 대입 개편, 수시 지원에 영향\"",
    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE0xdE9jUW5oajFHR1pvR0xRWGlwSTZObEs0Z2dadmNyZ3E5Y1piaFJxQVphcFRLMC15QzhXOEdOaFNrc3pXWFUwUlZ6V0pRY3NiaVIwWDctb0UyZ1AydVFVcmNB?oc=5",
@@ -3473,7 +3487,7 @@
    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1GOFNoNkZRbW9NTDJ6X3VzbXViOGZXUE05ZVlEYkZfQnhNdjNmVFVMMUNXUlVnQ1NvZ3ktTFdKUkluWHF2Z21lU1N3UGpiY2g4dUo5TEo5SkZLbHZKY1VkVmtLYnpmRkhFOGlOSi1pWQ?oc=5",
    "date": "2026-09-23T00:53:16.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "진일보",
+   "source": "jnilbo.com",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
@@ -4924,7 +4938,7 @@
    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5fWTFaOG9CUVZfcFVwTkh1YVp4cUZ2cENRTHJCNHAtTTRaSktWMzBVY3NnZUkxT0wxb2prMVc0R2h5SjBVRkFHMWE2Y0hiQ2RrRGRHRVhWbUlueWJLVVVqMWR1dlFPYnFYOUNQNmkyb3h0cVFaZFBwN0ln0gF_QVVfeXFMTXROZ2UxaUJ2ZklLcHZrYXdYdkxWN19XclU0WFFrVmh0Yy14UHlCb3lobjNLTE5QZ1diZjJxYVVlUzA4ZUI5OWkyVEktWUtHQ0czQm9rUndTYXBkLXo4RmJ6UUlleVJlRGs5T0s4M1NXcVlvcTl5RFpWTVEwRTdKcw?oc=5",
    "date": "2026-09-21T07:36:10.000Z",
    "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "머니투데이",
+   "source": "mt.co.kr",
    "sourceId": "google-news",
    "summary": "",
    "categories": [
