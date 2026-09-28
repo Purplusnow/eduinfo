@@ -7,6 +7,8 @@ import { CATEGORIES, SITE_DESC, fmtDate, u, type Item } from '../lib/site';
 import news from '../data/news.json';
 import official from '../data/official.json';
 import status from '../data/status.json';
+import majorsData from '../data/majors.json';
+import { univ } from '../lib/univ';
 
 const newsItems = news.items as Item[];
 const officialItems = (official.items as Item[]).slice(0, 8);
@@ -14,6 +16,24 @@ const byCat = CATEGORIES.map((c) => ({ ...c, items: newsItems.filter((it) => it.
   (c) => c.items.length,
 );
 const guides = (await getCollection('guides')).sort((a, b) => a.data.order - b.data.order);
+const majorCount = Object.values(majorsData.bySchool as Record<string, unknown[]>).reduce((n, l) => n + l.length, 0);
+const schoolsData = Object.values(import.meta.glob<{ default: { items: unknown[] } }>('../data/schools.json', { eager: true }))[0]?.default;
+
+// 시기별 추천 가이드: 수능·정시 시즌(9~2월)과 그 밖의 시기
+const month = new Date(Date.now() + 9 * 3600_000).getUTCMonth() + 1;
+const PICKS = month >= 9 || month <= 2
+  ? ['suneung-day', 'jeongsi-strategy', 'changes-2027', 'suneung-scores', 'medical-admission', 'reform-2028']
+  : ['susi-vs-jeongsi', 'susi-6-strategy', 'school-record', 'reform-2028', 'changes-2027', 'susi-types'];
+const picked = PICKS.map((id) => guides.find((g) => g.id === id)).filter((g) => g != null);
+
+const TILES = [
+  { href: '/universities/', title: '대학 정보', desc: `전국 ${univ.schools.length}개 대학의 경쟁률·취업률·등록금 비교` },
+  { href: '/majors/', title: '학과 찾기', desc: `학과 ${majorCount.toLocaleString('ko-KR')}개를 이름·직업으로 검색` },
+  { href: '/schedule/', title: '입시 일정', desc: '수능·수시·정시·전문대 일정과 D-day' },
+  { href: '/guides/', title: '입시 가이드', desc: `전형·전략·수능 정리글 ${guides.length}편` },
+  { href: '/exams/', title: '수능 기출문제', desc: '평가원 문제·정답 바로가기' },
+  ...(schoolsData ? [{ href: '/schools/', title: '전국 고등학교', desc: `고교 ${schoolsData.items.length.toLocaleString('ko-KR')}곳 유형·지역별 찾기` }] : []),
+];
 const latestDigest = (await getCollection('digests')).sort((a, b) => +b.data.date - +a.data.date)[0];
 ---
 <Base>
@@ -25,6 +45,15 @@ const latestDigest = (await getCollection('digests')).sort((a, b) => +b.data.dat
 
   <Ddays limit={4} />
   <p class="small"><a href={u('/schedule/')}>전체 일정 보기 →</a></p>
+
+  <nav class="tiles" aria-label="주요 기능">
+    {TILES.map((t) => (
+      <a class="tile" href={u(t.href)}>
+        <span class="tile-title">{t.title}</span>
+        <span class="tile-desc">{t.desc}</span>
+      </a>
+    ))}
+  </nav>
 
   {latestDigest && (
     <a class="card" href={u(`/digest/${latestDigest.id}/`)} style="display:block;color:inherit;text-decoration:none;margin-top:16px">
@@ -64,9 +93,12 @@ const latestDigest = (await getCollection('digests')).sort((a, b) => +b.data.dat
     ))}
   </div>
 
-  <h2>입시 가이드</h2>
-  <div class="grid">
-    {guides.map((g) => (
+  <div class="card-head" style="margin-top:2rem">
+    <h2 style="margin:0">지금 읽으면 좋은 가이드</h2>
+    <a class="small" href={u('/guides/')}>전체 {guides.length}편 보기</a>
+  </div>
+  <div class="grid" style="margin-top:12px">
+    {picked.map((g) => (
       <a class="card" href={u(`/guides/${g.id}/`)} style="color:inherit;text-decoration:none">
         <span class="tag">{g.data.category}</span>
         <h3 style="margin:6px 0 4px">{g.data.title}</h3>
@@ -74,4 +106,12 @@ const latestDigest = (await getCollection('digests')).sort((a, b) => +b.data.dat
       </a>
     ))}
   </div>
+
+  <style>
+    .tiles { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(min(170px, 100%), 1fr)); margin: 20px 0 8px; }
+    .tile { display: flex; flex-direction: column; gap: 2px; padding: 14px 16px; border-radius: var(--radius); background: var(--accent-soft); color: var(--text); text-decoration: none; }
+    .tile:hover { text-decoration: none; outline: 2px solid var(--accent); }
+    .tile-title { font-weight: 700; color: var(--accent); }
+    .tile-desc { font-size: 0.8125rem; color: var(--muted); }
+  </style>
 </Base>

@@ -1,0 +1,146 @@
+---
+import Base from '../layouts/Base.astro';
+import { u } from '../lib/site';
+import majorsData from '../data/majors.json';
+
+type Major = [string, string, string, string, number, string, string];
+const all = Object.values((majorsData as { bySchool: Record<string, Major[]> }).bySchool)
+  .flat()
+  .filter((m) => !/기타모집단위|소속학과없음|^기타$/.test(m[1]));
+const SERIES = ['인문ㆍ사회계열', '자연과학계열', '공학계열', '예ㆍ체능계열', '의학계열'];
+// 검색엔진과 첫 화면용: 가장 많은 대학에 개설된 학과(이름 기준)
+const base = (n: string) => n.replace(/\([^)]*\)/g, '').replace(/\s/g, '');
+const norm = (n: string) => base(n).replace(/학부$|학과$|과$|전공$/, '');
+const counts = new Map<string, { name: string; n: number }>();
+for (const m of all) {
+  const k = norm(m[1]);
+  const c = counts.get(k) ?? { name: base(m[1]), n: 0 };
+  c.n++;
+  counts.set(k, c);
+}
+const popular = [...counts.values()].sort((a, b) => b.n - a.n).slice(0, 40);
+---
+<Base title="학과 찾기" description={`전국 대학·전문대학 학과 ${all.length.toLocaleString('ko-KR')}개를 학과명, 계열, 관련 직업으로 검색하고 개설 대학을 비교합니다.`}>
+  <h1>학과 찾기</h1>
+  <p class="muted">
+    전국 4년제·전문대학의 운영 중인 학과 {all.length.toLocaleString('ko-KR')}개(대학알리미 공시)를 학과명이나 관련 직업으로 찾고, 어느 대학에 있는지 비교할 수 있습니다.
+  </p>
+
+  <div class="mj-filters">
+    <input class="filter-input" id="mq" type="search" placeholder="학과명 또는 직업 (예: 간호, 컴퓨터, 데이터분석가)" autocomplete="off" />
+    <select id="series" aria-label="계열">
+      <option value="">전체 계열</option>
+      {SERIES.map((s) => <option value={s}>{s.replace('ㆍ', '·')}</option>)}
+    </select>
+    <select id="kind" aria-label="유형">
+      <option value="">4년제·전문대</option>
+      <option value="4년제">4년제</option>
+      <option value="전문대학">전문대학</option>
+    </select>
+  </div>
+  <p class="muted small" id="mstatus">학과 목록을 불러오는 중…</p>
+  <div id="results"></div>
+
+  <noscript>
+    <h2>많이 개설된 학과</h2>
+    <ul>{popular.map((p) => <li>{p.name} ({p.n}곳)</li>)}</ul>
+  </noscript>
+  <section id="popular">
+    <h2>많은 대학에 개설된 학과</h2>
+    <div class="chips">
+      {popular.map((p) => <button class="chip" type="button" data-q={norm(p.name)}>{p.name} <span class="muted">{p.n}</span></button>)}
+    </div>
+  </section>
+
+  <p class="muted small">
+    출처: 한국대학교육협의회 대학알리미 학과 정보. 이름이 비슷한 학과(학과·학부·전공)는 하나로 묶었습니다. 정원 "-"는 모집 중단·학부 통합 등으로 공시된
+    정원이 없는 경우입니다. 대학별 세부 모집 단위는 모집요강에서 확인하세요.
+  </p>
+
+  <style is:global>
+    .mj-filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 4px; }
+    .mj-filters select { font: inherit; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--text); }
+    .mj-group { border-bottom: 1px solid var(--line); }
+    .mj-group summary { cursor: pointer; padding: 10px 0; list-style: none; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+    .mj-group summary::-webkit-details-marker { display: none; }
+    .mj-group summary .name { font-weight: 600; }
+    .mj-group[open] summary .name { color: var(--accent); }
+    .mj-jobs { font-size: 0.8125rem; color: var(--muted); margin: 0 0 8px; }
+    .mj-group table { margin-bottom: 12px; }
+    .num { text-align: right !important; font-variant-numeric: tabular-nums; }
+  </style>
+
+  <script is:inline define:vars={{ indexUrl: u('/majors-index.json'), univBase: u('/universities/') }}>
+    (async () => {
+      const $ = (id) => document.getElementById(id);
+      const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+      const base = (n) => n.replace(/\([^)]*\)/g, '').replace(/\s/g, '');
+      const norm = (n) => base(n).replace(/학부$|학과$|과$|전공$/, '');
+      let data;
+      try {
+        data = await (await fetch(indexUrl)).json();
+      } catch {
+        $('mstatus').textContent = '학과 목록을 불러오지 못했습니다. 새로고침해 주세요.';
+        return;
+      }
+      const { schools, rows } = data;
+      $('mstatus').textContent = '';
+
+      const render = () => {
+        const q = $('mq').value.trim().replace(/\s/g, '');
+        const series = $('series').value;
+        const kind = $('kind').value;
+        $('popular').hidden = !!(q || series);
+        if (!q && !series) {
+          $('results').innerHTML = '';
+          $('mstatus').textContent = '';
+          return;
+        }
+        const groups = new Map();
+        for (const r of rows) {
+          const [name, si, ser, , , jobs] = r;
+          const s = schools[si];
+          if (series && ser !== series) continue;
+          if (kind && s[3] !== kind) continue;
+          const byName = !q || name.replace(/\s/g, '').includes(q);
+          if (!byName && !(jobs || '').replace(/\s/g, '').includes(q)) continue;
+          const k = norm(name);
+          const g = groups.get(k) ?? { name: base(name), list: [], jobs: new Set(), byName: false };
+          g.byName ||= byName;
+          g.list.push(r);
+          (jobs || '').split(', ').filter(Boolean).forEach((j) => g.jobs.size < 8 && g.jobs.add(j));
+          groups.set(k, g);
+        }
+        // 학과명이 일치하는 묶음을 먼저, 관련 직업으로만 걸린 묶음은 뒤에
+        const sorted = [...groups.values()].sort((a, b) => (b.byName - a.byName) || b.list.length - a.list.length);
+        const total = sorted.reduce((n, g) => n + g.list.length, 0);
+        $('mstatus').textContent = sorted.length ? `학과 ${sorted.length}종 · 개설 ${total}곳` + (sorted.length > 60 ? ' (상위 60종 표시)' : '') : '찾는 학과가 없습니다.';
+        $('results').innerHTML = sorted
+          .slice(0, 60)
+          .map((g) => {
+            const list = g.list
+              .slice()
+              .sort((a, b) => schools[a[1]][1].localeCompare(schools[b[1]][1], 'ko'))
+              .map((r) => {
+                const s = schools[r[1]];
+                return `<tr><td><a href="${univBase}${s[0]}/">${esc(s[1])}</a> <span class="muted small">${s[3] === '전문대학' ? '전문대' : ''}</span></td><td class="small">${esc(r[0])}</td><td class="small">${esc(s[2])}</td><td class="small">${esc(r[3])}</td><td class="num">${r[4] || '-'}</td></tr>`;
+              })
+              .join('');
+            return `<details class="mj-group"><summary><span class="name">${esc(g.name)}</span><span class="muted small">${g.list.length}곳${g.byName ? '' : ' · 관련 직업 일치'}</span></summary>${g.jobs.size ? `<p class="mj-jobs">관련 직업: ${esc([...g.jobs].join(', '))}</p>` : ''}<div class="table-scroll"><table class="data"><thead><tr><th>대학</th><th>학과명</th><th>지역</th><th>연한</th><th class="num">정원</th></tr></thead><tbody>${list}</tbody></table></div></details>`;
+          })
+          .join('');
+        const first = $('results').querySelector('details');
+        if (first && sorted.length <= 3) first.open = true;
+      };
+      let t;
+      $('mq').addEventListener('input', () => { clearTimeout(t); t = setTimeout(render, 150); });
+      ['series', 'kind'].forEach((id) => $(id).addEventListener('input', render));
+      document.querySelectorAll('#popular .chip').forEach((b) =>
+        b.addEventListener('click', () => { $('mq').value = b.dataset.q; render(); $('mq').scrollIntoView({ behavior: 'smooth', block: 'center' }); }),
+      );
+      const p = new URLSearchParams(location.search).get('q');
+      if (p) { $('mq').value = p; }
+      render();
+    })();
+  </script>
+</Base>
