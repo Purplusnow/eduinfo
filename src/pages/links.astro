@@ -1,10 +1,12 @@
 ---
 import Base from '../layouts/Base.astro';
+import Ad from '../components/Ad.astro';
 import groups from '../data/links.json';
 ---
 <Base title="기관·사이트 모음" description="대입·수능·진로·장학 관련 공식 기관과 사이트 모음">
   <h1>기관·사이트 모음</h1>
   <p class="muted">입시 준비에 필요한 공식 사이트를 분야별로 정리했습니다.</p>
+  <Ad pos="top" />
   <div class="grid">
     {groups.map((g) => (
       <section class="card">

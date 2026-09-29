@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Ddays from '../components/Ddays.astro';
+import Ad from '../components/Ad.astro';
 import schedule from '../data/schedule.json';
 import { dday, fmtDate } from '../lib/site';
 
@@ -23,6 +24,7 @@ const state = (e: (typeof events)[number]) => {
     대학별 세부 일정(논술·면접일, 합격자 발표 시각)은 각 대학 모집요강을 확인하세요.
   </p>
   <Ddays limit={8} />
+  <Ad pos="top" />
 
   {GROUPS.map((g) => (
     <section>
@@ -43,6 +45,7 @@ const state = (e: (typeof events)[number]) => {
     </section>
   ))}
 
+  <Ad pos="bottom" />
   <h2>근거 자료</h2>
   <ul>
     {Object.values(sources).map((s) => <li><a href={s.url} target="_blank" rel="noopener">{s.name}</a></li>)}

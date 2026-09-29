@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import Ad from '../../components/Ad.astro';
 import { fmtDate, u } from '../../lib/site';
 
 const guides = (await getCollection('guides')).sort((a, b) => a.data.order - b.data.order);
@@ -10,6 +11,7 @@ const digests = (await getCollection('digests')).sort((a, b) => +b.data.date - +
 <Base title="입시 가이드" description="수시·정시·수능·전형 용어를 처음부터 이해할 수 있게 정리한 입시 가이드">
   <h1>입시 가이드</h1>
   <p class="muted">입시 제도를 처음 접하는 학생·학부모를 위한 정리글입니다. 각 글 아래에 근거 자료를 달았습니다.</p>
+  <Ad pos="top" />
   {groups.map((cat) => (
     <section>
       <h2>{cat}</h2>

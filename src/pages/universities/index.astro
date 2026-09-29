@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import Ad from '../../components/Ad.astro';
 import { fmtDate, u } from '../../lib/site';
 import { univ, displayName, fmtMetric, kindGroup, metricValue, type MetricId } from '../../lib/univ';
 
@@ -20,6 +21,7 @@ const withData = schools.filter((s) => metricValue(s, 'competition') != null).le
     {withData < schools.length && <> · 공시 지표는 매일 조금씩 채우는 중({withData}/{schools.length}곳)</>}
   </p>
 
+  <Ad pos="top" />
   <div class="univ-filters">
     <input class="filter-input" id="q" type="search" placeholder="대학 이름으로 찾기" />
     <select id="region" aria-label="지역">
@@ -69,6 +71,7 @@ const withData = schools.filter((s) => metricValue(s, 'competition') != null).le
       </tbody>
     </table>
   </div>
+  <Ad pos="bottom" />
   <p class="muted small">
     출처: 한국대학교육협의회 대학알리미(공공데이터포털 Open API). 경쟁률은 정원 내 신입생 기준, 등록금은 학생 1인당 연 평균입니다.
     열 제목을 누르면 정렬됩니다.

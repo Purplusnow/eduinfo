@@ -28,7 +28,7 @@ const { counts = {} } = Astro.props;
     const input = root.querySelector('input')!;
     const chips = [...root.querySelectorAll<HTMLButtonElement>('.chip')];
     const counter = root.querySelector<HTMLElement>('[data-count]')!;
-    const rows = [...list.querySelectorAll<HTMLElement>('li')];
+    const rows = [...list.querySelectorAll<HTMLElement>('li:not(.ad-li)')];
     const params = new URLSearchParams(location.search);
     let cat = params.get('cat') ?? '';
 

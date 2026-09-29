@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import ItemList from '../components/ItemList.astro';
 import Filter from '../components/Filter.astro';
+import Ad from '../components/Ad.astro';
 import { fmtDate, u, type Item } from '../lib/site';
 import official from '../data/official.json';
 
@@ -14,5 +15,6 @@ const items = official.items as Item[];
     <a href={u('/official.xml')}>RSS 구독</a>
   </p>
   <Filter />
-  <ItemList items={items} />
+  <Ad pos="top" />
+  <ItemList items={items} adEvery={15} />
 </Base>

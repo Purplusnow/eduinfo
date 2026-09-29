@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import Ad from '../../components/Ad.astro';
 import { u } from '../../lib/site';
 import { METRIC_INFO, univ, displayName, fmtMetric, homepageUrl, kindGroup, type MetricId, type School } from '../../lib/univ';
 import majorsData from '../../data/majors.json';
@@ -47,6 +48,8 @@ const desc = `${title}(${s.region}, ${s.estb} ${kindGroup(s)})의 신입생 경�
   <p class="muted small">
     {univ.year}년 대학알리미 공시 기준. "-"는 공시 값이 없거나 아직 수집하지 않은 항목입니다. 경쟁률은 정원 내 신입생 기준입니다.
   </p>
+
+  <Ad pos="top" />
 
   <h2>기본 정보</h2>
   <table class="data">
@@ -106,6 +109,7 @@ const desc = `${title}(${s.region}, ${s.estb} ${kindGroup(s)})의 신입생 경�
       </script>
     </>
   )}
+  <Ad pos="bottom" />
   <p class="muted small">출처: 한국대학교육협의회 대학알리미(공공데이터포털 Open API). 입학정원 0은 모집 중단·학부 통합 등으로 공시된 정원이 없는 경우입니다.</p>
 
   <style>

@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import Ad from '../components/Ad.astro';
 import { u } from '../lib/site';
 import majorsData from '../data/majors.json';
 
@@ -45,6 +46,7 @@ const popular = [...counts.values()].sort((a, b) => b.n - a.n).slice(0, 40);
     <h2>많이 개설된 학과</h2>
     <ul>{popular.map((p) => <li>{p.name} ({p.n}곳)</li>)}</ul>
   </noscript>
+  <Ad pos="top" />
   <section id="popular">
     <h2>많은 대학에 개설된 학과</h2>
     <div class="chips">
@@ -52,6 +54,7 @@ const popular = [...counts.values()].sort((a, b) => b.n - a.n).slice(0, 40);
     </div>
   </section>
 
+  <Ad pos="bottom" />
   <p class="muted small">
     출처: 한국대학교육협의회 대학알리미 학과 정보. 이름이 비슷한 학과(학과·학부·전공)는 하나로 묶었습니다. 정원 "-"는 모집 중단·학부 통합 등으로 공시된
     정원이 없는 경우입니다. 대학별 세부 모집 단위는 모집요강에서 확인하세요.

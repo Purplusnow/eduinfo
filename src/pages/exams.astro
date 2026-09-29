@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import Ad from '../components/Ad.astro';
 import { type Item } from '../lib/site';
 import exams from '../data/exams.json';
 
@@ -28,6 +29,7 @@ const years = [...byYear.keys()].sort((a, b) => b - a);
       </section>
     ))}
   </div>
+  <Ad pos="bottom" />
   <h2>더 찾아보기</h2>
   <ul>
     <li><a href="https://www.suneung.re.kr/boardCnts/list.do?boardID=1500234&m=0403&s=suneung" target="_blank" rel="noopener">평가원 수능 기출문제 전체 목록</a></li>

@@ -1,6 +1,7 @@
 ---
 // NEIS_API_KEY 로 schools.json 이 만들어졌을 때만 내용이 채워진다.
 import Base from '../layouts/Base.astro';
+import Ad from '../components/Ad.astro';
 import { fmtDate, u } from '../lib/site';
 
 type School = { id: string; name: string; region: string; type: string; track: string | null; founding: string; homepage: string | null; address: string };
@@ -16,6 +17,7 @@ const types = data ? [...new Set(data.items.map((s) => s.type))].sort((a, b) => 
   ) : (
     <>
       <p class="muted">NEIS 교육정보 개방 포털 기준 {data.items.length}개교 · {fmtDate(data.updatedAt)} 갱신 · <a href={u('/highschool/')}>시·도교육청 고입 공지 보기</a></p>
+      <Ad pos="top" />
       <input class="filter-input" id="school-q" type="search" placeholder="학교명·지역·계열로 찾기 (예: 과학, 부산, 외국어)" />
       {types.map((t) => (
         <section>

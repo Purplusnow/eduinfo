@@ -1,0 +1,22 @@
+---
+// 반응형 디스플레이 광고 한 칸. 위치(top/mid/bottom)별로 다른 광고 단위를 쓴다.
+import { ADSENSE_CLIENT, ADSENSE_SLOTS } from '../lib/site';
+
+interface Props {
+  pos?: keyof typeof ADSENSE_SLOTS;
+}
+const { pos = 'mid' } = Astro.props;
+const slot = ADSENSE_SLOTS[pos];
+---
+{ADSENSE_CLIENT && slot && (
+  <aside class="ad-slot" aria-label="광고" data-pagefind-ignore>
+    <ins
+      class="adsbygoogle"
+      style="display:block"
+      data-ad-client={ADSENSE_CLIENT}
+      data-ad-slot={slot}
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+    <script is:inline>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </aside>
+)}

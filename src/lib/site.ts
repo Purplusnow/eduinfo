@@ -6,6 +6,9 @@ export const SITE_DESC = '대입·고입 공식 발표, 뉴스, 일정, 전형 �
 // 검색엔진 소유 확인 코드(서치콘솔·서치어드바이저에서 "HTML 태그" 방식으로 받은 content 값). 비어 있으면 태그를 넣지 않는다.
 // Google 애드센스 게시자 ID(koreanblog.xyz 계정). 비우면 광고 스크립트를 넣지 않는다.
 export const ADSENSE_CLIENT = 'ca-pub-4640178123605595';
+// 수동 광고 단위(반응형 디스플레이). 지금은 horse 사이트와 같은 단위를 쓴다.
+// 입시 사이트 전용 단위를 만들면 여기 번호만 바꾸면 된다.
+export const ADSENSE_SLOTS = { top: '8186876073', mid: '5173699929', bottom: '1855723286' } as const;
 export const REPO_URL = 'https://github.com/Purplusnow/eduinfo';
 
 export const VERIFY = {

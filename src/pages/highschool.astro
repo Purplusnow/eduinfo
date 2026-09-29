@@ -2,6 +2,7 @@
 import { getEntry } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import ItemList from '../components/ItemList.astro';
+import Ad from '../components/Ad.astro';
 import { fmtDate, u, type Item } from '../lib/site';
 import official from '../data/official.json';
 
@@ -21,6 +22,7 @@ const guide = await getEntry('guides', 'highschool-admission');
     <a href={u('/schools/')}>전국 고등학교 찾기</a>
   </p>
 
+  <Ad pos="top" />
   <div class="hs-filter">
     <select id="office" aria-label="교육청">
       <option value="">전체 교육청</option>
@@ -28,7 +30,7 @@ const guide = await getEntry('guides', 'highschool-admission');
     </select>
     <span class="muted small" id="hs-count"></span>
   </div>
-  <ItemList items={items} showTags={false} />
+  <ItemList items={items} showTags={false} adEvery={15} />
 
   <p class="muted small">
     대전·충남·제주교육청은 사이트가 자동 수집을 허용하지 않고, 울산교육청은 보안 인증서 문제로 접속이 되지 않아 제외되었습니다. 해당 지역은 교육청 홈페이지에서 직접
@@ -42,7 +44,7 @@ const guide = await getEntry('guides', 'highschool-admission');
   <script is:inline>
     (() => {
       const sel = document.getElementById('office');
-      const rows = [...document.querySelectorAll('.items li')];
+      const rows = [...document.querySelectorAll('.items li:not(.ad-li)')];
       const apply = () => {
         let n = 0;
         rows.forEach((li) => {

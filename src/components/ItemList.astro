@@ -1,15 +1,20 @@
 ---
 import { categoryLabel, fmtDate, itemDate, type Item } from '../lib/site';
+import Ad from './Ad.astro';
 
 interface Props {
   items: Item[];
   showSummary?: boolean;
   showTags?: boolean;
+  /** n개마다 광고 한 칸(최대 maxAds개). 0이면 광고 없음 */
+  adEvery?: number;
+  maxAds?: number;
 }
-const { items, showSummary = false, showTags = true } = Astro.props;
+const { items, showSummary = false, showTags = true, adEvery = 0, maxAds = 2 } = Astro.props;
+const adAfter = (i: number) => adEvery > 0 && (i + 1) % adEvery === 0 && (i + 1) / adEvery <= maxAds && i < items.length - 1;
 ---
 <ul class="items">
-  {items.map((it) => (
+  {items.map((it, i) => (<>
     <li data-cats={it.categories.join(' ')} data-text={`${it.title} ${it.source}`}>
       <a class="title" href={it.url} target="_blank" rel="noopener">{it.title}</a>
       {showSummary && it.summary && <p class="summary">{it.summary}</p>}
@@ -19,5 +24,6 @@ const { items, showSummary = false, showTags = true } = Astro.props;
         {showTags && it.categories.map((c) => <span class="tag">{categoryLabel(c)}</span>)}
       </div>
     </li>
-  ))}
+    {adAfter(i) && <li class="ad-li"><Ad pos={(i + 1) / adEvery === 1 ? 'mid' : 'bottom'} /></li>}
+  </>))}
 </ul>

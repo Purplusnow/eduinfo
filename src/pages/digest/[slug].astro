@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import Ad from '../../components/Ad.astro';
 import { fmtDate, u } from '../../lib/site';
 
 export async function getStaticPaths() {
@@ -18,6 +19,8 @@ const { Content } = await render(d);
     {d.data.generated && (
       <p class="notice">이 브리핑은 한 주간 수집된 기사 제목과 공식 발표를 AI가 요약한 것입니다. 각 항목의 원문 링크에서 사실을 확인하세요.</p>
     )}
+    <Ad pos="top" />
     <Content />
+    <Ad pos="bottom" />
   </article>
 </Base>
