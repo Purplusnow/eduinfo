@@ -26,6 +26,10 @@ jobs:
   collect-and-build:
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    outputs:
+      message: ${{ steps.commit.outputs.message }}
+    env:
+      SUMMARY_FILE: ${{ runner.temp }}/summary.json
     steps:
       - uses: actions/checkout@v7
 
@@ -73,6 +77,7 @@ jobs:
             -o /dev/null -w "  텔레그램 %{http_code}\n" || true
 
       - name: 수집 결과 커밋
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -83,6 +88,11 @@ jobs:
             git commit -m "data: $(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M') 자동 수집"
             git pull --rebase --autostash
             git push
+            # 새 글이 있으면 배포 성공 뒤 보낼 텔레그램 메시지를 만들어 둔다
+            MSG=$(node collectors/notify-summary.mjs || true)
+            if [ -n "$MSG" ]; then
+              { echo 'message<<__MSG__'; echo "$MSG"; echo '__MSG__'; } >> "$GITHUB_OUTPUT"
+            fi
           fi
 
       - id: pages
@@ -125,4 +135,23 @@ jobs:
             "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
             --data-urlencode "chat_id=${TG_CHAT}" \
             --data-urlencode "text=$(printf '[입시정보] %s 빌드·배포 실패\n사이트가 갱신되지 않았습니다.\n\n%s' "$NOW" "$RUN_URL")" \
+            -o /dev/null -w "  텔레그램 %{http_code}\n" || true
+
+  # 새 글이 들어와 배포까지 끝나면 요약을 보낸다(바뀐 게 없으면 조용히 넘어감)
+  notify-success:
+    needs: [collect-and-build, deploy]
+    if: success() && needs.collect-and-build.outputs.message != ''
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          TG_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TG_CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+          BODY: ${{ needs.collect-and-build.outputs.message }}
+        run: |
+          [ -n "$TG_TOKEN" ] && [ -n "$TG_CHAT" ] || { echo "텔레그램 설정 없음"; exit 0; }
+          curl -sS --max-time 20 -X POST \
+            "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TG_CHAT}" \
+            --data-urlencode "disable_web_page_preview=true" \
+            --data-urlencode "text=${BODY}" \
             -o /dev/null -w "  텔레그램 %{http_code}\n" || true

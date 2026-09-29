@@ -193,5 +193,16 @@ for (const [id, r] of Object.entries(report)) {
 }
 await writeFile(path.join(DATA_DIR, 'status.json'), JSON.stringify(status, null, 1) + '\n');
 
+// 워크플로 알림용: 대학 지표 채움 현황을 요약 파일에 덧붙인다
+if (process.env.SUMMARY_FILE) {
+  let sum = {};
+  try {
+    sum = JSON.parse(await readFile(process.env.SUMMARY_FILE, 'utf8'));
+  } catch {}
+  const complete = store.schools.filter((s) => METRICS.every((m) => s.metrics[m.id]?.year === store.year)).length;
+  sum.univ = { complete, total: store.schools.length, year: store.year, fetched: report['univ-metrics']?.count ?? 0 };
+  await writeFile(process.env.SUMMARY_FILE, JSON.stringify(sum));
+}
+
 const filled = METRICS.map((m) => `${m.id} ${store.schools.filter((s) => s.metrics[m.id]?.year === store.year).length}/${store.schools.length}`);
 console.log(`공시연도 ${store.year} · 오늘 호출 ${JSON.stringify(meta.calls)} · ${filled.join(', ')}`);

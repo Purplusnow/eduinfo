@@ -60,7 +60,7 @@ function normalize(raw, src) {
 function merge(existing, incoming, { maxDays, maxItems }) {
   const byId = new Map(existing.map((it) => [it.id, it]));
   const titles = new Set(existing.map((it) => normTitle(it.title)));
-  let added = 0;
+  const newIds = new Set();
   for (const it of incoming) {
     const prev = byId.get(it.id);
     if (prev) {
@@ -71,7 +71,7 @@ function merge(existing, incoming, { maxDays, maxItems }) {
     if (titles.has(key)) continue; // 다른 피드에서 이미 받은 같은 기사
     titles.add(key);
     byId.set(it.id, it);
-    added++;
+    newIds.add(it.id);
   }
   const cutoff = now.getTime() - maxDays * 86400_000;
   const items = [...byId.values()]
@@ -84,7 +84,9 @@ function merge(existing, incoming, { maxDays, maxItems }) {
     }))
     .sort((a, b) => new Date(b.date ?? b.firstSeen) - new Date(a.date ?? a.firstSeen))
     .slice(0, maxItems);
-  return { items, added };
+  // 보관 기간 밖의 옛 글(게시판 고정글 등)은 신규로 치지 않는다
+  const addedItems = items.filter((it) => newIds.has(it.id));
+  return { items, added: addedItems.length, addedItems };
 }
 
 const status = await readJson('status.json', { sources: {} });
@@ -125,13 +127,21 @@ for (const [i, src] of targets.entries()) {
   };
 }
 
+const summary = {};
 for (const [kind, incoming] of Object.entries(buckets)) {
   if (!incoming.length) continue;
   const policy = RETENTION[kind];
   const store = await readJson(policy.file, { items: [] });
-  const { items, added } = merge(store.items, incoming, policy);
+  const { items, added, addedItems } = merge(store.items, incoming, policy);
   await writeJson(policy.file, { updatedAt: now.toISOString(), items });
   console.log(`→ ${policy.file}: 신규 ${added}건, 총 ${items.length}건`);
+  summary[kind] = addedItems;
+}
+
+// 워크플로의 텔레그램 성공 알림용 요약(SUMMARY_FILE 이 있을 때만)
+if (process.env.SUMMARY_FILE) {
+  const pick = (list = []) => list.map((it) => ({ title: it.title, source: it.source, sourceId: it.sourceId }));
+  await writeFile(process.env.SUMMARY_FILE, JSON.stringify({ news: pick(summary.news), official: pick(summary.official) }));
 }
 
 status.updatedAt = now.toISOString();
