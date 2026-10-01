@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-01T10:05:36.065Z",
+ "updatedAt": "2026-10-01T18:24:45.484Z",
  "items": [
   {
    "id": "a4488de12d36",
@@ -13,6 +13,32 @@
    "categories": [
     "etc",
     "highschool"
+   ]
+  },
+  {
+   "id": "df23c90fa26a",
+   "title": "2027학년도 고입 전형업무 각종 서식",
+   "url": "https://home.pen.go.kr/hischool/na/ntt/selectNttInfo.do?mi=12446&bbsId=4006&nttSn=1040731",
+   "date": "2026-10-01T03:00:00.000Z",
+   "firstSeen": "2026-10-01T18:24:45.484Z",
+   "source": "부산시교육청 고입포털",
+   "sourceId": "hs-busan",
+   "summary": "",
+   "categories": [
+    "highschool"
+   ]
+  },
+  {
+   "id": "6229999ce0e7",
+   "title": "2027학년도 수시모집 원서접수 마감시간 연장에 따른 추가 접수 현황 분석 및 향후 대응계획",
+   "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107331&lev=0&m=020402&s=moe&opType=N",
+   "date": "2026-09-30T03:00:00.000Z",
+   "firstSeen": "2026-10-01T18:24:45.484Z",
+   "source": "교육부 보도자료",
+   "sourceId": "moe",
+   "summary": "",
+   "categories": [
+    "susi"
    ]
   },
   {
