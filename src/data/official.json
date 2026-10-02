@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-02T00:46:21.966Z",
+ "updatedAt": "2026-10-02T09:43:35.672Z",
  "items": [
   {
    "id": "a4488de12d36",
@@ -2555,71 +2555,6 @@
    "firstSeen": "2026-09-28T08:37:12.571Z",
    "source": "전남교육청 진로진학지원센터",
    "sourceId": "hs-jeonnam",
-   "summary": "",
-   "categories": [
-    "highschool"
-   ]
-  },
-  {
-   "id": "ac4009c906f9",
-   "title": "2026학년도 부산광역시 고등학교 입학전형 온라인 설명회 자료(9. 2. 내용 추가 안내)",
-   "url": "https://home.pen.go.kr/hischool/na/ntt/selectNttInfo.do?mi=12446&bbsId=4006&nttSn=942989",
-   "date": "2025-08-28T03:00:00.000Z",
-   "firstSeen": "2026-09-28T08:37:12.571Z",
-   "source": "부산시교육청 고입포털",
-   "sourceId": "hs-busan",
-   "summary": "",
-   "categories": [
-    "highschool"
-   ]
-  },
-  {
-   "id": "fec39bc016ba",
-   "title": "2025학년도 고입 후기 일반고 내신 산출 및 원서접수 매뉴얼 안내",
-   "url": "https://jinhak.gen.go.kr/?sid=8&wbb=md:view;uid:217;",
-   "date": "2025-08-28T03:00:00.000Z",
-   "firstSeen": "2026-09-28T08:37:12.571Z",
-   "source": "광주광역시교육청 진로진학지원센터",
-   "sourceId": "hs-gwangju",
-   "summary": "",
-   "categories": [
-    "highschool"
-   ]
-  },
-  {
-   "id": "b0995e0a63e5",
-   "title": "2024학년도 고입 후기 일반고 내신 산출 및 원서접수 매뉴얼 안내",
-   "url": "https://jinhak.gen.go.kr/?sid=8&wbb=md:view;uid:216;",
-   "date": "2025-08-28T03:00:00.000Z",
-   "firstSeen": "2026-09-28T08:37:12.571Z",
-   "source": "광주광역시교육청 진로진학지원센터",
-   "sourceId": "hs-gwangju",
-   "summary": "",
-   "categories": [
-    "highschool"
-   ]
-  },
-  {
-   "id": "69ccfbb2b1e2",
-   "title": "2023학년도 고입 후기 일반고 내신 산출 및 원서접수 매뉴얼 안내",
-   "url": "https://jinhak.gen.go.kr/?sid=8&wbb=md:view;uid:215;",
-   "date": "2025-08-28T03:00:00.000Z",
-   "firstSeen": "2026-09-28T08:37:12.571Z",
-   "source": "광주광역시교육청 진로진학지원센터",
-   "sourceId": "hs-gwangju",
-   "summary": "",
-   "categories": [
-    "highschool"
-   ]
-  },
-  {
-   "id": "672dac1d49fa",
-   "title": "2022학년도 고입 후기 일반고 내신 산출 및 원서접수 매뉴얼 안내",
-   "url": "https://jinhak.gen.go.kr/?sid=8&wbb=md:view;uid:214;",
-   "date": "2025-08-28T03:00:00.000Z",
-   "firstSeen": "2026-09-28T08:37:12.571Z",
-   "source": "광주광역시교육청 진로진학지원센터",
-   "sourceId": "hs-gwangju",
    "summary": "",
    "categories": [
     "highschool"
