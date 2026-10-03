@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-03T16:15:46.247Z",
+ "updatedAt": "2026-10-03T21:12:28.434Z",
  "items": [
   {
    "id": "7010057",
@@ -2595,7 +2595,7 @@
    "founding": "사립",
    "coed": "여",
    "address": "서울특별시 은평구 연서로 117",
-   "homepage": "www.yale.hs.kr"
+   "homepage": "https://yale.sen.hs.kr/"
   },
   {
    "id": "7010101",
@@ -4520,7 +4520,7 @@
    "founding": "공립",
    "coed": "남여공학",
    "address": "부산광역시 영도구 중리북로21번길 5",
-   "homepage": "http://busport.hs.kr"
+   "homepage": "https://school.busanedu.net/busport-h/main.do"
   },
   {
    "id": "7150337",
@@ -6198,7 +6198,7 @@
    "id": "7310036",
    "name": "강화고등학교",
    "region": "인천광역시",
-   "type": "자율고",
+   "type": "일반고",
    "track": null,
    "founding": "공립",
    "coed": "남",
@@ -6209,7 +6209,7 @@
    "id": "7310201",
    "name": "강화여자고등학교",
    "region": "인천광역시",
-   "type": "일반고",
+   "type": "자율고",
    "track": null,
    "founding": "공립",
    "coed": "여",
@@ -11250,7 +11250,7 @@
    "type": "일반고",
    "track": null,
    "founding": "사립",
-   "coed": "남",
+   "coed": "남여공학",
    "address": "경기도 수원시 장안구 장안로 426-1",
    "homepage": "https://dongwon-h.goesw.kr"
   },
@@ -26328,7 +26328,7 @@
    "id": "9290096",
    "name": "제주고등학교",
    "region": "제주특별자치도",
-   "type": "특성화고",
+   "type": "일반고",
    "track": null,
    "founding": "공립",
    "coed": "남여공학",
@@ -26372,7 +26372,7 @@
    "id": "9290051",
    "name": "제주여자상업고등학교",
    "region": "제주특별자치도",
-   "type": "특성화고",
+   "type": "일반고",
    "track": null,
    "founding": "공립",
    "coed": "여",
