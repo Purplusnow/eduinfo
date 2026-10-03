@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-02T22:12:12.985Z",
+ "updatedAt": "2026-10-03T05:15:59.142Z",
  "items": [
   {
    "id": "a4488de12d36",
@@ -2529,32 +2529,6 @@
    "firstSeen": "2026-09-28T08:37:12.571Z",
    "source": "강원특별자치도교육청 고입자료실",
    "sourceId": "hs-gangwon",
-   "summary": "",
-   "categories": [
-    "highschool"
-   ]
-  },
-  {
-   "id": "caebf72c9c17",
-   "title": "2026학년도 부산광역시 고입 지체장애인심사 안내",
-   "url": "https://home.pen.go.kr/hischool/na/ntt/selectNttInfo.do?mi=12446&bbsId=4006&nttSn=943177",
-   "date": "2025-08-29T03:00:00.000Z",
-   "firstSeen": "2026-09-28T08:37:12.571Z",
-   "source": "부산시교육청 고입포털",
-   "sourceId": "hs-busan",
-   "summary": "",
-   "categories": [
-    "highschool"
-   ]
-  },
-  {
-   "id": "f49735966925",
-   "title": "2026학년도 평준화지역 후기학교 신입생 입학전형 기본계획",
-   "url": "https://www.jge.go.kr/jinro/na/ntt/selectNttInfo.do?mi=824&bbsId=396&nttSn=5152704",
-   "date": "2025-08-29T03:00:00.000Z",
-   "firstSeen": "2026-09-28T08:37:12.571Z",
-   "source": "전남교육청 진로진학지원센터",
-   "sourceId": "hs-jeonnam",
    "summary": "",
    "categories": [
     "highschool"
