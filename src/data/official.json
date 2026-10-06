@@ -1,6 +1,19 @@
 {
- "updatedAt": "2026-10-05T22:00:36.772Z",
+ "updatedAt": "2026-10-06T06:17:37.672Z",
  "items": [
+  {
+   "id": "aeda7a75804c",
+   "title": "“학생부 기록이 곧 경쟁력” 일반고 대상 학생부 컨설팅 운영",
+   "url": "https://www.jbe.go.kr/news/board/view.jbe?boardId=BBS_0000222&menuCd=DOM_000001201001000000&dataSid=1186267",
+   "date": "2026-10-06T03:00:00.000Z",
+   "firstSeen": "2026-10-06T06:17:37.672Z",
+   "source": "전북특별자치도교육청 보도자료",
+   "sourceId": "hs-jeonbuk",
+   "summary": "",
+   "categories": [
+    "highschool"
+   ]
+  },
   {
    "id": "a4488de12d36",
    "title": "[★검정고시 합격자] 2027 고등학교 입학전형 원서 접수 방법",
@@ -2516,19 +2529,6 @@
    "firstSeen": "2026-09-28T08:37:12.571Z",
    "source": "광주광역시교육청 진로진학지원센터",
    "sourceId": "hs-gwangju",
-   "summary": "",
-   "categories": [
-    "highschool"
-   ]
-  },
-  {
-   "id": "0fc9861a198c",
-   "title": "2026학년도 강원특별자치도교육감 입학전형 고등학교 신입생 전형요강(체육특기자 포함)",
-   "url": "https://www.gwe.go.kr/main/bbs/view.do?key=bTIzMDcyMTA2MDM1MTM%3D&bbsSn=43984",
-   "date": "2025-09-01T03:00:00.000Z",
-   "firstSeen": "2026-09-28T08:37:12.571Z",
-   "source": "강원특별자치도교육청 고입자료실",
-   "sourceId": "hs-gangwon",
    "summary": "",
    "categories": [
     "highschool"
