@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-07T05:56:26.354Z",
+ "updatedAt": "2026-10-07T13:19:37.844Z",
  "items": [
   {
    "id": "f4d03cda8ee5",
@@ -9,6 +9,19 @@
    "firstSeen": "2026-10-07T05:56:26.354Z",
    "source": "전북특별자치도교육청 보도자료",
    "sourceId": "hs-jeonbuk",
+   "summary": "",
+   "categories": [
+    "highschool"
+   ]
+  },
+  {
+   "id": "98705a838105",
+   "title": "[경남예술고 지원자용] 원서접수 사용자 매뉴얼",
+   "url": "https://highschool.gne.go.kr/s10/hsa/archive/noticeDetail.do?boardSeq=55",
+   "date": "2026-10-07T03:00:00.000Z",
+   "firstSeen": "2026-10-07T13:19:37.844Z",
+   "source": "경상남도교육청 고입포털",
+   "sourceId": "hs-gyeongnam",
    "summary": "",
    "categories": [
     "highschool"
