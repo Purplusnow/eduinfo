@@ -1,6 +1,19 @@
 {
- "updatedAt": "2026-10-06T22:38:58.182Z",
+ "updatedAt": "2026-10-07T05:56:26.354Z",
  "items": [
+  {
+   "id": "f4d03cda8ee5",
+   "title": "“영재학교 설립 필요해요” 78%... 전북과학고 영재학교 전환 인식조사",
+   "url": "https://www.jbe.go.kr/news/board/view.jbe?boardId=BBS_0000222&menuCd=DOM_000001201001000000&dataSid=1186740",
+   "date": "2026-10-07T03:00:00.000Z",
+   "firstSeen": "2026-10-07T05:56:26.354Z",
+   "source": "전북특별자치도교육청 보도자료",
+   "sourceId": "hs-jeonbuk",
+   "summary": "",
+   "categories": [
+    "highschool"
+   ]
+  },
   {
    "id": "aeda7a75804c",
    "title": "“학생부 기록이 곧 경쟁력” 일반고 대상 학생부 컨설팅 운영",
@@ -2503,32 +2516,6 @@
    "firstSeen": "2026-09-28T08:37:12.571Z",
    "source": "강원특별자치도교육청 고입자료실",
    "sourceId": "hs-gangwon",
-   "summary": "",
-   "categories": [
-    "highschool"
-   ]
-  },
-  {
-   "id": "c53c1b5a2786",
-   "title": "2026학년도 광주광역시 고등학교 신입생 입학 전형요강 바로알기 리플릿 안내",
-   "url": "https://jinhak.gen.go.kr/?sid=8&wbb=md:view;uid:219;",
-   "date": "2025-09-02T03:00:00.000Z",
-   "firstSeen": "2026-09-28T08:37:12.571Z",
-   "source": "광주광역시교육청 진로진학지원센터",
-   "sourceId": "hs-gwangju",
-   "summary": "",
-   "categories": [
-    "highschool"
-   ]
-  },
-  {
-   "id": "cfa3dca1ad4e",
-   "title": "[공고] 2026학년도 광주광역시 고등학교 신입생 입학 전형요강 공고",
-   "url": "https://jinhak.gen.go.kr/?sid=8&wbb=md:view;uid:218;",
-   "date": "2025-09-02T03:00:00.000Z",
-   "firstSeen": "2026-09-28T08:37:12.571Z",
-   "source": "광주광역시교육청 진로진학지원센터",
-   "sourceId": "hs-gwangju",
    "summary": "",
    "categories": [
     "highschool"
