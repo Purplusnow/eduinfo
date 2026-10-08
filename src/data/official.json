@@ -1,14 +1,27 @@
 {
- "updatedAt": "2026-10-08T00:58:53.570Z",
+ "updatedAt": "2026-10-08T10:32:03.426Z",
  "items": [
   {
    "id": "91dc5640adec",
    "title": "NEW 2027학년도 강원특별자치도 일반고 입학예정자 중 타시도 전출 예정 학생에 대한 시도별 입학 전 배정 계획 안내 (지속 업데이트 중)",
    "url": "https://www.gwe.go.kr/main/bbs/view.do?key=bTIzMDcyMTA2MDM1MTM%3D&bbsSn=56731",
-   "date": "2026-10-08T00:58:53.570Z",
+   "date": "2026-10-08T03:00:00.000Z",
    "firstSeen": "2026-10-08T00:58:53.570Z",
    "source": "강원특별자치도교육청 고입자료실",
    "sourceId": "hs-gangwon",
+   "summary": "",
+   "categories": [
+    "highschool"
+   ]
+  },
+  {
+   "id": "14ae9f3b56d0",
+   "title": "원서접수 관련 업무처리 매뉴얼(중학교 및 고등학교 교사용)",
+   "url": "https://highschool.gne.go.kr/s10/hsa/archive/noticeDetail.do?boardSeq=56",
+   "date": "2026-10-08T03:00:00.000Z",
+   "firstSeen": "2026-10-08T10:32:03.426Z",
+   "source": "경상남도교육청 고입포털",
+   "sourceId": "hs-gyeongnam",
    "summary": "",
    "categories": [
     "highschool"
@@ -35,6 +48,19 @@
    "firstSeen": "2026-10-07T13:19:37.844Z",
    "source": "경상남도교육청 고입포털",
    "sourceId": "hs-gyeongnam",
+   "summary": "",
+   "categories": [
+    "highschool"
+   ]
+  },
+  {
+   "id": "8e31270de4fb",
+   "title": "양평전자과학고, 2027학년도 신설 ‘미디어프로덕션과’ 중학생 대상 학과체험 개최",
+   "url": "https://www.goe.go.kr/goe/na/ntt/selectNttInfo.do?mi=10102&bbsId=1922&nttSn=2376740",
+   "date": "2026-10-07T03:00:00.000Z",
+   "firstSeen": "2026-10-08T10:32:03.426Z",
+   "source": "경기도교육청 보도자료",
+   "sourceId": "hs-gyeonggi",
    "summary": "",
    "categories": [
     "highschool"
