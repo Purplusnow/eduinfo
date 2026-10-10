@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-10T17:20:03.892Z",
+ "updatedAt": "2026-10-10T21:41:50.053Z",
  "items": [
   {
    "id": "7010057",
@@ -472,7 +472,7 @@
    "founding": "국립",
    "coed": "남여공학",
    "address": "서울특별시 금천구 시흥대로38길 62",
-   "homepage": "http://kugak-am.hs.kr"
+   "homepage": "https://kugak-am.sen.hs.kr"
   },
   {
    "id": "7010071",
@@ -2595,7 +2595,7 @@
    "founding": "사립",
    "coed": "여",
    "address": "서울특별시 은평구 연서로 117",
-   "homepage": "https://yale.sen.hs.kr/"
+   "homepage": "https://yale.sen.hs.kr"
   },
   {
    "id": "7010101",
@@ -4103,6 +4103,17 @@
    "coed": "남여공학",
    "address": "부산광역시 서구 망양로33번길 12",
    "homepage": "http://www.saja.hs.kr/"
+  },
+  {
+   "id": "       ",
+   "name": "부산가람고등학교",
+   "region": "부산광역시",
+   "type": "일반고",
+   "track": null,
+   "founding": "공립",
+   "coed": "남여공학",
+   "address": "부산광역시 강서구 영강길81번길 24",
+   "homepage": "http://"
   },
   {
    "id": "7150099",
@@ -19139,7 +19150,7 @@
    "founding": "사립",
    "coed": "여",
    "address": "전북특별자치도 정읍시 학산로 89",
-   "homepage": "http://www.h-s.hs.kr"
+   "homepage": "https://school.jbedu.kr/h-s"
   },
   {
    "id": "8321158",
@@ -22395,7 +22406,7 @@
    "founding": "사립",
    "coed": "남여공학",
    "address": "경상북도 경주시 안강읍 화전길 62-8",
-   "homepage": "https://school.gyo6.net/gj-yale/main.do?sysId=gj-yale"
+   "homepage": "https://school.gyo6.net/gj-yale"
   },
   {
    "id": "8750433",
@@ -26356,6 +26367,17 @@
    "coed": "남여공학",
    "address": "제주특별자치도 제주시 용담로 65",
    "homepage": "http://jnuh.jje.hs.kr"
+  },
+  {
+   "id": "9290227",
+   "name": "제주미래고등학교",
+   "region": "제주특별자치도",
+   "type": "특성화고",
+   "track": null,
+   "founding": "공립",
+   "coed": "남여공학",
+   "address": "제주특별자치도 제주시 문연로 5",
+   "homepage": "http://"
   },
   {
    "id": "9290071",
