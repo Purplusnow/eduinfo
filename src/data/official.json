@@ -1,6 +1,32 @@
 {
- "updatedAt": "2026-10-12T00:31:20.220Z",
+ "updatedAt": "2026-10-12T10:45:17.251Z",
  "items": [
+  {
+   "id": "6a87da26bde7",
+   "title": "2027학년도 타 시·도 일반고 입학예정자(합격자) 중 종전 광주광역시 전입 학생에 대한 일반고 입학 전 배정 계획",
+   "url": "https://jinhak.gen.go.kr/?sid=8&wbb=md:view;uid:235;",
+   "date": "2026-10-12T03:00:00.000Z",
+   "firstSeen": "2026-10-12T10:45:17.251Z",
+   "source": "광주광역시교육청 진로진학지원센터",
+   "sourceId": "hs-gwangju",
+   "summary": "",
+   "categories": [
+    "highschool"
+   ]
+  },
+  {
+   "id": "f85df4518a02",
+   "title": "새글2027학년도 영동고등학교 입학전형 시행 요강",
+   "url": "https://www.cbe.go.kr/cbe/na/ntt/selectNttInfo.do?mi=11465&bbsId=1779&nttSn=1580704",
+   "date": "2026-10-12T03:00:00.000Z",
+   "firstSeen": "2026-10-12T10:45:17.251Z",
+   "source": "충북교육청 고입시",
+   "sourceId": "hs-chungbuk",
+   "summary": "",
+   "categories": [
+    "highschool"
+   ]
+  },
   {
    "id": "71078a75bf0c",
    "title": "2027학년도 전국모집 고등학교 현황(경북)",
