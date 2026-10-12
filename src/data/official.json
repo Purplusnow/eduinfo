@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-12T10:45:17.251Z",
+ "updatedAt": "2026-10-12T21:15:30.126Z",
  "items": [
   {
    "id": "6a87da26bde7",
@@ -28,6 +28,19 @@
    ]
   },
   {
+   "id": "14ae9f3b56d0",
+   "title": "[교사용] 원서접수 관련 나이스 업무처리 매뉴얼",
+   "url": "https://highschool.gne.go.kr/s10/hsa/archive/noticeDetail.do?boardSeq=56",
+   "date": "2026-10-12T03:00:00.000Z",
+   "firstSeen": "2026-10-08T10:32:03.426Z",
+   "source": "경상남도교육청 고입포털",
+   "sourceId": "hs-gyeongnam",
+   "summary": "",
+   "categories": [
+    "highschool"
+   ]
+  },
+  {
    "id": "71078a75bf0c",
    "title": "2027학년도 전국모집 고등학교 현황(경북)",
    "url": "https://hischoolgbe.kr/online/board/hsMaterial01#54387",
@@ -48,19 +61,6 @@
    "firstSeen": "2026-10-08T00:58:53.570Z",
    "source": "강원특별자치도교육청 고입자료실",
    "sourceId": "hs-gangwon",
-   "summary": "",
-   "categories": [
-    "highschool"
-   ]
-  },
-  {
-   "id": "14ae9f3b56d0",
-   "title": "원서접수 관련 업무처리 매뉴얼(중학교 및 고등학교 교사용)",
-   "url": "https://highschool.gne.go.kr/s10/hsa/archive/noticeDetail.do?boardSeq=56",
-   "date": "2026-10-08T03:00:00.000Z",
-   "firstSeen": "2026-10-08T10:32:03.426Z",
-   "source": "경상남도교육청 고입포털",
-   "sourceId": "hs-gyeongnam",
    "summary": "",
    "categories": [
     "highschool"
