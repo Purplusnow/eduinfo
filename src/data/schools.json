@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-17T20:34:31.090Z",
+ "updatedAt": "2026-10-17T23:07:08.144Z",
  "items": [
   {
    "id": "7010057",
@@ -6228,17 +6228,6 @@
    "homepage": "http://ganghwagirls.icehs.kr"
   },
   {
-   "id": "       ",
-   "name": "검단3고등학교(설립예정)",
-   "region": "인천광역시",
-   "type": "일반고",
-   "track": null,
-   "founding": "공립",
-   "coed": "남여공학",
-   "address": "인천광역시 검단구 고산후로310번길 16",
-   "homepage": "http://"
-  },
-  {
    "id": "7310203",
    "name": "검단고등학교",
    "region": "인천광역시",
@@ -6811,6 +6800,17 @@
    "homepage": "inje.icehs.kr"
   },
   {
+   "id": "7310644",
+   "name": "인천검단가온고등학교",
+   "region": "인천광역시",
+   "type": "일반고",
+   "track": null,
+   "founding": "공립",
+   "coed": "남여공학",
+   "address": "인천광역시 검단구 고산후로310번길 16",
+   "homepage": "http://"
+  },
+  {
    "id": "7310057",
    "name": "인천고등학교",
    "region": "인천광역시",
@@ -6952,6 +6952,17 @@
    "coed": "남여공학",
    "address": "인천광역시 미추홀구 석정로 165",
    "homepage": "ipa.icehs.kr"
+  },
+  {
+   "id": "7310645",
+   "name": "인천도담고등학교",
+   "region": "인천광역시",
+   "type": "일반고",
+   "track": null,
+   "founding": "공립",
+   "coed": "여",
+   "address": "인천광역시 서해구 청라커낼로 217",
+   "homepage": "http://"
   },
   {
    "id": "7310191",
@@ -7326,17 +7337,6 @@
    "coed": "남여공학",
    "address": "인천광역시 부평구 굴포로 194-9",
    "homepage": "ijss.icehs.kr"
-  },
-  {
-   "id": "       ",
-   "name": "인천청라4고등학교(개교예정)",
-   "region": "인천광역시",
-   "type": "일반고",
-   "track": null,
-   "founding": "공립",
-   "coed": "여",
-   "address": "인천광역시 서해구 청라커낼로 217",
-   "homepage": "http://"
   },
   {
    "id": "7310375",
@@ -8227,7 +8227,7 @@
    "founding": "사립",
    "coed": "남여공학",
    "address": "전남광주통합특별시 광산구 월계로 117-8",
-   "homepage": "http://sdok.gen.hs.kr"
+   "homepage": "https://sdok.gen.hs.kr"
   },
   {
    "id": "7140393",
@@ -11065,7 +11065,7 @@
    "founding": "사립",
    "coed": "남여공학",
    "address": "경기도 남양주시 와부읍 덕소로 194",
-   "homepage": "http://deokso-h.goegn.kr"
+   "homepage": "http://deokso.hs.kr"
   },
   {
    "id": "7531328",
@@ -17566,7 +17566,7 @@
    "founding": "사립",
    "coed": "남여공학",
    "address": "충청북도 충주시 방아길 20",
-   "homepage": "chungju-ch.hs.kr"
+   "homepage": "https://school.cbe.go.kr/chungjuch-h"
   },
   {
    "id": "8000080",
@@ -20063,7 +20063,7 @@
    "founding": "사립",
    "coed": "여",
    "address": "전북특별자치도 전주시 완산구 경기전길 130",
-   "homepage": "http://www.sungsim.hs.kr"
+   "homepage": "https://school.jbedu.kr/sungsim"
   },
   {
    "id": "8321082",
@@ -24469,7 +24469,7 @@
    "id": "9010041",
    "name": "김해고등학교",
    "region": "경상남도",
-   "type": "일반고",
+   "type": "자율고",
    "track": null,
    "founding": "공립",
    "coed": "남",
@@ -25390,6 +25390,17 @@
    "homepage": "http://jangyu-h.gne.go.kr"
   },
   {
+   "id": "       ",
+   "name": "장평고등학교",
+   "region": "경상남도",
+   "type": "일반고",
+   "track": null,
+   "founding": "공립",
+   "coed": "남여공학",
+   "address": "경상남도 거제시 장평2로2길 22-9",
+   "homepage": "http://"
+  },
+  {
    "id": "9010699",
    "name": "증산고등학교",
    "region": "경상남도",
@@ -25564,6 +25575,17 @@
    "coed": "여",
    "address": "경상남도 창원시 진해구 병암북로4번길 41",
    "homepage": "http://jhsehwayeo-h.gne.go.kr"
+  },
+  {
+   "id": "       ",
+   "name": "진해신항고등학교",
+   "region": "경상남도",
+   "type": "일반고",
+   "track": null,
+   "founding": "공립",
+   "coed": "남여공학",
+   "address": "경상남도 창원시 진해구 신항동로 227",
+   "homepage": "http://"
   },
   {
    "id": "9010067",
@@ -26376,8 +26398,8 @@
    "track": null,
    "founding": "공립",
    "coed": "남여공학",
-   "address": "제주특별자치도 제주시 문연로 5",
-   "homepage": "http://"
+   "address": "제주특별자치도 제주시 1100로 3213",
+   "homepage": "https://school.jje.go.kr/mirae"
   },
   {
    "id": "9290071",
