@@ -1,6 +1,20 @@
 {
- "updatedAt": "2026-10-20T23:51:52.250Z",
+ "updatedAt": "2026-10-21T04:42:50.594Z",
  "items": [
+  {
+   "id": "2dd99ab3c9e6",
+   "title": "예비 고1 고교학점제 이해·대입 준비 돕는다",
+   "url": "https://www.jbe.go.kr/news/board/view.jbe?boardId=BBS_0000222&menuCd=DOM_000001201001000000&dataSid=1202124",
+   "date": "2026-10-21T03:00:00.000Z",
+   "firstSeen": "2026-10-21T04:42:50.594Z",
+   "source": "전북특별자치도교육청 보도자료",
+   "sourceId": "hs-jeonbuk",
+   "summary": "",
+   "categories": [
+    "policy",
+    "highschool"
+   ]
+  },
   {
    "id": "6dcf0664e3b7",
    "title": "안정적인 2027학년도 수능 시행을 위해 모든 부처가 힘을 모아 지원합니다",
@@ -2647,32 +2661,6 @@
    "firstSeen": "2026-09-28T08:37:12.571Z",
    "source": "전남교육청 진로진학지원센터",
    "sourceId": "hs-jeonnam",
-   "summary": "",
-   "categories": [
-    "highschool"
-   ]
-  },
-  {
-   "id": "1b4e3b868169",
-   "title": "2026학년도 강원특별자치도 직업계고 입학 안내서",
-   "url": "https://www.gwe.go.kr/main/bbs/view.do?key=bTIzMDcyMTA2MDM1MTM%3D&bbsSn=44466",
-   "date": "2025-09-16T03:00:00.000Z",
-   "firstSeen": "2026-09-28T08:37:12.571Z",
-   "source": "강원특별자치도교육청 고입자료실",
-   "sourceId": "hs-gangwon",
-   "summary": "",
-   "categories": [
-    "highschool"
-   ]
-  },
-  {
-   "id": "ef6e14d7d2e9",
-   "title": "강원특별자치도 특례 신입학 업무처리 지침 안내",
-   "url": "https://www.gwe.go.kr/main/bbs/view.do?key=bTIzMDcyMTA2MDM1MTM%3D&bbsSn=44436",
-   "date": "2025-09-16T03:00:00.000Z",
-   "firstSeen": "2026-09-28T08:37:12.571Z",
-   "source": "강원특별자치도교육청 고입자료실",
-   "sourceId": "hs-gangwon",
    "summary": "",
    "categories": [
     "highschool"
