@@ -1,6 +1,19 @@
 {
- "updatedAt": "2026-10-23T04:45:55.511Z",
+ "updatedAt": "2026-10-23T11:35:16.599Z",
  "items": [
+  {
+   "id": "796f40b9dbea",
+   "title": "2027학년도 인천광역시 평준화지역 일반고등학교 입학 전 배정 계획 알림",
+   "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10889&bbsId=1618&nttSn=3387196",
+   "date": "2026-10-23T03:00:00.000Z",
+   "firstSeen": "2026-10-23T11:35:16.599Z",
+   "source": "인천시교육청 고등학교입학자료실",
+   "sourceId": "hs-incheon",
+   "summary": "",
+   "categories": [
+    "highschool"
+   ]
+  },
   {
    "id": "0631f146d5ad",
    "title": "2027학년도 경기도 고등학교 입학 전 배정 및 전학 계획 안내",
@@ -10,6 +23,19 @@
    "source": "경기도교육청 고등학교 입학전학 포털",
    "sourceId": "hs-gyeonggi",
    "summary": "2027학년도 경기도 고등학교 입학 전 배정 및 전학 계획을 붙임과 같이 안내합니다.",
+   "categories": [
+    "highschool"
+   ]
+  },
+  {
+   "id": "48c04a7b06d5",
+   "title": "양평전자과학고, 미래 첨단기술 인재 양성을 위한 ‘피지컬 AI 기술 특강’ 운영",
+   "url": "https://www.goe.go.kr/goe/na/ntt/selectNttInfo.do?mi=10102&bbsId=1922&nttSn=2378713",
+   "date": "2026-10-22T03:00:00.000Z",
+   "firstSeen": "2026-10-23T11:35:16.599Z",
+   "source": "경기도교육청 보도자료",
+   "sourceId": "hs-gyeonggi",
+   "summary": "",
    "categories": [
     "highschool"
    ]
