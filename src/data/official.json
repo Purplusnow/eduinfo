@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-23T21:22:57.752Z",
+ "updatedAt": "2026-10-24T04:33:30.770Z",
  "items": [
   {
    "id": "796f40b9dbea",
@@ -2661,45 +2661,6 @@
    "firstSeen": "2026-09-28T08:37:12.571Z",
    "source": "부산시교육청 고입포털",
    "sourceId": "hs-busan",
-   "summary": "",
-   "categories": [
-    "highschool"
-   ]
-  },
-  {
-   "id": "9af6fd4c48cf",
-   "title": "2026학년도 나이스 기반 고입 시스템 매뉴얼(고등학교)",
-   "url": "https://www.jge.go.kr/jinro/na/ntt/selectNttInfo.do?mi=824&bbsId=396&nttSn=5154366",
-   "date": "2025-09-19T03:00:00.000Z",
-   "firstSeen": "2026-09-28T08:37:12.571Z",
-   "source": "전남교육청 진로진학지원센터",
-   "sourceId": "hs-jeonnam",
-   "summary": "",
-   "categories": [
-    "highschool"
-   ]
-  },
-  {
-   "id": "321acf48ca02",
-   "title": "2026학년도 나이스 기반 고입 시스템 매뉴얼(중학교)",
-   "url": "https://www.jge.go.kr/jinro/na/ntt/selectNttInfo.do?mi=824&bbsId=396&nttSn=5154365",
-   "date": "2025-09-19T03:00:00.000Z",
-   "firstSeen": "2026-09-28T08:37:12.571Z",
-   "source": "전남교육청 진로진학지원센터",
-   "sourceId": "hs-jeonnam",
-   "summary": "",
-   "categories": [
-    "highschool"
-   ]
-  },
-  {
-   "id": "815b94974224",
-   "title": "2026학년도 전라남도 고등학교 입학전형 설명자료",
-   "url": "https://www.jge.go.kr/jinro/na/ntt/selectNttInfo.do?mi=824&bbsId=396&nttSn=5154363",
-   "date": "2025-09-19T03:00:00.000Z",
-   "firstSeen": "2026-09-28T08:37:12.571Z",
-   "source": "전남교육청 진로진학지원센터",
-   "sourceId": "hs-jeonnam",
    "summary": "",
    "categories": [
     "highschool"
