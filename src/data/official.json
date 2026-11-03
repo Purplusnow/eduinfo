@@ -1,6 +1,32 @@
 {
- "updatedAt": "2026-11-02T21:41:23.055Z",
+ "updatedAt": "2026-11-03T06:44:24.544Z",
  "items": [
+  {
+   "id": "07f7340b5581",
+   "title": "2027학년도 고등학교 입학 선호도 조사(2차) 결과 알림",
+   "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10889&bbsId=1618&nttSn=3388031",
+   "date": "2026-11-03T03:00:00.000Z",
+   "firstSeen": "2026-11-03T06:44:24.544Z",
+   "source": "인천시교육청 고등학교입학자료실",
+   "sourceId": "hs-incheon",
+   "summary": "",
+   "categories": [
+    "highschool"
+   ]
+  },
+  {
+   "id": "b066a947278b",
+   "title": "경기과학고, 미래 과학인재의 꿈을 잇는「Science Dream Bridge」 개최",
+   "url": "https://www.goe.go.kr/goe/na/ntt/selectNttInfo.do?mi=10102&bbsId=1922&nttSn=2380025",
+   "date": "2026-11-02T03:00:00.000Z",
+   "firstSeen": "2026-11-03T06:44:24.544Z",
+   "source": "경기도교육청 보도자료",
+   "sourceId": "hs-gyeonggi",
+   "summary": "",
+   "categories": [
+    "highschool"
+   ]
+  },
   {
    "id": "44c05c8be063",
    "title": "2027학년도 부산광역시 고등학교 진학 안내 리플릿",
@@ -88,6 +114,19 @@
    "firstSeen": "2026-10-29T09:55:11.515Z",
    "source": "인천시교육청 고등학교입학자료실",
    "sourceId": "hs-incheon",
+   "summary": "",
+   "categories": [
+    "highschool"
+   ]
+  },
+  {
+   "id": "5ab3ac0ea4d4",
+   "title": "성남외국어고등학교, UN 글로벌 아카데미 평화 리더단 교내 평화 캠페인 개최",
+   "url": "https://www.goe.go.kr/goe/na/ntt/selectNttInfo.do?mi=10102&bbsId=1922&nttSn=2380112",
+   "date": "2026-10-29T03:00:00.000Z",
+   "firstSeen": "2026-11-03T06:44:24.544Z",
+   "source": "경기도교육청 보도자료",
+   "sourceId": "hs-gyeonggi",
    "summary": "",
    "categories": [
     "highschool"
@@ -2767,19 +2806,6 @@
    "firstSeen": "2026-09-28T08:37:12.571Z",
    "source": "광주광역시교육청 진로진학지원센터",
    "sourceId": "hs-gwangju",
-   "summary": "",
-   "categories": [
-    "highschool"
-   ]
-  },
-  {
-   "id": "c4bec191af25",
-   "title": "2026학년도 전후기 고등학교 전형업무관계자회의 PPT자료",
-   "url": "https://home.pen.go.kr/hischool/na/ntt/selectNttInfo.do?mi=12446&bbsId=4006&nttSn=950610",
-   "date": "2025-09-29T03:00:00.000Z",
-   "firstSeen": "2026-09-28T08:37:12.571Z",
-   "source": "부산시교육청 고입포털",
-   "sourceId": "hs-busan",
    "summary": "",
    "categories": [
     "highschool"
