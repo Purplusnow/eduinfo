@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-05T17:22:43.634Z",
+ "updatedAt": "2026-11-05T23:37:14.474Z",
  "items": [
   {
    "id": "976b5e963267",
@@ -16782,57 +16782,6 @@
    "date": "2026-09-22T00:00:00.000Z",
    "firstSeen": "2026-09-28T05:57:13.798Z",
    "source": "월간중앙",
-   "sourceId": "google-news",
-   "summary": "",
-   "categories": []
-  },
-  {
-   "id": "d292f690aa2e",
-   "title": "수시 먹통 후 구제도 공정성 논란…\"장관 책임져야\"",
-   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1yeDhzVS1kYXJZMUMwdUFEeFdfd3hzN0p4QUZNdFJNdVMzZUhra2VPS040Sl92c0dVd1QtUDlvTVNUZVJMTnR1ZGZlQlk5VjRkV0xvdnJwdkRSckZLcWtZ?oc=5",
-   "date": "2026-09-21T23:32:30.000Z",
-   "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "한국교육신문",
-   "sourceId": "google-news",
-   "summary": "",
-   "categories": [
-    "susi",
-    "policy"
-   ]
-  },
-  {
-   "id": "fd231a40ac87",
-   "title": "‘의대 불패’ 마침내 깨지나…中 명문 의대 합격선 1300계단 ‘뚝’, AI·로봇 뜬다",
-   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9ySlBCbmRVWHRvcUxWTEl5MkxmeUNZVExZSUpPbHJZZEZLeGZrRFBodmx4ODNXV1paeWZFWFFtZFFOYlc3ckVfNFZwTUc0eFVoUEFvaGt3?oc=5",
-   "date": "2026-09-21T22:54:25.000Z",
-   "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "헤럴드경제",
-   "sourceId": "google-news",
-   "summary": "",
-   "categories": [
-    "medical"
-   ]
-  },
-  {
-   "id": "438f95fa67f3",
-   "title": "수능 앞둔 수험생 피로·집중력 저하…생활 리듬부터 살펴야",
-   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFB1LVBOUWN6UFhHSnBZZl9pMmJXM1drYnBkZWttRGVhbnZqWnpEczliU2dOdEs3MHQtYVdwLXpmSERXQi1UTTY5QjRZVW9aQ0ZDS0owQVZfV0J2RVhLV0RTN2xhTlBPWEpGNXZlU2dBMW1kdw?oc=5",
-   "date": "2026-09-21T22:04:53.000Z",
-   "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "인더스트리뉴스",
-   "sourceId": "google-news",
-   "summary": "",
-   "categories": [
-    "suneung"
-   ]
-  },
-  {
-   "id": "0dd2bd55850d",
-   "title": "영등포구, 학교로 찾아가는 맞춤형 입시 지원",
-   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAwdGlFajR6ZDhZZ1gzWVpvOGkwZkNsYXdKNGJUTjV3Zll2MEZvWVF6cEhqeGZUZ2RBcEhUbGNnWTZ3b2l6YTlFMkxuYm5hd3RqUHJSOG1B?oc=5",
-   "date": "2026-09-21T21:48:08.000Z",
-   "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "헤럴드경제",
    "sourceId": "google-news",
    "summary": "",
    "categories": []
