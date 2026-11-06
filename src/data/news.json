@@ -1,11 +1,48 @@
 {
- "updatedAt": "2026-11-06T16:44:26.557Z",
+ "updatedAt": "2026-11-06T23:05:55.005Z",
  "items": [
+  {
+   "id": "56af56521da9",
+   "title": "[인터뷰] 재불 작가 목수정 “한국은 경쟁을 말하고 프랑스는 연대를 가르쳤다”",
+   "url": "https://www.edupress.kr/news/articleView.html?idxno=30593",
+   "date": "2026-11-06T23:05:55.005Z",
+   "firstSeen": "2026-11-06T23:05:55.005Z",
+   "source": "에듀프레스",
+   "sourceId": "edupress",
+   "summary": "에듀프레스 장재훈 기자 = 프랑스 고교생들이 열악한 교육환경과 교육 불평등에 항의하며 거리로 나섰다. 교사 부족과 낡은 학교 시설, 교육재정 축소, 대입제도 불평등에 대한 불만이 시위의 불씨가 됐지만 학생들의 요구는 자신들의 권리를 넘어 교육 기회의 평등과 사회적 연대로 확장되고 있다. 오직 대학 진학만을 위한 경쟁 중…",
+   "categories": []
+  },
+  {
+   "id": "1eb91dc674d9",
+   "title": "2027학년도 수능 11월 9일 실시…국·수 변별력↑, 영어는 ‘변수’ 가능성",
+   "url": "https://news.unn.net/news/articleView.html?idxno=600138",
+   "date": "2026-11-06T17:48:13.000Z",
+   "firstSeen": "2026-11-06T16:44:26.557Z",
+   "source": "한국대학신문",
+   "sourceId": "unn",
+   "summary": "[한국대학신문 박인규 기자] 2027학년도 대학수학능력시험이 10일 앞으로 다가온 가운데, 국어·수학·영어 과목 모두 변별력 있게 출제될 것으로 예상된다. 수험생들은 다소 어려운 난이도를 염두에 두고 남은 기간 심리적 안정에 신경 써야 할 것으로 보인다.최근 스마트안경 등 부정행위 방지 이슈가 부각되고 있으나 평소와 다…",
+   "categories": [
+    "suneung"
+   ]
+  },
+  {
+   "id": "318ed11e703b",
+   "title": "한국기술교육대, ‘2026 STEP 학습 우수사례 공모전’ 시상식 개최",
+   "url": "https://news.unn.net/news/articleView.html?idxno=600164",
+   "date": "2026-11-06T17:25:37.000Z",
+   "firstSeen": "2026-11-06T16:44:26.557Z",
+   "source": "한국대학신문",
+   "sourceId": "unn",
+   "summary": "[한국대학신문 김연주 기자] 한국기술교육대학교(KOREATECH·총장 유길상) 온라인평생교육원(원장 한연희)은 고용노동부와 공동으로 추진한 ‘2026년 스마트 직업훈련 플랫폼 STEP 학습 우수사례 공모전’ 시상식을 6일 서울 드래곤시티에서 개최했다.이번 공모전은 온라인 직업훈련 플랫폼 STEP을 활용해 취업과 업무역량…",
+   "categories": [
+    "etc"
+   ]
+  },
   {
    "id": "d1501ec8e2e2",
    "title": "전주비전대 국토정보건설과 김지성 학과장 '국가공간정보발전 유공' 국토교통부 장관 표창 수상",
    "url": "https://www.veritas-a.com/news/articleView.html?idxno=635773",
-   "date": "2026-11-06T16:44:26.557Z",
+   "date": "2026-11-06T17:16:44.000Z",
    "firstSeen": "2026-11-06T16:44:26.557Z",
    "source": "베리타스알파",
    "sourceId": "veritas",
@@ -15,10 +52,23 @@
    ]
   },
   {
+   "id": "45097277eb3b",
+   "title": "교직 개방? 교원수급 보완? …국교위, 외부 전문가 교사 임용 다음 주 가닥",
+   "url": "https://www.edupress.kr/news/articleView.html?idxno=30592",
+   "date": "2026-11-06T17:15:16.000Z",
+   "firstSeen": "2026-11-06T16:44:26.557Z",
+   "source": "에듀프레스",
+   "sourceId": "edupress",
+   "summary": "에듀프레스 장재훈 기자 = 국가교육위원회에서 교원자격증이 없는 외부 전문가를 교사로 활용하는 방안이 논의되고 있다. 게임·웹툰 등 기존 교원자격 표시과목만으로는 교사 수급이 어려운 분야의 전문 인력을 확보하기 위한 취지다.고교학점제 시행으로 학교에서 개설하는 과목이 다양해지면서 기존 교원자격체계만으로는 담당 교사를 확보…",
+   "categories": [
+    "policy"
+   ]
+  },
+  {
    "id": "c9bedbdaf3c9",
    "title": "[2027대입잣대] 상위15개대 기부금 연대 1위 ‘996억원'.. 고대 서울대 이대 성대 톱5",
    "url": "https://www.veritas-a.com/news/articleView.html?idxno=635733",
-   "date": "2026-11-06T16:44:26.557Z",
+   "date": "2026-11-06T17:05:20.000Z",
    "firstSeen": "2026-11-06T16:44:26.557Z",
    "source": "베리타스알파",
    "sourceId": "veritas",
@@ -29,7 +79,7 @@
    "id": "16697b27ba29",
    "title": "[2027수시] 면접/논술 대학별고사 대비 전략.. '내 학생부 해부부터 모의논술 분석까지'",
    "url": "https://www.veritas-a.com/news/articleView.html?idxno=635671",
-   "date": "2026-11-06T16:44:26.557Z",
+   "date": "2026-11-06T16:58:00.000Z",
    "firstSeen": "2026-11-06T16:44:26.557Z",
    "source": "베리타스알파",
    "sourceId": "veritas",
@@ -43,7 +93,7 @@
    "id": "99ef70de2faa",
    "title": "광주대 국제협력처 어학연수생 '한국어 겨루기' 특별활동",
    "url": "https://www.veritas-a.com/news/articleView.html?idxno=635763",
-   "date": "2026-11-06T16:44:26.557Z",
+   "date": "2026-11-06T16:57:09.000Z",
    "firstSeen": "2026-11-06T16:44:26.557Z",
    "source": "베리타스알파",
    "sourceId": "veritas",
@@ -54,7 +104,7 @@
    "id": "0fa0bdc4829a",
    "title": "[단독] ‘보훈’ 2028 대입문호 얼마나 되나.. '5·18민주유공자'주요22개대 2586명, 의대 5개교 18명 ‘지원 가능’",
    "url": "https://www.veritas-a.com/news/articleView.html?idxno=635360",
-   "date": "2026-11-06T16:44:26.557Z",
+   "date": "2026-11-06T16:55:15.000Z",
    "firstSeen": "2026-11-06T16:44:26.557Z",
    "source": "베리타스알파",
    "sourceId": "veritas",
@@ -68,52 +118,13 @@
    "id": "f9648dc4715e",
    "title": "국립목포해양대-강원도립대 교육 연계/미래해양인재 양성 위해 맞손",
    "url": "https://www.veritas-a.com/news/articleView.html?idxno=635760",
-   "date": "2026-11-06T16:44:26.557Z",
+   "date": "2026-11-06T16:50:28.000Z",
    "firstSeen": "2026-11-06T16:44:26.557Z",
    "source": "베리타스알파",
    "sourceId": "veritas",
    "summary": "[베리타스알파=박병언 기자] 국립목포해양대가 강원도립대와 교육 연계 체계 구축/미래해양인재 양성을 위한 협력에 나섰다. 양 대학은 6일 '교육 연계/미래해양인재 양성을 위한 업무협약'을 체결했다. 이번 협약에 따라 양 대학은 학사과정 간 교육과정을 연계/개발하고 연계교육과정 이수자의 진학/편입학을 지원하는 등 교육과정의…",
    "categories": [
     "etc"
-   ]
-  },
-  {
-   "id": "1eb91dc674d9",
-   "title": "2027학년도 수능 11월 9일 실시…국·수 변별력↑, 영어는 ‘변수’ 가능성",
-   "url": "https://news.unn.net/news/articleView.html?idxno=600138",
-   "date": "2026-11-06T16:44:26.557Z",
-   "firstSeen": "2026-11-06T16:44:26.557Z",
-   "source": "한국대학신문",
-   "sourceId": "unn",
-   "summary": "[한국대학신문 박인규 기자] 2027학년도 대학수학능력시험이 10일 앞으로 다가온 가운데, 국어·수학·영어 과목 모두 변별력 있게 출제될 것으로 예상된다. 수험생들은 다소 어려운 난이도를 염두에 두고 남은 기간 심리적 안정에 신경 써야 할 것으로 보인다.최근 스마트안경 등 부정행위 방지 이슈가 부각되고 있으나 평소와 다…",
-   "categories": [
-    "suneung"
-   ]
-  },
-  {
-   "id": "318ed11e703b",
-   "title": "한국기술교육대, ‘2026 STEP 학습 우수사례 공모전’ 시상식 개최",
-   "url": "https://news.unn.net/news/articleView.html?idxno=600164",
-   "date": "2026-11-06T16:44:26.557Z",
-   "firstSeen": "2026-11-06T16:44:26.557Z",
-   "source": "한국대학신문",
-   "sourceId": "unn",
-   "summary": "[한국대학신문 김연주 기자] 한국기술교육대학교(KOREATECH·총장 유길상) 온라인평생교육원(원장 한연희)은 고용노동부와 공동으로 추진한 ‘2026년 스마트 직업훈련 플랫폼 STEP 학습 우수사례 공모전’ 시상식을 6일 서울 드래곤시티에서 개최했다.이번 공모전은 온라인 직업훈련 플랫폼 STEP을 활용해 취업과 업무역량…",
-   "categories": [
-    "etc"
-   ]
-  },
-  {
-   "id": "45097277eb3b",
-   "title": "교직 개방? 교원수급 보완? …국교위, 외부 전문가 교사 임용 다음 주 가닥",
-   "url": "https://www.edupress.kr/news/articleView.html?idxno=30592",
-   "date": "2026-11-06T16:44:26.557Z",
-   "firstSeen": "2026-11-06T16:44:26.557Z",
-   "source": "에듀프레스",
-   "sourceId": "edupress",
-   "summary": "에듀프레스 장재훈 기자 = 국가교육위원회에서 교원자격증이 없는 외부 전문가를 교사로 활용하는 방안이 논의되고 있다. 게임·웹툰 등 기존 교원자격 표시과목만으로는 교사 수급이 어려운 분야의 전문 인력을 확보하기 위한 취지다.고교학점제 시행으로 학교에서 개설하는 과목이 다양해지면서 기존 교원자격체계만으로는 담당 교사를 확보…",
-   "categories": [
-    "policy"
    ]
   },
   {
@@ -16473,56 +16484,6 @@
     "suneung",
     "jeongsi"
    ]
-  },
-  {
-   "id": "799d62dcf302",
-   "title": "\"라디오 같아서 공부하는 기분이 안 들어요\" 교육부xEBS, '아이돌이 들려주는 수능 한국사' 5개월의 여정 마무리",
-   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBvOEZsWXRtaFJNRGxhQlFKUXNRbl9Za0tUYmhWSEpramwxVXZ3bkJPWUpIcUkzY0ZDRENyb2JZeFRTdXA1YzVIZzVULTJ3Yl9NUllxcUFPSm9nWW5aV2FFaWZmVTlRQ29sR2l5NA?oc=5",
-   "date": "2026-09-22T23:00:45.000Z",
-   "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "베리타스알파",
-   "sourceId": "google-news",
-   "summary": "",
-   "categories": [
-    "suneung"
-   ]
-  },
-  {
-   "id": "ef119d0a2efd",
-   "title": "2027 자연계 편입수험생 76% \"목표는 공학\"..\"학벌 상승 넘어 유망전공까지\"",
-   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9qdnhQcFo3ZVB6ZkcwTTh2aW5XRVJPZEJ3RFlNYlloNUxHUmFVdHNDRndOTE1wdUowVlVlVXo5dkFrUURVc3dJVmM1MENXQk14WXpqMS1IUjEtUkdPOXZjdlB6ZUF0UnR6Q1NWOA?oc=5",
-   "date": "2026-09-22T23:00:00.000Z",
-   "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "베리타스알파",
-   "sourceId": "google-news",
-   "summary": "",
-   "categories": [
-    "etc"
-   ]
-  },
-  {
-   "id": "6c0f2f81d0e4",
-   "title": "[거인의어깨 입시컨설팅] 수능 대비 마무리·최종 점검 전략",
-   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1YT0M2SmNDYllCZHBzUlhxbFdYVmxBclU2c1VnSTdBOHJISEFpVWZubjNib2o3dnNzU1c5ZjFJdTg5Vjc2MW1nNG94dDF6TTZjbUYtTlpndDRJSE5s?oc=5",
-   "date": "2026-09-22T22:00:00.000Z",
-   "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "뉴스핌",
-   "sourceId": "google-news",
-   "summary": "",
-   "categories": [
-    "suneung"
-   ]
-  },
-  {
-   "id": "8ee5551a3023",
-   "title": "덕성여대, 이화여대병설미디어고서 진로·취업 프로그램 운영",
-   "url": "https://news.unn.net/news/articleView.html?idxno=597888",
-   "date": "2026-09-22T17:32:00.000Z",
-   "firstSeen": "2026-09-28T05:32:56.398Z",
-   "source": "한국대학신문",
-   "sourceId": "unn",
-   "summary": "[한국대학신문 김윤미 기자] 덕성여자대학교(총장 민재홍) 대학일자리플러스센터는 지난 2일 이화여자대학교병설미디어고등학교를 찾아 직업계고 학생들의 취업역량 강화를 위한 진로·취업 프로그램을 운영했다.이번 프로그램은 직업계고 지역청년 고용지원 사업인 ‘서울북부 청년이루다(I-RuDA)’와 연계해 마련됐으며, 이화여자대학교병…",
-   "categories": []
   }
  ]
 }
