@@ -1,6 +1,20 @@
 {
- "updatedAt": "2026-11-05T23:37:14.474Z",
+ "updatedAt": "2026-11-06T06:38:52.204Z",
  "items": [
+  {
+   "id": "c0b367326ba5",
+   "title": "새글2027학년도 충북예술고등학교 추가모집 요강",
+   "url": "https://www.cbe.go.kr/cbe/na/ntt/selectNttInfo.do?mi=11465&bbsId=1779&nttSn=1581862",
+   "date": "2026-11-06T03:00:00.000Z",
+   "firstSeen": "2026-11-06T06:38:52.204Z",
+   "source": "충북교육청 고입시",
+   "sourceId": "hs-chungbuk",
+   "summary": "",
+   "categories": [
+    "jeongsi",
+    "highschool"
+   ]
+  },
   {
    "id": "628923fbab15",
    "title": "NEW 2027학년도 교육감입학전형 거리산출 프로그램(근거리 우선배정 및 원거리 배제배정)",
@@ -9,6 +23,19 @@
    "firstSeen": "2026-11-05T06:42:07.023Z",
    "source": "강원특별자치도교육청 고입자료실",
    "sourceId": "hs-gangwon",
+   "summary": "",
+   "categories": [
+    "highschool"
+   ]
+  },
+  {
+   "id": "7615575f8d6a",
+   "title": "한국모빌리티고, 2027학년도 고입 경쟁률 120%”조기 돌파",
+   "url": "https://www.goe.go.kr/goe/na/ntt/selectNttInfo.do?mi=10102&bbsId=1922&nttSn=2380632",
+   "date": "2026-11-05T03:00:00.000Z",
+   "firstSeen": "2026-11-06T06:38:52.204Z",
+   "source": "경기도교육청 보도자료",
+   "sourceId": "hs-gyeonggi",
    "summary": "",
    "categories": [
     "highschool"
