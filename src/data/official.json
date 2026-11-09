@@ -1,6 +1,30 @@
 {
- "updatedAt": "2026-11-08T22:00:48.174Z",
+ "updatedAt": "2026-11-09T06:21:17.230Z",
  "items": [
+  {
+   "id": "56d1878d9c62",
+   "title": "스마트 안경 관련 내신평가 부정행위 전수조사 결과",
+   "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107600&lev=0&m=020402&s=moe&opType=N",
+   "date": "2026-11-09T03:00:00.000Z",
+   "firstSeen": "2026-11-09T06:21:17.230Z",
+   "source": "교육부 보도자료",
+   "sourceId": "moe",
+   "summary": "",
+   "categories": []
+  },
+  {
+   "id": "2da37234fbb9",
+   "title": "수능 수험생 여러분, 전자기기 가져오지 마세요!",
+   "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107599&lev=0&m=020402&s=moe&opType=N",
+   "date": "2026-11-09T03:00:00.000Z",
+   "firstSeen": "2026-11-09T06:21:17.230Z",
+   "source": "교육부 보도자료",
+   "sourceId": "moe",
+   "summary": "",
+   "categories": [
+    "suneung"
+   ]
+  },
   {
    "id": "c0b367326ba5",
    "title": "2027학년도 충북예술고등학교 추가모집 요강",
