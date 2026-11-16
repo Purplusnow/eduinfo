@@ -1,11 +1,11 @@
 {
- "updatedAt": "2026-11-15T22:46:37.295Z",
+ "updatedAt": "2026-11-16T06:23:43.793Z",
  "items": [
   {
    "id": "308eed731159",
    "title": "2027학년도 대학수학능력시험 문답지 전국 85개 시험지구에 배부 시작",
    "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107658&lev=0&m=020402&s=moe&opType=N",
-   "date": "2026-11-15T22:46:37.295Z",
+   "date": "2026-11-16T03:00:00.000Z",
    "firstSeen": "2026-11-15T22:46:37.295Z",
    "source": "교육부 보도자료",
    "sourceId": "moe",
@@ -35,6 +35,19 @@
    "firstSeen": "2026-11-13T06:40:44.113Z",
    "source": "충북교육청 고입시",
    "sourceId": "hs-chungbuk",
+   "summary": "",
+   "categories": [
+    "highschool"
+   ]
+  },
+  {
+   "id": "2da73c02491a",
+   "title": "평택마이스터고, 전국 마이스터고 제전 2개 부문 동상 쾌거",
+   "url": "https://www.goe.go.kr/goe/na/ntt/selectNttInfo.do?mi=10102&bbsId=1922&nttSn=2381823",
+   "date": "2026-11-13T03:00:00.000Z",
+   "firstSeen": "2026-11-16T06:23:43.793Z",
+   "source": "경기도교육청 보도자료",
+   "sourceId": "hs-gyeonggi",
    "summary": "",
    "categories": [
     "highschool"
