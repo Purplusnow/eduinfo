@@ -1,6 +1,45 @@
 {
- "updatedAt": "2026-11-18T00:56:38.867Z",
+ "updatedAt": "2026-11-18T11:36:58.622Z",
  "items": [
+  {
+   "id": "7c817f371398",
+   "title": "2027 수능 강화된 부정행위 예방조치에 따른 수험생 유의사항 추가 안내",
+   "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107693&lev=0&m=020402&s=moe&opType=N",
+   "date": "2026-11-18T03:00:00.000Z",
+   "firstSeen": "2026-11-18T11:36:58.622Z",
+   "source": "교육부 보도자료",
+   "sourceId": "moe",
+   "summary": "",
+   "categories": [
+    "suneung"
+   ]
+  },
+  {
+   "id": "2d3b6bd2a0a0",
+   "title": "수능시험일 위급재난문자가 발송됩니다",
+   "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107692&lev=0&m=020402&s=moe&opType=N",
+   "date": "2026-11-18T03:00:00.000Z",
+   "firstSeen": "2026-11-18T11:36:58.622Z",
+   "source": "교육부 보도자료",
+   "sourceId": "moe",
+   "summary": "",
+   "categories": [
+    "suneung"
+   ]
+  },
+  {
+   "id": "27a4bc5b4209",
+   "title": "새글2027학년도 단양고등학교 입학전형 시행 요강(수정)",
+   "url": "https://www.cbe.go.kr/cbe/na/ntt/selectNttInfo.do?mi=11465&bbsId=1779&nttSn=1582546",
+   "date": "2026-11-18T03:00:00.000Z",
+   "firstSeen": "2026-11-18T11:36:58.622Z",
+   "source": "충북교육청 고입시",
+   "sourceId": "hs-chungbuk",
+   "summary": "",
+   "categories": [
+    "highschool"
+   ]
+  },
   {
    "id": "308eed731159",
    "title": "2027학년도 대학수학능력시험 문답지 전국 85개 시험지구에 배부 시작",
@@ -762,7 +801,7 @@
   },
   {
    "id": "a97b8064b30a",
-   "title": "특례입학전형",
+   "title": "특례입학전형 안내",
    "url": "https://highschool.gne.go.kr/s10/hsa/archive/noticeDetail.do?boardSeq=54",
    "date": "2026-09-21T03:00:00.000Z",
    "firstSeen": "2026-09-28T08:37:12.571Z",
@@ -2935,19 +2974,6 @@
    "firstSeen": "2026-09-28T08:37:12.571Z",
    "source": "강원특별자치도교육청 고입자료실",
    "sourceId": "hs-gangwon",
-   "summary": "",
-   "categories": [
-    "highschool"
-   ]
-  },
-  {
-   "id": "4c5453abf607",
-   "title": "2026학년도 타 시·도 일반고 입학예정자 중 광주광역시 전입 학생에 대한 일반고 입학 전 배정 계획",
-   "url": "https://jinhak.gen.go.kr/?sid=8&wbb=md:view;uid:221;",
-   "date": "2025-10-14T03:00:00.000Z",
-   "firstSeen": "2026-09-28T08:37:12.571Z",
-   "source": "광주광역시교육청 진로진학지원센터",
-   "sourceId": "hs-gwangju",
    "summary": "",
    "categories": [
     "highschool"
