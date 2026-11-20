@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T20:32:08.544Z",
+ "updatedAt": "2026-11-20T02:17:42.813Z",
  "items": [
   {
    "id": "394f3770e982",
@@ -22,6 +22,19 @@
    "firstSeen": "2026-11-19T11:35:04.015Z",
    "source": "인천시교육청 고등학교입학자료실",
    "sourceId": "hs-incheon",
+   "summary": "",
+   "categories": [
+    "highschool"
+   ]
+  },
+  {
+   "id": "16cf3de59773",
+   "title": "경기게임마이스터고, 국내 최대 게임쇼 ‘2026 지스타(G-STAR)’서 졸업작품 대거 공개",
+   "url": "https://www.goe.go.kr/goe/na/ntt/selectNttInfo.do?mi=10102&bbsId=1922&nttSn=2382306",
+   "date": "2026-11-19T03:00:00.000Z",
+   "firstSeen": "2026-11-20T02:17:42.813Z",
+   "source": "경기도교육청 보도자료",
+   "sourceId": "hs-gyeonggi",
    "summary": "",
    "categories": [
     "highschool"
