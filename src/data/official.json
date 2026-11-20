@@ -1,6 +1,32 @@
 {
- "updatedAt": "2026-11-20T02:17:42.813Z",
+ "updatedAt": "2026-11-20T11:33:16.403Z",
  "items": [
+  {
+   "id": "49b3144b4629",
+   "title": "고등학교 입학전형 지침 및 이중지원 예방",
+   "url": "https://highschool.gne.go.kr/s10/hsa/archive/noticeDetail.do?boardSeq=60",
+   "date": "2026-11-20T03:00:00.000Z",
+   "firstSeen": "2026-11-20T11:33:16.403Z",
+   "source": "경상남도교육청 고입포털",
+   "sourceId": "hs-gyeongnam",
+   "summary": "",
+   "categories": [
+    "highschool"
+   ]
+  },
+  {
+   "id": "30ab355f84ea",
+   "title": "[중학교용] 입학원서 기재내용 보호자(학부모) 확인서(서식)",
+   "url": "https://highschool.gne.go.kr/s10/hsa/archive/noticeDetail.do?boardSeq=59",
+   "date": "2026-11-20T03:00:00.000Z",
+   "firstSeen": "2026-11-20T11:33:16.403Z",
+   "source": "경상남도교육청 고입포털",
+   "sourceId": "hs-gyeongnam",
+   "summary": "",
+   "categories": [
+    "highschool"
+   ]
+  },
   {
    "id": "394f3770e982",
    "title": "수능 부정행위 결코 용납하지 않겠습니다",
@@ -3001,19 +3027,6 @@
    "source": "경상북도교육청 온라인 고입전형",
    "sourceId": "hs-gyeongbuk",
    "summary": "2026학년도 전기고등학교 원서 공통서식과 내신성적확인서 서식입니다. 원서는 온라인 고입전형 포털 또는 나이스로 작성하고 작성이 불가피한 경우에만 사용하시기 바랍니다.",
-   "categories": [
-    "highschool"
-   ]
-  },
-  {
-   "id": "0fb5bd7b7859",
-   "title": "2026학년도 타시도 고등학교 입학예정자 중 강원특별자치도내 고등학교 입학 전 전입 안내",
-   "url": "https://www.gwe.go.kr/main/bbs/view.do?key=bTIzMDcyMTA2MDM1MTM%3D&bbsSn=45221",
-   "date": "2025-10-16T03:00:00.000Z",
-   "firstSeen": "2026-09-28T08:37:12.571Z",
-   "source": "강원특별자치도교육청 고입자료실",
-   "sourceId": "hs-gangwon",
-   "summary": "",
    "categories": [
     "highschool"
    ]
