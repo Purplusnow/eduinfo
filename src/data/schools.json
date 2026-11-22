@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T19:11:50.350Z",
+ "updatedAt": "2026-11-22T01:16:16.575Z",
  "items": [
   {
    "id": "7010057",
@@ -15479,6 +15479,17 @@
    "homepage": " https://hyoja-h.goeujb.kr"
   },
   {
+   "id": "       ",
+   "name": "훈민고등학교",
+   "region": "경기도",
+   "type": "일반고",
+   "track": null,
+   "founding": "공립",
+   "coed": "남여공학",
+   "address": "경기도 의정부시 홈다리길 10",
+   "homepage": "http://"
+  },
+  {
    "id": "7530924",
    "name": "흥덕고등학교",
    "region": "경기도",
@@ -19744,7 +19755,7 @@
    "founding": "공립",
    "coed": "남여공학",
    "address": "전북특별자치도 익산시 동서로14길 30-2",
-   "homepage": "http://energyedu.hs.kr/"
+   "homepage": "https://school.jbedu.kr/jb-it"
   },
   {
    "id": "8321130",
