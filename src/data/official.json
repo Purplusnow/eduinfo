@@ -1,6 +1,31 @@
 {
- "updatedAt": "2026-11-22T19:34:49.324Z",
+ "updatedAt": "2026-11-23T01:40:03.904Z",
  "items": [
+  {
+   "id": "0e9fcf31af2d",
+   "title": "교육부, 「대입 허위 원서접수 신고센터 」 설치",
+   "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107743&lev=0&m=020402&s=moe&opType=N",
+   "date": "2026-11-23T01:40:03.904Z",
+   "firstSeen": "2026-11-23T01:40:03.904Z",
+   "source": "교육부 보도자료",
+   "sourceId": "moe",
+   "summary": "",
+   "categories": []
+  },
+  {
+   "id": "637b2264c57c",
+   "title": "2027학년도 경기도 고등학교 전기학교 추가모집 현황 안내",
+   "url": "https://satp.goe.go.kr/intro.do#notice-308",
+   "date": "2026-11-23T01:40:03.904Z",
+   "firstSeen": "2026-11-23T01:40:03.904Z",
+   "source": "경기도교육청 고등학교 입학전학 포털",
+   "sourceId": "hs-gyeonggi",
+   "summary": "2027학년도 경기도 고등학교 전기학교 추가모집 현황을 다음과 같이 안내합니다. 자세한 내용은 해당 학교로 문의하여 주시기 바랍니다. 1. 추가모집 ...",
+   "categories": [
+    "jeongsi",
+    "highschool"
+   ]
+  },
   {
    "id": "49b3144b4629",
    "title": "고등학교 입학전형 지침 및 이중지원 예방",
