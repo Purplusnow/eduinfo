@@ -1,11 +1,11 @@
 {
- "updatedAt": "2026-11-24T02:10:49.523Z",
+ "updatedAt": "2026-11-24T13:39:08.852Z",
  "items": [
   {
    "id": "3d028fbf5dd0",
    "title": "2027. 3. 1.자 중등 교장공모제 실시학교 지원서류 공개(대구일마이스터고)",
    "url": "https://www.dge.go.kr/main/na/ntt/selectNttInfo.do?mi=5053&bbsId=1045&nttSn=2224784",
-   "date": "2026-11-24T02:10:49.523Z",
+   "date": "2026-11-24T03:00:00.000Z",
    "firstSeen": "2026-11-24T02:10:49.523Z",
    "source": "대구시교육청 공지사항",
    "sourceId": "hs-daegu",
@@ -13,6 +13,30 @@
    "categories": [
     "highschool"
    ]
+  },
+  {
+   "id": "b8eb032e0f49",
+   "title": "교육부 ‘수능 부정행위 대응팀(TF)’ 본격 가동",
+   "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107815&lev=0&m=020402&s=moe&opType=N",
+   "date": "2026-11-24T03:00:00.000Z",
+   "firstSeen": "2026-11-24T13:39:08.852Z",
+   "source": "교육부 보도자료",
+   "sourceId": "moe",
+   "summary": "",
+   "categories": [
+    "suneung"
+   ]
+  },
+  {
+   "id": "18355631a914",
+   "title": "중등학교 내신평가 스마트기기 활용 부정행위 대응 방안 발표",
+   "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107814&lev=0&m=020402&s=moe&opType=N",
+   "date": "2026-11-24T03:00:00.000Z",
+   "firstSeen": "2026-11-24T13:39:08.852Z",
+   "source": "교육부 보도자료",
+   "sourceId": "moe",
+   "summary": "",
+   "categories": []
   },
   {
    "id": "0e9fcf31af2d",
