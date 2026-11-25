@@ -1,6 +1,32 @@
 {
- "updatedAt": "2026-11-24T23:52:40.683Z",
+ "updatedAt": "2026-11-25T08:28:29.192Z",
  "items": [
+  {
+   "id": "f4de6394bf4f",
+   "title": "교육부, 수능 부정행위 끝까지 추적 시험지 보관기간 5년으로 연장 추진",
+   "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107837&lev=0&m=020402&s=moe&opType=N",
+   "date": "2026-11-25T03:00:00.000Z",
+   "firstSeen": "2026-11-25T08:28:29.192Z",
+   "source": "교육부 보도자료",
+   "sourceId": "moe",
+   "summary": "",
+   "categories": [
+    "suneung"
+   ]
+  },
+  {
+   "id": "bf47a9c35721",
+   "title": "학교별 서류 제출 방법 안내(체험위주 특성화고, 각종학교)",
+   "url": "https://highschool.gne.go.kr/s10/hsa/archive/noticeDetail.do?boardSeq=61",
+   "date": "2026-11-25T03:00:00.000Z",
+   "firstSeen": "2026-11-25T08:28:29.192Z",
+   "source": "경상남도교육청 고입포털",
+   "sourceId": "hs-gyeongnam",
+   "summary": "",
+   "categories": [
+    "highschool"
+   ]
+  },
   {
    "id": "3d028fbf5dd0",
    "title": "2027. 3. 1.자 중등 교장공모제 실시학교 지원서류 공개(대구일마이스터고)",
@@ -3049,19 +3075,6 @@
    "firstSeen": "2026-09-28T08:37:12.571Z",
    "source": "전남교육청 진로진학지원센터",
    "sourceId": "hs-jeonnam",
-   "summary": "",
-   "categories": [
-    "highschool"
-   ]
-  },
-  {
-   "id": "68469991c22c",
-   "title": "2026학년도 후기 평준화 일반고등학교 신입생 입학 전형 서식 모음",
-   "url": "https://jinhak.gen.go.kr/?sid=8&wbb=md:view;uid:222;",
-   "date": "2025-10-21T03:00:00.000Z",
-   "firstSeen": "2026-09-28T08:37:12.571Z",
-   "source": "광주광역시교육청 진로진학지원센터",
-   "sourceId": "hs-gwangju",
    "summary": "",
    "categories": [
     "highschool"
