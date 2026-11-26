@@ -1,6 +1,32 @@
 {
- "updatedAt": "2026-11-25T19:13:37.518Z",
+ "updatedAt": "2026-11-26T03:32:26.536Z",
  "items": [
+  {
+   "id": "15eb9c262804",
+   "title": "교육부·한국교육과정평가원, 2026년 고교학점제 성과공유회 개최",
+   "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107848&lev=0&m=020402&s=moe&opType=N",
+   "date": "2026-11-26T03:00:00.000Z",
+   "firstSeen": "2026-11-26T03:32:26.536Z",
+   "source": "교육부 보도자료",
+   "sourceId": "moe",
+   "summary": "",
+   "categories": [
+    "policy"
+   ]
+  },
+  {
+   "id": "026caa724c24",
+   "title": "새글2027학년도 충청북도 교육감전형 고등학교(평준화고) 소개자료",
+   "url": "https://www.cbe.go.kr/cbe/na/ntt/selectNttInfo.do?mi=11465&bbsId=1779&nttSn=1583041",
+   "date": "2026-11-26T03:00:00.000Z",
+   "firstSeen": "2026-11-26T03:32:26.536Z",
+   "source": "충북교육청 고입시",
+   "sourceId": "hs-chungbuk",
+   "summary": "",
+   "categories": [
+    "highschool"
+   ]
+  },
   {
    "id": "f4de6394bf4f",
    "title": "교육부, 수능 부정행위 끝까지 추적 시험지 보관기간 5년으로 연장 추진",
@@ -3062,19 +3088,6 @@
    "firstSeen": "2026-09-28T08:37:12.571Z",
    "source": "부산시교육청 고입포털",
    "sourceId": "hs-busan",
-   "summary": "",
-   "categories": [
-    "highschool"
-   ]
-  },
-  {
-   "id": "8239c2cc2b4b",
-   "title": "2026학년도 전라남도 전입 학생에 대한 입학전 배정 및 전입학 계획 안내",
-   "url": "https://www.jge.go.kr/jinro/na/ntt/selectNttInfo.do?mi=824&bbsId=396&nttSn=5156696",
-   "date": "2025-10-22T03:00:00.000Z",
-   "firstSeen": "2026-09-28T08:37:12.571Z",
-   "source": "전남교육청 진로진학지원센터",
-   "sourceId": "hs-jeonnam",
    "summary": "",
    "categories": [
     "highschool"
