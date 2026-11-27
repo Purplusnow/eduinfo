@@ -1,6 +1,20 @@
 {
- "updatedAt": "2026-11-27T01:43:14.141Z",
+ "updatedAt": "2026-11-27T12:12:28.403Z",
  "items": [
+  {
+   "id": "e024500dc3a4",
+   "title": "2027학년도 고교학점제 안정적 운영 지원",
+   "url": "https://www.jbe.go.kr/news/board/view.jbe?boardId=BBS_0000222&menuCd=DOM_000001201001000000&dataSid=1218049",
+   "date": "2026-11-27T03:00:00.000Z",
+   "firstSeen": "2026-11-27T12:12:28.403Z",
+   "source": "전북특별자치도교육청 보도자료",
+   "sourceId": "hs-jeonbuk",
+   "summary": "",
+   "categories": [
+    "policy",
+    "highschool"
+   ]
+  },
   {
    "id": "15eb9c262804",
    "title": "교육부·한국교육과정평가원, 2026년 고교학점제 성과공유회 개최",
@@ -3058,33 +3072,6 @@
    "title": "2026학년도 부산광역시 평준화 적용 일반고등학교 부산시내 재배정 안내(장소변경)",
    "url": "https://home.pen.go.kr/hischool/na/ntt/selectNttInfo.do?mi=12446&bbsId=4006&nttSn=953780",
    "date": "2025-10-24T03:00:00.000Z",
-   "firstSeen": "2026-09-28T08:37:12.571Z",
-   "source": "부산시교육청 고입포털",
-   "sourceId": "hs-busan",
-   "summary": "",
-   "categories": [
-    "highschool"
-   ]
-  },
-  {
-   "id": "ec4595cb2825",
-   "title": "2026학년도 타시도 졸업자 및 검정고시 합격자 평준화적용 일반고 원서 접수 안내",
-   "url": "https://home.pen.go.kr/hischool/na/ntt/selectNttInfo.do?mi=12446&bbsId=4006&nttSn=953444",
-   "date": "2025-10-23T03:00:00.000Z",
-   "firstSeen": "2026-09-28T08:37:12.571Z",
-   "source": "부산시교육청 고입포털",
-   "sourceId": "hs-busan",
-   "summary": "",
-   "categories": [
-    "etc",
-    "highschool"
-   ]
-  },
-  {
-   "id": "c81e90343c1c",
-   "title": "2026학년도 부산광역시교육청 평준화적용 일반고등학교 타시도 전입자 선배정 계획(장소변경)",
-   "url": "https://home.pen.go.kr/hischool/na/ntt/selectNttInfo.do?mi=12446&bbsId=4006&nttSn=953442",
-   "date": "2025-10-23T03:00:00.000Z",
    "firstSeen": "2026-09-28T08:37:12.571Z",
    "source": "부산시교육청 고입포털",
    "sourceId": "hs-busan",
